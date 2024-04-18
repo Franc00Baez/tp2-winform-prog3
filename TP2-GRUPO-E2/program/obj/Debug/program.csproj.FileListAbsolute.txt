@@ -54,3 +54,4 @@ C:\Users\Lucio\OneDrive\Escritorio\prueba\tp2-winform-prog3\TP2-GRUPO-E2\program
 C:\Users\Lucio\OneDrive\Escritorio\prueba\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusID3.resources
 C:\Users\Lucio\OneDrive\Escritorio\prueba\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusNombre2.resources
 C:\Users\Lucio\OneDrive\Escritorio\prueba\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusNombre3.resources
+C:\Users\Lucio\OneDrive\Escritorio\prueba\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormListadoArt.resources

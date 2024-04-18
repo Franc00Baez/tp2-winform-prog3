@@ -45,15 +45,15 @@ namespace program
             this.marcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.buscarPorIDToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.buscarPorNombreToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.categoríasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarCategoríaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarCategoríaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.timer = new System.Windows.Forms.Timer(this.components);
-            this.buscarPorIDToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarPorNombreToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarPorIDToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarPorNombreToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -155,6 +155,7 @@ namespace program
             this.verListadoDeArtículosToolStripMenuItem.Name = "verListadoDeArtículosToolStripMenuItem";
             this.verListadoDeArtículosToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.verListadoDeArtículosToolStripMenuItem.Text = "Ver listado de artículos";
+            this.verListadoDeArtículosToolStripMenuItem.Click += new System.EventHandler(this.verListadoDeArtículosToolStripMenuItem_Click);
             // 
             // marcasToolStripMenuItem
             // 
@@ -168,7 +169,7 @@ namespace program
             // agregarMarcaToolStripMenuItem
             // 
             this.agregarMarcaToolStripMenuItem.Name = "agregarMarcaToolStripMenuItem";
-            this.agregarMarcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarMarcaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.agregarMarcaToolStripMenuItem.Text = "Agregar marca";
             this.agregarMarcaToolStripMenuItem.Click += new System.EventHandler(this.agregarMarcaToolStripMenuItem_Click);
             // 
@@ -178,8 +179,22 @@ namespace program
             this.buscarPorIDToolStripMenuItem1,
             this.buscarPorNombreToolStripMenuItem1});
             this.buscarMarcaToolStripMenuItem.Name = "buscarMarcaToolStripMenuItem";
-            this.buscarMarcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.buscarMarcaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.buscarMarcaToolStripMenuItem.Text = "Buscar marca";
+            // 
+            // buscarPorIDToolStripMenuItem1
+            // 
+            this.buscarPorIDToolStripMenuItem1.Name = "buscarPorIDToolStripMenuItem1";
+            this.buscarPorIDToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
+            this.buscarPorIDToolStripMenuItem1.Text = "Buscar por ID";
+            this.buscarPorIDToolStripMenuItem1.Click += new System.EventHandler(this.buscarPorIDToolStripMenuItem1_Click);
+            // 
+            // buscarPorNombreToolStripMenuItem1
+            // 
+            this.buscarPorNombreToolStripMenuItem1.Name = "buscarPorNombreToolStripMenuItem1";
+            this.buscarPorNombreToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
+            this.buscarPorNombreToolStripMenuItem1.Text = "Buscar por nombre";
+            this.buscarPorNombreToolStripMenuItem1.Click += new System.EventHandler(this.buscarPorNombreToolStripMenuItem1_Click);
             // 
             // categoríasToolStripMenuItem
             // 
@@ -193,7 +208,7 @@ namespace program
             // agregarCategoríaToolStripMenuItem
             // 
             this.agregarCategoríaToolStripMenuItem.Name = "agregarCategoríaToolStripMenuItem";
-            this.agregarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.agregarCategoríaToolStripMenuItem.Text = "Agregar categoría";
             this.agregarCategoríaToolStripMenuItem.Click += new System.EventHandler(this.agregarCategoríaToolStripMenuItem_Click);
             // 
@@ -203,8 +218,22 @@ namespace program
             this.buscarPorIDToolStripMenuItem2,
             this.buscarPorNombreToolStripMenuItem2});
             this.buscarCategoríaToolStripMenuItem.Name = "buscarCategoríaToolStripMenuItem";
-            this.buscarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.buscarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.buscarCategoríaToolStripMenuItem.Text = "Buscar categoría";
+            // 
+            // buscarPorIDToolStripMenuItem2
+            // 
+            this.buscarPorIDToolStripMenuItem2.Name = "buscarPorIDToolStripMenuItem2";
+            this.buscarPorIDToolStripMenuItem2.Size = new System.Drawing.Size(175, 22);
+            this.buscarPorIDToolStripMenuItem2.Text = "Buscar por ID";
+            this.buscarPorIDToolStripMenuItem2.Click += new System.EventHandler(this.buscarPorIDToolStripMenuItem2_Click);
+            // 
+            // buscarPorNombreToolStripMenuItem2
+            // 
+            this.buscarPorNombreToolStripMenuItem2.Name = "buscarPorNombreToolStripMenuItem2";
+            this.buscarPorNombreToolStripMenuItem2.Size = new System.Drawing.Size(175, 22);
+            this.buscarPorNombreToolStripMenuItem2.Text = "Buscar por nombre";
+            this.buscarPorNombreToolStripMenuItem2.Click += new System.EventHandler(this.buscarPorNombreToolStripMenuItem2_Click);
             // 
             // aboutToolStripMenuItem
             // 
@@ -213,34 +242,6 @@ namespace program
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.aboutToolStripMenuItem.Text = "About&";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // buscarPorIDToolStripMenuItem1
-            // 
-            this.buscarPorIDToolStripMenuItem1.Name = "buscarPorIDToolStripMenuItem1";
-            this.buscarPorIDToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.buscarPorIDToolStripMenuItem1.Text = "Buscar por ID";
-            this.buscarPorIDToolStripMenuItem1.Click += new System.EventHandler(this.buscarPorIDToolStripMenuItem1_Click);
-            // 
-            // buscarPorNombreToolStripMenuItem1
-            // 
-            this.buscarPorNombreToolStripMenuItem1.Name = "buscarPorNombreToolStripMenuItem1";
-            this.buscarPorNombreToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.buscarPorNombreToolStripMenuItem1.Text = "Buscar por nombre";
-            this.buscarPorNombreToolStripMenuItem1.Click += new System.EventHandler(this.buscarPorNombreToolStripMenuItem1_Click);
-            // 
-            // buscarPorIDToolStripMenuItem2
-            // 
-            this.buscarPorIDToolStripMenuItem2.Name = "buscarPorIDToolStripMenuItem2";
-            this.buscarPorIDToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.buscarPorIDToolStripMenuItem2.Text = "Buscar por ID";
-            this.buscarPorIDToolStripMenuItem2.Click += new System.EventHandler(this.buscarPorIDToolStripMenuItem2_Click);
-            // 
-            // buscarPorNombreToolStripMenuItem2
-            // 
-            this.buscarPorNombreToolStripMenuItem2.Name = "buscarPorNombreToolStripMenuItem2";
-            this.buscarPorNombreToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
-            this.buscarPorNombreToolStripMenuItem2.Text = "Buscar por nombre";
-            this.buscarPorNombreToolStripMenuItem2.Click += new System.EventHandler(this.buscarPorNombreToolStripMenuItem2_Click);
             // 
             // FormPrincipal
             // 

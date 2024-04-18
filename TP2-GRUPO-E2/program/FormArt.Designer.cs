@@ -38,11 +38,11 @@
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblNombre2 = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblMarca = new System.Windows.Forms.Label();
             this.lblCodArt2 = new System.Windows.Forms.Label();
             this.lblCodArt = new System.Windows.Forms.Label();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
             this.SuspendLayout();
@@ -65,7 +65,7 @@
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Location = new System.Drawing.Point(12, 20);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(45, 16);
+            this.lblDescripcion.Size = new System.Drawing.Size(44, 16);
             this.lblDescripcion.TabIndex = 0;
             this.lblDescripcion.Text = "label4";
             // 
@@ -114,7 +114,7 @@
             this.btnEditar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Location = new System.Drawing.Point(268, 323);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(148, 38);
+            this.btnEditar.Size = new System.Drawing.Size(147, 39);
             this.btnEditar.TabIndex = 0;
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.UseVisualStyleBackColor = false;
@@ -159,14 +159,6 @@
             this.lblNombre.TabIndex = 26;
             this.lblNombre.Text = "Nombre : ";
             // 
-            // pictureBox
-            // 
-            this.pictureBox.Location = new System.Drawing.Point(341, 12);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(228, 179);
-            this.pictureBox.TabIndex = 25;
-            this.pictureBox.TabStop = false;
-            // 
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
@@ -206,6 +198,14 @@
             this.lblCodArt.Size = new System.Drawing.Size(134, 17);
             this.lblCodArt.TabIndex = 21;
             this.lblCodArt.Text = "Código de articulo : ";
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.Location = new System.Drawing.Point(341, 12);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(228, 179);
+            this.pictureBox.TabIndex = 25;
+            this.pictureBox.TabStop = false;
             // 
             // FormArt
             // 

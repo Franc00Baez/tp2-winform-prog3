@@ -98,5 +98,11 @@ namespace program
             FormBusNombre3 formBusNombre3 = new FormBusNombre3();
             formBusNombre3.ShowDialog();
         }
+
+        private void verListadoDeArtículosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormListadoArt formListadoArt = new FormListadoArt();
+            formListadoArt.ShowDialog();
+        }
     }
 }

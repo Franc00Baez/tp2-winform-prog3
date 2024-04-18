@@ -126,6 +126,12 @@
     <Compile Include="FormBusNombre3.Designer.cs">
       <DependentUpon>FormBusNombre3.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormListadoArt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListadoArt.Designer.cs">
+      <DependentUpon>FormListadoArt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Marca.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -167,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormBusNombre3.resx">
       <DependentUpon>FormBusNombre3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoArt.resx">
+      <DependentUpon>FormListadoArt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
