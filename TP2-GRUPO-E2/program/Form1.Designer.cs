@@ -32,6 +32,7 @@ namespace program
             this.components = new System.ComponentModel.Container();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.tssl1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.tsslFecha = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.artículosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarArtículoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,7 +50,6 @@ namespace program
             this.buscarCategoríaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer = new System.Windows.Forms.Timer(this.components);
-            this.tsslFecha = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -70,6 +70,11 @@ namespace program
             // 
             this.tssl1.Name = "tssl1";
             this.tssl1.Size = new System.Drawing.Size(0, 17);
+            // 
+            // tsslFecha
+            // 
+            this.tsslFecha.Name = "tsslFecha";
+            this.tsslFecha.Size = new System.Drawing.Size(0, 17);
             // 
             // menuStrip1
             // 
@@ -196,19 +201,17 @@ namespace program
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
-            // tsslFecha
-            // 
-            this.tsslFecha.Name = "tsslFecha";
-            this.tsslFecha.Size = new System.Drawing.Size(0, 17);
-            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.BackgroundImage = global::program.Properties.Resources.Cool_Text___ABM_PRODUCTOS_456120502568613;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(850, 520);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormPrincipal";
