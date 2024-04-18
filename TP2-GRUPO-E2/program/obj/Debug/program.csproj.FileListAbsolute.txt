@@ -1,0 +1,11 @@
+C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\bin\Debug\program.exe.config
+C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\bin\Debug\program.exe
+C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\bin\Debug\program.pdb
+C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.csproj.AssemblyReference.cache
+C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormPrincipal.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.Properties.Resources.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.csproj.GenerateResource.cache
+C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.csproj.CoreCompileInputs.cache
+C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.exe
+C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.pdb
