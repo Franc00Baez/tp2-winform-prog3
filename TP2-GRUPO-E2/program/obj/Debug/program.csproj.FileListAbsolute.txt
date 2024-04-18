@@ -9,3 +9,4 @@ C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\pro
 C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.csproj.CoreCompileInputs.cache
 C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.exe
 C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.pdb
+C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormAgrArt.resources

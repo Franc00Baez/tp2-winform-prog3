@@ -10,17 +10,12 @@ using System.Windows.Forms;
 
 namespace program
 {
-    public partial class FormPrincipal : Form
+    public partial class FormAgrArt : Form
     {
-        public FormPrincipal()
+        public FormAgrArt()
         {
             InitializeComponent();
         }
 
-        private void agregarArtículoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormAgrArt formAgrArt = new FormAgrArt();
-            formAgrArt.ShowDialog();
-        }
     }
 }

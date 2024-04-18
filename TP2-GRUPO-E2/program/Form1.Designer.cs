@@ -98,6 +98,7 @@ namespace program
             this.agregarArtículoToolStripMenuItem.Name = "agregarArtículoToolStripMenuItem";
             this.agregarArtículoToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.agregarArtículoToolStripMenuItem.Text = "Agregar artículo";
+            this.agregarArtículoToolStripMenuItem.Click += new System.EventHandler(this.agregarArtículoToolStripMenuItem_Click);
             // 
             // buscarArtículoToolStripMenuItem
             // 
@@ -196,8 +197,10 @@ namespace program
             this.ClientSize = new System.Drawing.Size(850, 520);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MIAPP";
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
