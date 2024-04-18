@@ -36,19 +36,20 @@ namespace program
             this.artículosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarArtículoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarArtículoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verListadoDeArtículosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarPorIDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarPorNombreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarPorMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarPorCategoríaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verListadoDeArtículosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.marcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.categoríasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarMarcaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.categoríasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarCategoríaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarCategoríaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer = new System.Windows.Forms.Timer(this.components);
+            this.tsslFecha = new System.Windows.Forms.ToolStripStatusLabel();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +58,8 @@ namespace program
             // 
             this.statusStrip1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tssl1});
+            this.tssl1,
+            this.tsslFecha});
             this.statusStrip1.Location = new System.Drawing.Point(0, 498);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(850, 22);
@@ -111,12 +113,6 @@ namespace program
             this.buscarArtículoToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.buscarArtículoToolStripMenuItem.Text = "Buscar artículo";
             // 
-            // verListadoDeArtículosToolStripMenuItem
-            // 
-            this.verListadoDeArtículosToolStripMenuItem.Name = "verListadoDeArtículosToolStripMenuItem";
-            this.verListadoDeArtículosToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
-            this.verListadoDeArtículosToolStripMenuItem.Text = "Ver listado de artículos";
-            // 
             // buscarPorIDToolStripMenuItem
             // 
             this.buscarPorIDToolStripMenuItem.Name = "buscarPorIDToolStripMenuItem";
@@ -145,6 +141,12 @@ namespace program
             this.buscarPorCategoríaToolStripMenuItem.Text = "Buscar por categoría";
             this.buscarPorCategoríaToolStripMenuItem.Click += new System.EventHandler(this.buscarPorCategoríaToolStripMenuItem_Click);
             // 
+            // verListadoDeArtículosToolStripMenuItem
+            // 
+            this.verListadoDeArtículosToolStripMenuItem.Name = "verListadoDeArtículosToolStripMenuItem";
+            this.verListadoDeArtículosToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
+            this.verListadoDeArtículosToolStripMenuItem.Text = "Ver listado de artículos";
+            // 
             // marcasToolStripMenuItem
             // 
             this.marcasToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -153,6 +155,18 @@ namespace program
             this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
             this.marcasToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.marcasToolStripMenuItem.Text = "Marcas";
+            // 
+            // agregarMarcaToolStripMenuItem
+            // 
+            this.agregarMarcaToolStripMenuItem.Name = "agregarMarcaToolStripMenuItem";
+            this.agregarMarcaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.agregarMarcaToolStripMenuItem.Text = "Agregar marca";
+            // 
+            // buscarMarcaToolStripMenuItem
+            // 
+            this.buscarMarcaToolStripMenuItem.Name = "buscarMarcaToolStripMenuItem";
+            this.buscarMarcaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.buscarMarcaToolStripMenuItem.Text = "Buscar marca";
             // 
             // categoríasToolStripMenuItem
             // 
@@ -163,35 +177,29 @@ namespace program
             this.categoríasToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.categoríasToolStripMenuItem.Text = "Categorías";
             // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.aboutToolStripMenuItem.Text = "About";
-            // 
-            // agregarMarcaToolStripMenuItem
-            // 
-            this.agregarMarcaToolStripMenuItem.Name = "agregarMarcaToolStripMenuItem";
-            this.agregarMarcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.agregarMarcaToolStripMenuItem.Text = "Agregar marca";
-            // 
-            // buscarMarcaToolStripMenuItem
-            // 
-            this.buscarMarcaToolStripMenuItem.Name = "buscarMarcaToolStripMenuItem";
-            this.buscarMarcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.buscarMarcaToolStripMenuItem.Text = "Buscar marca";
-            // 
             // agregarCategoríaToolStripMenuItem
             // 
             this.agregarCategoríaToolStripMenuItem.Name = "agregarCategoríaToolStripMenuItem";
-            this.agregarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.agregarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.agregarCategoríaToolStripMenuItem.Text = "Agregar categoría";
             // 
             // buscarCategoríaToolStripMenuItem
             // 
             this.buscarCategoríaToolStripMenuItem.Name = "buscarCategoríaToolStripMenuItem";
-            this.buscarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.buscarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
             this.buscarCategoríaToolStripMenuItem.Text = "Buscar categoría";
+            // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
+            // tsslFecha
+            // 
+            this.tsslFecha.Name = "tsslFecha";
+            this.tsslFecha.Size = new System.Drawing.Size(0, 17);
             // 
             // FormPrincipal
             // 
@@ -236,6 +244,7 @@ namespace program
         private System.Windows.Forms.ToolStripMenuItem buscarCategoríaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.Timer timer;
+        private System.Windows.Forms.ToolStripStatusLabel tsslFecha;
     }
 }
 
