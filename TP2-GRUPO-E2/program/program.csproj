@@ -58,6 +58,30 @@
     <Compile Include="FormAgrArt.Designer.cs">
       <DependentUpon>FormAgrArt.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormBusCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBusCategoria.Designer.cs">
+      <DependentUpon>FormBusCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBusID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBusID.Designer.cs">
+      <DependentUpon>FormBusID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBusMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBusMarca.Designer.cs">
+      <DependentUpon>FormBusMarca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBusNombre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBusNombre.Designer.cs">
+      <DependentUpon>FormBusNombre.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -65,6 +89,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAgrArt.resx">
       <DependentUpon>FormAgrArt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBusCategoria.resx">
+      <DependentUpon>FormBusCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBusID.resx">
+      <DependentUpon>FormBusID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBusMarca.resx">
+      <DependentUpon>FormBusMarca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBusNombre.resx">
+      <DependentUpon>FormBusNombre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

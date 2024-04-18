@@ -53,7 +53,7 @@
             this.btnImportar.FlatAppearance.BorderSize = 0;
             this.btnImportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnImportar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImportar.Location = new System.Drawing.Point(154, 166);
+            this.btnImportar.Location = new System.Drawing.Point(154, 170);
             this.btnImportar.Name = "btnImportar";
             this.btnImportar.Size = new System.Drawing.Size(251, 20);
             this.btnImportar.TabIndex = 54;
@@ -64,7 +64,7 @@
             // 
             this.lblImagen.AutoSize = true;
             this.lblImagen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblImagen.Location = new System.Drawing.Point(12, 166);
+            this.lblImagen.Location = new System.Drawing.Point(12, 170);
             this.lblImagen.Name = "lblImagen";
             this.lblImagen.Size = new System.Drawing.Size(136, 17);
             this.lblImagen.TabIndex = 53;
@@ -72,14 +72,14 @@
             // 
             // txtbDescripcion
             // 
-            this.txtbDescripcion.Location = new System.Drawing.Point(112, 196);
+            this.txtbDescripcion.Location = new System.Drawing.Point(112, 200);
             this.txtbDescripcion.Name = "txtbDescripcion";
             this.txtbDescripcion.Size = new System.Drawing.Size(400, 20);
             this.txtbDescripcion.TabIndex = 52;
             // 
             // txtbPrecio
             // 
-            this.txtbPrecio.Location = new System.Drawing.Point(73, 136);
+            this.txtbPrecio.Location = new System.Drawing.Point(73, 140);
             this.txtbPrecio.Name = "txtbPrecio";
             this.txtbPrecio.Size = new System.Drawing.Size(251, 20);
             this.txtbPrecio.TabIndex = 51;
@@ -87,7 +87,7 @@
             // cboxCategoria
             // 
             this.cboxCategoria.FormattingEnabled = true;
-            this.cboxCategoria.Location = new System.Drawing.Point(99, 106);
+            this.cboxCategoria.Location = new System.Drawing.Point(99, 110);
             this.cboxCategoria.Name = "cboxCategoria";
             this.cboxCategoria.Size = new System.Drawing.Size(177, 21);
             this.cboxCategoria.TabIndex = 50;
@@ -95,21 +95,21 @@
             // cboxMarca
             // 
             this.cboxMarca.FormattingEnabled = true;
-            this.cboxMarca.Location = new System.Drawing.Point(73, 76);
+            this.cboxMarca.Location = new System.Drawing.Point(73, 80);
             this.cboxMarca.Name = "cboxMarca";
             this.cboxMarca.Size = new System.Drawing.Size(203, 21);
             this.cboxMarca.TabIndex = 49;
             // 
             // txtbNombre
             // 
-            this.txtbNombre.Location = new System.Drawing.Point(88, 46);
+            this.txtbNombre.Location = new System.Drawing.Point(88, 50);
             this.txtbNombre.Name = "txtbNombre";
             this.txtbNombre.Size = new System.Drawing.Size(251, 20);
             this.txtbNombre.TabIndex = 48;
             // 
             // txtbCodArt
             // 
-            this.txtbCodArt.Location = new System.Drawing.Point(152, 16);
+            this.txtbCodArt.Location = new System.Drawing.Point(152, 20);
             this.txtbCodArt.Name = "txtbCodArt";
             this.txtbCodArt.Size = new System.Drawing.Size(251, 20);
             this.txtbCodArt.TabIndex = 47;
@@ -120,7 +120,7 @@
             this.btnCancelar.FlatAppearance.BorderSize = 0;
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(422, 319);
+            this.btnCancelar.Location = new System.Drawing.Point(422, 323);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(147, 39);
             this.btnCancelar.TabIndex = 46;
@@ -133,7 +133,7 @@
             this.btnAgregar.FlatAppearance.BorderSize = 0;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(268, 319);
+            this.btnAgregar.Location = new System.Drawing.Point(268, 323);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(148, 38);
             this.btnAgregar.TabIndex = 45;
@@ -144,7 +144,7 @@
             // 
             this.lblPrecio.AutoSize = true;
             this.lblPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrecio.Location = new System.Drawing.Point(12, 136);
+            this.lblPrecio.Location = new System.Drawing.Point(12, 140);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(60, 17);
             this.lblPrecio.TabIndex = 44;
@@ -154,7 +154,7 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(12, 46);
+            this.lblNombre.Location = new System.Drawing.Point(12, 50);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(70, 17);
             this.lblNombre.TabIndex = 43;
@@ -164,7 +164,7 @@
             // 
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(12, 106);
+            this.lblCategoria.Location = new System.Drawing.Point(12, 110);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(81, 17);
             this.lblCategoria.TabIndex = 42;
@@ -174,7 +174,7 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDescripcion.Location = new System.Drawing.Point(12, 196);
+            this.lblDescripcion.Location = new System.Drawing.Point(12, 200);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(94, 17);
             this.lblDescripcion.TabIndex = 41;
@@ -184,7 +184,7 @@
             // 
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(12, 76);
+            this.lblMarca.Location = new System.Drawing.Point(12, 80);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(55, 17);
             this.lblMarca.TabIndex = 40;
@@ -203,7 +203,7 @@
             // 
             this.lblCodArt.AutoSize = true;
             this.lblCodArt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodArt.Location = new System.Drawing.Point(12, 16);
+            this.lblCodArt.Location = new System.Drawing.Point(12, 20);
             this.lblCodArt.Name = "lblCodArt";
             this.lblCodArt.Size = new System.Drawing.Size(134, 17);
             this.lblCodArt.TabIndex = 38;
