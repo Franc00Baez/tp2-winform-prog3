@@ -118,7 +118,25 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="search_file_icon_252034" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_file_icon_252034.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus_file_icon_252047" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus_file_icon_252047.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="text_clipboard_icon_252043" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\text_clipboard_icon_252043.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="plus_file_icon_2520471" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\plus_file_icon_252047.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search_data_magnifier_folder_icon_252030" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search_data_magnifier_folder_icon_252030.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Cool Text - ABM PRODUCTOS 456120502568613" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cool Text - ABM PRODUCTOS 456120502568613.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clock_icon_252111" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clock_icon_252111.ico;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

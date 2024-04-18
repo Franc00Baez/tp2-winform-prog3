@@ -203,5 +203,20 @@
   <ItemGroup>
     <None Include="Resources\Cool Text - ABM PRODUCTOS 456120502568613.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus_file_icon_252047.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_data_magnifier_folder_icon_252030.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\text_clipboard_icon_252043.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search_file_icon_252034.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clock_icon_252111.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

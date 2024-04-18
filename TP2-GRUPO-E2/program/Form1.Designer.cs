@@ -77,8 +77,9 @@ namespace program
             // 
             // tsslFecha
             // 
+            this.tsslFecha.Image = global::program.Properties.Resources.clock_icon_252111;
             this.tsslFecha.Name = "tsslFecha";
-            this.tsslFecha.Size = new System.Drawing.Size(0, 17);
+            this.tsslFecha.Size = new System.Drawing.Size(16, 17);
             // 
             // menuStrip1
             // 
@@ -106,6 +107,7 @@ namespace program
             // 
             // agregarArtículoToolStripMenuItem
             // 
+            this.agregarArtículoToolStripMenuItem.Image = global::program.Properties.Resources.plus_file_icon_252047;
             this.agregarArtículoToolStripMenuItem.Name = "agregarArtículoToolStripMenuItem";
             this.agregarArtículoToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.agregarArtículoToolStripMenuItem.Text = "Agregar artículo";
@@ -118,12 +120,14 @@ namespace program
             this.buscarPorNombreToolStripMenuItem,
             this.buscarPorMarcaToolStripMenuItem,
             this.buscarPorCategoríaToolStripMenuItem});
+            this.buscarArtículoToolStripMenuItem.Image = global::program.Properties.Resources.search_data_magnifier_folder_icon_252030;
             this.buscarArtículoToolStripMenuItem.Name = "buscarArtículoToolStripMenuItem";
             this.buscarArtículoToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.buscarArtículoToolStripMenuItem.Text = "Buscar artículo";
             // 
             // buscarPorIDToolStripMenuItem
             // 
+            this.buscarPorIDToolStripMenuItem.Image = global::program.Properties.Resources.search_file_icon_252034;
             this.buscarPorIDToolStripMenuItem.Name = "buscarPorIDToolStripMenuItem";
             this.buscarPorIDToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.buscarPorIDToolStripMenuItem.Text = "Buscar por ID";
@@ -131,6 +135,7 @@ namespace program
             // 
             // buscarPorNombreToolStripMenuItem
             // 
+            this.buscarPorNombreToolStripMenuItem.Image = global::program.Properties.Resources.search_file_icon_252034;
             this.buscarPorNombreToolStripMenuItem.Name = "buscarPorNombreToolStripMenuItem";
             this.buscarPorNombreToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.buscarPorNombreToolStripMenuItem.Text = "Buscar por nombre";
@@ -138,6 +143,7 @@ namespace program
             // 
             // buscarPorMarcaToolStripMenuItem
             // 
+            this.buscarPorMarcaToolStripMenuItem.Image = global::program.Properties.Resources.search_file_icon_252034;
             this.buscarPorMarcaToolStripMenuItem.Name = "buscarPorMarcaToolStripMenuItem";
             this.buscarPorMarcaToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.buscarPorMarcaToolStripMenuItem.Text = "Buscar por marca";
@@ -145,6 +151,7 @@ namespace program
             // 
             // buscarPorCategoríaToolStripMenuItem
             // 
+            this.buscarPorCategoríaToolStripMenuItem.Image = global::program.Properties.Resources.search_file_icon_252034;
             this.buscarPorCategoríaToolStripMenuItem.Name = "buscarPorCategoríaToolStripMenuItem";
             this.buscarPorCategoríaToolStripMenuItem.Size = new System.Drawing.Size(182, 22);
             this.buscarPorCategoríaToolStripMenuItem.Text = "Buscar por categoría";
@@ -152,6 +159,7 @@ namespace program
             // 
             // verListadoDeArtículosToolStripMenuItem
             // 
+            this.verListadoDeArtículosToolStripMenuItem.Image = global::program.Properties.Resources.text_clipboard_icon_252043;
             this.verListadoDeArtículosToolStripMenuItem.Name = "verListadoDeArtículosToolStripMenuItem";
             this.verListadoDeArtículosToolStripMenuItem.Size = new System.Drawing.Size(192, 22);
             this.verListadoDeArtículosToolStripMenuItem.Text = "Ver listado de artículos";
@@ -168,8 +176,9 @@ namespace program
             // 
             // agregarMarcaToolStripMenuItem
             // 
+            this.agregarMarcaToolStripMenuItem.Image = global::program.Properties.Resources.plus_file_icon_2520471;
             this.agregarMarcaToolStripMenuItem.Name = "agregarMarcaToolStripMenuItem";
-            this.agregarMarcaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.agregarMarcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.agregarMarcaToolStripMenuItem.Text = "Agregar marca";
             this.agregarMarcaToolStripMenuItem.Click += new System.EventHandler(this.agregarMarcaToolStripMenuItem_Click);
             // 
@@ -178,21 +187,24 @@ namespace program
             this.buscarMarcaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.buscarPorIDToolStripMenuItem1,
             this.buscarPorNombreToolStripMenuItem1});
+            this.buscarMarcaToolStripMenuItem.Image = global::program.Properties.Resources.search_data_magnifier_folder_icon_252030;
             this.buscarMarcaToolStripMenuItem.Name = "buscarMarcaToolStripMenuItem";
-            this.buscarMarcaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.buscarMarcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.buscarMarcaToolStripMenuItem.Text = "Buscar marca";
             // 
             // buscarPorIDToolStripMenuItem1
             // 
+            this.buscarPorIDToolStripMenuItem1.Image = global::program.Properties.Resources.search_file_icon_252034;
             this.buscarPorIDToolStripMenuItem1.Name = "buscarPorIDToolStripMenuItem1";
-            this.buscarPorIDToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
+            this.buscarPorIDToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.buscarPorIDToolStripMenuItem1.Text = "Buscar por ID";
             this.buscarPorIDToolStripMenuItem1.Click += new System.EventHandler(this.buscarPorIDToolStripMenuItem1_Click);
             // 
             // buscarPorNombreToolStripMenuItem1
             // 
+            this.buscarPorNombreToolStripMenuItem1.Image = global::program.Properties.Resources.search_file_icon_252034;
             this.buscarPorNombreToolStripMenuItem1.Name = "buscarPorNombreToolStripMenuItem1";
-            this.buscarPorNombreToolStripMenuItem1.Size = new System.Drawing.Size(175, 22);
+            this.buscarPorNombreToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.buscarPorNombreToolStripMenuItem1.Text = "Buscar por nombre";
             this.buscarPorNombreToolStripMenuItem1.Click += new System.EventHandler(this.buscarPorNombreToolStripMenuItem1_Click);
             // 
@@ -207,8 +219,9 @@ namespace program
             // 
             // agregarCategoríaToolStripMenuItem
             // 
+            this.agregarCategoríaToolStripMenuItem.Image = global::program.Properties.Resources.plus_file_icon_2520471;
             this.agregarCategoríaToolStripMenuItem.Name = "agregarCategoríaToolStripMenuItem";
-            this.agregarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.agregarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.agregarCategoríaToolStripMenuItem.Text = "Agregar categoría";
             this.agregarCategoríaToolStripMenuItem.Click += new System.EventHandler(this.agregarCategoríaToolStripMenuItem_Click);
             // 
@@ -217,21 +230,24 @@ namespace program
             this.buscarCategoríaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.buscarPorIDToolStripMenuItem2,
             this.buscarPorNombreToolStripMenuItem2});
+            this.buscarCategoríaToolStripMenuItem.Image = global::program.Properties.Resources.search_data_magnifier_folder_icon_252030;
             this.buscarCategoríaToolStripMenuItem.Name = "buscarCategoríaToolStripMenuItem";
-            this.buscarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(168, 22);
+            this.buscarCategoríaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.buscarCategoríaToolStripMenuItem.Text = "Buscar categoría";
             // 
             // buscarPorIDToolStripMenuItem2
             // 
+            this.buscarPorIDToolStripMenuItem2.Image = global::program.Properties.Resources.search_file_icon_252034;
             this.buscarPorIDToolStripMenuItem2.Name = "buscarPorIDToolStripMenuItem2";
-            this.buscarPorIDToolStripMenuItem2.Size = new System.Drawing.Size(175, 22);
+            this.buscarPorIDToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.buscarPorIDToolStripMenuItem2.Text = "Buscar por ID";
             this.buscarPorIDToolStripMenuItem2.Click += new System.EventHandler(this.buscarPorIDToolStripMenuItem2_Click);
             // 
             // buscarPorNombreToolStripMenuItem2
             // 
+            this.buscarPorNombreToolStripMenuItem2.Image = global::program.Properties.Resources.search_file_icon_252034;
             this.buscarPorNombreToolStripMenuItem2.Name = "buscarPorNombreToolStripMenuItem2";
-            this.buscarPorNombreToolStripMenuItem2.Size = new System.Drawing.Size(175, 22);
+            this.buscarPorNombreToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.buscarPorNombreToolStripMenuItem2.Text = "Buscar por nombre";
             this.buscarPorNombreToolStripMenuItem2.Click += new System.EventHandler(this.buscarPorNombreToolStripMenuItem2_Click);
             // 
