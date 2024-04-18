@@ -45,7 +45,7 @@
             this.btnBuscar.Location = new System.Drawing.Point(54, 110);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(112, 30);
-            this.btnBuscar.TabIndex = 22;
+            this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
@@ -60,7 +60,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(274, 110);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(112, 30);
-            this.btnCancelar.TabIndex = 21;
+            this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.button2_Click);
@@ -72,7 +72,7 @@
             this.txtbCategoria.Location = new System.Drawing.Point(184, 53);
             this.txtbCategoria.Name = "txtbCategoria";
             this.txtbCategoria.Size = new System.Drawing.Size(202, 20);
-            this.txtbCategoria.TabIndex = 20;
+            this.txtbCategoria.TabIndex = 1;
             // 
             // lblCategoria
             // 
@@ -81,7 +81,7 @@
             this.lblCategoria.Location = new System.Drawing.Point(51, 53);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(127, 17);
-            this.lblCategoria.TabIndex = 19;
+            this.lblCategoria.TabIndex = 0;
             this.lblCategoria.Text = "Ingresar categoría:";
             // 
             // FormBusCategoria

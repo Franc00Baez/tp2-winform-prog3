@@ -100,7 +100,7 @@
             this.btnEliminar.Location = new System.Drawing.Point(422, 323);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(147, 39);
-            this.btnEliminar.TabIndex = 31;
+            this.btnEliminar.TabIndex = 1;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = false;
             // 
@@ -115,7 +115,7 @@
             this.btnEditar.Location = new System.Drawing.Point(268, 323);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(148, 38);
-            this.btnEditar.TabIndex = 30;
+            this.btnEditar.TabIndex = 0;
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.UseVisualStyleBackColor = false;
             // 

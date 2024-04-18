@@ -98,7 +98,7 @@ namespace program
             this.verListadoDeArtículosToolStripMenuItem});
             this.artículosToolStripMenuItem.Name = "artículosToolStripMenuItem";
             this.artículosToolStripMenuItem.Size = new System.Drawing.Size(66, 20);
-            this.artículosToolStripMenuItem.Text = "Artículos";
+            this.artículosToolStripMenuItem.Text = "&Artículos";
             // 
             // agregarArtículoToolStripMenuItem
             // 
@@ -159,7 +159,7 @@ namespace program
             this.buscarMarcaToolStripMenuItem});
             this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
             this.marcasToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
-            this.marcasToolStripMenuItem.Text = "Marcas";
+            this.marcasToolStripMenuItem.Text = "&Marcas";
             // 
             // agregarMarcaToolStripMenuItem
             // 
@@ -180,7 +180,7 @@ namespace program
             this.buscarCategoríaToolStripMenuItem});
             this.categoríasToolStripMenuItem.Name = "categoríasToolStripMenuItem";
             this.categoríasToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
-            this.categoríasToolStripMenuItem.Text = "Categorías";
+            this.categoríasToolStripMenuItem.Text = "&Categorías";
             // 
             // agregarCategoríaToolStripMenuItem
             // 
@@ -197,8 +197,9 @@ namespace program
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
-            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Text = "About&";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // FormPrincipal

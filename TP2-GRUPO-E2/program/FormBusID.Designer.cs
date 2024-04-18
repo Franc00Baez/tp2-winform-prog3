@@ -45,7 +45,7 @@
             this.btnBuscar.Location = new System.Drawing.Point(54, 110);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(112, 30);
-            this.btnBuscar.TabIndex = 14;
+            this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
@@ -61,7 +61,7 @@
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(0);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(112, 30);
-            this.btnCancelar.TabIndex = 13;
+            this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.button2_Click);
@@ -72,7 +72,7 @@
             this.txtbID.Location = new System.Drawing.Point(138, 53);
             this.txtbID.Name = "txtbID";
             this.txtbID.Size = new System.Drawing.Size(248, 20);
-            this.txtbID.TabIndex = 12;
+            this.txtbID.TabIndex = 1;
             // 
             // lblID
             // 
@@ -81,7 +81,7 @@
             this.lblID.Location = new System.Drawing.Point(51, 53);
             this.lblID.Name = "lblID";
             this.lblID.Size = new System.Drawing.Size(81, 17);
-            this.lblID.TabIndex = 11;
+            this.lblID.TabIndex = 0;
             this.lblID.Text = "Ingresar ID:";
             // 
             // FormBusID

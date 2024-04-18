@@ -45,7 +45,7 @@
             this.btnBuscar.Location = new System.Drawing.Point(54, 110);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(112, 30);
-            this.btnBuscar.TabIndex = 18;
+            this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
@@ -60,7 +60,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(274, 110);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(112, 30);
-            this.btnCancelar.TabIndex = 17;
+            this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.button2_Click);
@@ -71,7 +71,7 @@
             this.txtbMarca.Location = new System.Drawing.Point(165, 53);
             this.txtbMarca.Name = "txtbMarca";
             this.txtbMarca.Size = new System.Drawing.Size(221, 20);
-            this.txtbMarca.TabIndex = 16;
+            this.txtbMarca.TabIndex = 1;
             // 
             // lblMarca
             // 
@@ -80,7 +80,7 @@
             this.lblMarca.Location = new System.Drawing.Point(51, 53);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(107, 17);
-            this.lblMarca.TabIndex = 15;
+            this.lblMarca.TabIndex = 0;
             this.lblMarca.Text = "Ingresar marca:";
             // 
             // FormBusMarca

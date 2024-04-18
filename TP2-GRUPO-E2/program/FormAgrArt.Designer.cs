@@ -56,7 +56,7 @@
             this.btnImportar.Location = new System.Drawing.Point(154, 170);
             this.btnImportar.Name = "btnImportar";
             this.btnImportar.Size = new System.Drawing.Size(251, 20);
-            this.btnImportar.TabIndex = 54;
+            this.btnImportar.TabIndex = 11;
             this.btnImportar.Text = "IMPORTAR";
             this.btnImportar.UseVisualStyleBackColor = false;
             // 
@@ -67,7 +67,7 @@
             this.lblImagen.Location = new System.Drawing.Point(12, 170);
             this.lblImagen.Name = "lblImagen";
             this.lblImagen.Size = new System.Drawing.Size(136, 17);
-            this.lblImagen.TabIndex = 53;
+            this.lblImagen.TabIndex = 10;
             this.lblImagen.Text = "Imagen de articulo : ";
             // 
             // txtbDescripcion
@@ -75,14 +75,14 @@
             this.txtbDescripcion.Location = new System.Drawing.Point(112, 200);
             this.txtbDescripcion.Name = "txtbDescripcion";
             this.txtbDescripcion.Size = new System.Drawing.Size(400, 20);
-            this.txtbDescripcion.TabIndex = 52;
+            this.txtbDescripcion.TabIndex = 13;
             // 
             // txtbPrecio
             // 
             this.txtbPrecio.Location = new System.Drawing.Point(73, 140);
             this.txtbPrecio.Name = "txtbPrecio";
             this.txtbPrecio.Size = new System.Drawing.Size(251, 20);
-            this.txtbPrecio.TabIndex = 51;
+            this.txtbPrecio.TabIndex = 9;
             // 
             // cboxCategoria
             // 
@@ -90,7 +90,7 @@
             this.cboxCategoria.Location = new System.Drawing.Point(99, 110);
             this.cboxCategoria.Name = "cboxCategoria";
             this.cboxCategoria.Size = new System.Drawing.Size(177, 21);
-            this.cboxCategoria.TabIndex = 50;
+            this.cboxCategoria.TabIndex = 7;
             // 
             // cboxMarca
             // 
@@ -98,21 +98,21 @@
             this.cboxMarca.Location = new System.Drawing.Point(73, 80);
             this.cboxMarca.Name = "cboxMarca";
             this.cboxMarca.Size = new System.Drawing.Size(203, 21);
-            this.cboxMarca.TabIndex = 49;
+            this.cboxMarca.TabIndex = 5;
             // 
             // txtbNombre
             // 
             this.txtbNombre.Location = new System.Drawing.Point(88, 50);
             this.txtbNombre.Name = "txtbNombre";
             this.txtbNombre.Size = new System.Drawing.Size(251, 20);
-            this.txtbNombre.TabIndex = 48;
+            this.txtbNombre.TabIndex = 3;
             // 
             // txtbCodArt
             // 
             this.txtbCodArt.Location = new System.Drawing.Point(152, 20);
             this.txtbCodArt.Name = "txtbCodArt";
             this.txtbCodArt.Size = new System.Drawing.Size(251, 20);
-            this.txtbCodArt.TabIndex = 47;
+            this.txtbCodArt.TabIndex = 1;
             // 
             // btnCancelar
             // 
@@ -125,7 +125,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(422, 323);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(147, 39);
-            this.btnCancelar.TabIndex = 46;
+            this.btnCancelar.TabIndex = 15;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
@@ -141,7 +141,7 @@
             this.btnAgregar.Location = new System.Drawing.Point(268, 323);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(148, 38);
-            this.btnAgregar.TabIndex = 45;
+            this.btnAgregar.TabIndex = 14;
             this.btnAgregar.Text = "AGREGAR";
             this.btnAgregar.UseVisualStyleBackColor = false;
             // 
@@ -152,7 +152,7 @@
             this.lblPrecio.Location = new System.Drawing.Point(12, 140);
             this.lblPrecio.Name = "lblPrecio";
             this.lblPrecio.Size = new System.Drawing.Size(60, 17);
-            this.lblPrecio.TabIndex = 44;
+            this.lblPrecio.TabIndex = 8;
             this.lblPrecio.Text = "Precio : ";
             // 
             // lblNombre
@@ -162,7 +162,7 @@
             this.lblNombre.Location = new System.Drawing.Point(12, 50);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(70, 17);
-            this.lblNombre.TabIndex = 43;
+            this.lblNombre.TabIndex = 2;
             this.lblNombre.Text = "Nombre : ";
             // 
             // lblCategoria
@@ -172,7 +172,7 @@
             this.lblCategoria.Location = new System.Drawing.Point(12, 110);
             this.lblCategoria.Name = "lblCategoria";
             this.lblCategoria.Size = new System.Drawing.Size(81, 17);
-            this.lblCategoria.TabIndex = 42;
+            this.lblCategoria.TabIndex = 6;
             this.lblCategoria.Text = "Categoría : ";
             // 
             // lblDescripcion
@@ -182,7 +182,7 @@
             this.lblDescripcion.Location = new System.Drawing.Point(12, 200);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(94, 17);
-            this.lblDescripcion.TabIndex = 41;
+            this.lblDescripcion.TabIndex = 12;
             this.lblDescripcion.Text = "Descripción : ";
             // 
             // lblMarca
@@ -192,7 +192,7 @@
             this.lblMarca.Location = new System.Drawing.Point(12, 80);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(55, 17);
-            this.lblMarca.TabIndex = 40;
+            this.lblMarca.TabIndex = 4;
             this.lblMarca.Text = "Marca: ";
             // 
             // label2
@@ -211,7 +211,7 @@
             this.lblCodArt.Location = new System.Drawing.Point(12, 20);
             this.lblCodArt.Name = "lblCodArt";
             this.lblCodArt.Size = new System.Drawing.Size(134, 17);
-            this.lblCodArt.TabIndex = 38;
+            this.lblCodArt.TabIndex = 0;
             this.lblCodArt.Text = "Código de articulo : ";
             // 
             // FormAgrArt
@@ -242,7 +242,7 @@
             this.MinimizeBox = false;
             this.Name = "FormAgrArt";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Agregar artículo";
+            this.Text = "Articulo";
             this.ResumeLayout(false);
             this.PerformLayout();
 

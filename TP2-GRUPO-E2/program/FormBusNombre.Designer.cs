@@ -45,7 +45,7 @@
             this.btnBuscar.Location = new System.Drawing.Point(54, 110);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(112, 30);
-            this.btnBuscar.TabIndex = 18;
+            this.btnBuscar.TabIndex = 2;
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
@@ -60,7 +60,7 @@
             this.btnCancelar.Location = new System.Drawing.Point(274, 110);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(112, 30);
-            this.btnCancelar.TabIndex = 17;
+            this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.button2_Click);
@@ -71,7 +71,7 @@
             this.txtbNombre.Location = new System.Drawing.Point(173, 53);
             this.txtbNombre.Name = "txtbNombre";
             this.txtbNombre.Size = new System.Drawing.Size(213, 20);
-            this.txtbNombre.TabIndex = 16;
+            this.txtbNombre.TabIndex = 1;
             // 
             // lblNombre
             // 
@@ -80,7 +80,7 @@
             this.lblNombre.Location = new System.Drawing.Point(51, 53);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(116, 17);
-            this.lblNombre.TabIndex = 15;
+            this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Ingresar nombre:";
             // 
             // FormBusNombre
