@@ -242,7 +242,7 @@
             this.MinimizeBox = false;
             this.Name = "FormAgrArt";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Articulo";
+            this.Text = "Agregar articulo";
             this.ResumeLayout(false);
             this.PerformLayout();
 

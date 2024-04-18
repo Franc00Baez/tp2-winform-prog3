@@ -62,5 +62,41 @@ namespace program
 
             Process.Start(url);
         }
+
+        private void agregarMarcaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAgrMarca formAgrMarca = new FormAgrMarca();
+            formAgrMarca.ShowDialog();
+        }
+
+        private void agregarCategoríaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormAgrCat formAgrCat = new FormAgrCat(); 
+            formAgrCat.ShowDialog();
+        }
+
+        private void buscarPorIDToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormBusID2 formBusID2 = new FormBusID2();
+            formBusID2.ShowDialog();
+        }
+
+        private void buscarPorNombreToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            FormBusNombre2 formBusNombre2 = new FormBusNombre2();
+            formBusNombre2.ShowDialog();
+        }
+
+        private void buscarPorIDToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FormBusID3 formBusID3 = new FormBusID3();
+            formBusID3.ShowDialog();
+        }
+
+        private void buscarPorNombreToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            FormBusNombre3 formBusNombre3 = new FormBusNombre3();
+            formBusNombre3.ShowDialog();
+        }
     }
 }

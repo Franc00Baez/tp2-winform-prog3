@@ -1,6 +1,6 @@
 ﻿namespace program
 {
-    partial class FormBusMarca
+    partial class FormAgrCat
     {
         /// <summary>
         /// Required designer variable.
@@ -30,8 +30,8 @@
         {
             this.btnBuscar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.txtbMarca = new System.Windows.Forms.TextBox();
-            this.lblMarca = new System.Windows.Forms.Label();
+            this.txtbCategoria = new System.Windows.Forms.TextBox();
+            this.lblCategoria = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnBuscar
@@ -45,8 +45,8 @@
             this.btnBuscar.Location = new System.Drawing.Point(54, 110);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(112, 30);
-            this.btnBuscar.TabIndex = 2;
-            this.btnBuscar.Text = "BUSCAR";
+            this.btnBuscar.TabIndex = 10;
+            this.btnBuscar.Text = "AGREGAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
             // 
             // btnCancelar
@@ -60,30 +60,31 @@
             this.btnCancelar.Location = new System.Drawing.Point(274, 110);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(112, 30);
-            this.btnCancelar.TabIndex = 3;
+            this.btnCancelar.TabIndex = 11;
             this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.button2_Click);
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // txtbMarca
+            // txtbCategoria
             // 
-            this.txtbMarca.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtbMarca.Location = new System.Drawing.Point(165, 53);
-            this.txtbMarca.Name = "txtbMarca";
-            this.txtbMarca.Size = new System.Drawing.Size(221, 20);
-            this.txtbMarca.TabIndex = 1;
+            this.txtbCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtbCategoria.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtbCategoria.Location = new System.Drawing.Point(173, 53);
+            this.txtbCategoria.Name = "txtbCategoria";
+            this.txtbCategoria.Size = new System.Drawing.Size(213, 20);
+            this.txtbCategoria.TabIndex = 9;
             // 
-            // lblMarca
+            // lblCategoria
             // 
-            this.lblMarca.AutoSize = true;
-            this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(51, 53);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(107, 17);
-            this.lblMarca.TabIndex = 0;
-            this.lblMarca.Text = "Ingresar marca:";
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.Location = new System.Drawing.Point(51, 53);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(116, 17);
+            this.lblCategoria.TabIndex = 8;
+            this.lblCategoria.Text = "Ingresar nombre:";
             // 
-            // FormBusMarca
+            // FormAgrCat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -91,14 +92,14 @@
             this.ClientSize = new System.Drawing.Size(421, 164);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.txtbMarca);
-            this.Controls.Add(this.lblMarca);
+            this.Controls.Add(this.txtbCategoria);
+            this.Controls.Add(this.lblCategoria);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "FormBusMarca";
+            this.Name = "FormAgrCat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Búsqueda por marca";
+            this.Text = "Agregar categoría";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -108,7 +109,7 @@
 
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.TextBox txtbMarca;
-        private System.Windows.Forms.Label lblMarca;
+        private System.Windows.Forms.TextBox txtbCategoria;
+        private System.Windows.Forms.Label lblCategoria;
     }
 }
