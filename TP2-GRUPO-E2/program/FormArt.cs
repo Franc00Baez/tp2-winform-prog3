@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace program
 {
-    public partial class FormAgrArt : Form
+    public partial class FormArt : Form
     {
-        public FormAgrArt()
+        public FormArt()
         {
             InitializeComponent();
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
     }
 }

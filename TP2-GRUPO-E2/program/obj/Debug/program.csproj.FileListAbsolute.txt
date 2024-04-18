@@ -14,3 +14,4 @@ C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\pro
 C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusNombre.resources
 C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusMarca.resources
 C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusCategoria.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP2PROGRA3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormArt.resources
