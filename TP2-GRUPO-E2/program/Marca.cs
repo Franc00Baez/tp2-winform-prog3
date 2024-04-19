@@ -8,8 +8,8 @@ namespace program
 {
     class Marca
     {
-        private int id_marca;
-        private string nombre;
+        private int IDMarca;
+        private string Nombre;
 
     }
 }
