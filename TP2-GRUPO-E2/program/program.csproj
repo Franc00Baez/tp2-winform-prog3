@@ -218,5 +218,12 @@
   <ItemGroup>
     <None Include="Resources\clock_icon_252111.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\additemalt_120213.ico" />
+    <Content Include="Resources\chart_flowchart_document_write_file_note_pencil_draft_icon_262111.ico" />
+    <Content Include="Resources\list_84237.ico" />
+    <Content Include="Resources\magnifier-1_icon-icons.com_56924.ico" />
+    <Content Include="Resources\wondicon-ui-free-parcel_111208.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

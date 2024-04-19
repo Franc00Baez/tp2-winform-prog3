@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormArt));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblMarca2 = new System.Windows.Forms.Label();
@@ -227,6 +228,7 @@
             this.Controls.Add(this.lblMarca);
             this.Controls.Add(this.lblCodArt2);
             this.Controls.Add(this.lblCodArt);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FormArt";
