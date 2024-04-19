@@ -9,16 +9,17 @@ namespace program
     class Articulo
     {
         private int CodigoDeArticulo;
+        private string CodArt;
         private string Nombre;
         private string Descripcion;
-        private Marca marca;
-        private Categoria categoria;
-        private List<string> imagenes;
-        decimal precio;
+        private Marca IDMarca;
+        private Categoria IDCategoria;
+        private List<Imagen> Imagenes;
+        decimal Precio;
 
         public Articulo()
         {
-            imagenes = new List<string>();
+            Imagenes = new List<Imagen>();
         }
         
     }

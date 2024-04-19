@@ -25,6 +25,9 @@ Los datos mínimos con los que deberá contar el artículo son los siguientes:
 
 El programa debe permitir administrar las Marcas y Categorías disponibles en el programa. Además, un producto podría llegar a tener una o más imágenes, sin un límite establecido. Esto debe estar contemplado en la gestión del artículo.
 
+
+![Texto Alternativo](MODELODOMINIO.png)
+
 **Etapa 1:** Construir las clases necesarias para el modelo de dicha aplicación junto a las ventanas con las que contará y su navegación.
 
 **Etapa 2:** Construir la interacción con la base de datos y validaciones correspondientes para dar vida a la funcionalidad.
