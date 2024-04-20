@@ -102,3 +102,10 @@ C:\Users\Lucio\OneDrive\Escritorio\GithubProgra3\tp2-winform-prog3\TP2-GRUPO-E2\
 C:\Users\Lucio\OneDrive\Escritorio\GithubProgra3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.csproj.CoreCompileInputs.cache
 C:\Users\Lucio\OneDrive\Escritorio\GithubProgra3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.exe
 C:\Users\Lucio\OneDrive\Escritorio\GithubProgra3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.pdb
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormAgrCat.resources
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormAgrMarca.resources
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusID2.resources
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusID3.resources
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusNombre2.resources
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusNombre3.resources
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormListadoArt.resources
