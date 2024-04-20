@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace program
 {
-    class Imagen
+    public class Imagen
     {
-        private int ID;
-        private int IDArticulo;
-        private string URL;
+        public int ID;
+        public int IDArticulo;
+        public string URL;
     }
 }

@@ -6,21 +6,16 @@ using System.Threading.Tasks;
 
 namespace program
 {
-    class Articulo
+    
+        public class  Articulo
     {
-        private int CodigoDeArticulo;
-        private string CodArt;
-        private string Nombre;
-        private string Descripcion;
-        private Marca IDMarca;
-        private Categoria IDCategoria;
-        private List<Imagen> Imagenes;
-        decimal Precio;
-
-        public Articulo()
-        {
-            Imagenes = new List<Imagen>();
-        }
-        
+        public int Id { get; set; }
+        public string Codigo { get; set; }
+        public string Nombre { get; set; }
+        public string Descripcion { get; set; }
+        public int idMarca { get; set; }
+        public int idCategoria { get; set; }
+        public decimal Precio { get; set; }
+       
     }
 }

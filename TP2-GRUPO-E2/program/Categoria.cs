@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace program
 {
-    class Categoria
+    public class Categoria
     {
-        private int ID;
-        private string Tipo;
+        public int ID;
+        public string Tipo;
     }
 }

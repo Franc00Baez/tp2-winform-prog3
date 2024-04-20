@@ -20,12 +20,14 @@ namespace program
         private void button1_Click(object sender, EventArgs e)
         {
             Refresh();
+            
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             FormAgrArt formAgrArt = new FormAgrArt();
             formAgrArt.ShowDialog();
+            Refresh();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -33,5 +35,18 @@ namespace program
             FormAgrArt formEdtArt = new FormAgrArt();
             formEdtArt.ShowDialog();
         }
+
+        private void FormListadoArt_Load(object sender, EventArgs e)
+        {
+            cargar();
+            Refresh();
+        }
+
+        private void cargar()
+        {
+            ArtDB artDB = new ArtDB();
+            dataGridView1.DataSource = artDB.Get();
+        }
+
     }
 }

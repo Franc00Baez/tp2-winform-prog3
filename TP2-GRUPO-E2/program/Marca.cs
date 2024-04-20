@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace program
 {
-    class Marca
+    public class Marca
     {
-        private int IDMarca;
-        private string Nombre;
+        public int IDMarca;
+        public string Nombre;
 
     }
 }

@@ -21,5 +21,21 @@ namespace program
         {
             this.Close();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            ArtDB artDB = new ArtDB();
+            try
+            {
+                artDB.Add(txtbCodArt.Text,txtbNombre.Text,txtbDescripcion.Text,int.Parse(cboxMarca.Text),int.Parse(cboxCategoria.Text),int.Parse(txtbPrecio.Text));
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Ocurrió un error al ingresar el registro " + ex.Message);
+            }
+            
+        }
     }
 }
