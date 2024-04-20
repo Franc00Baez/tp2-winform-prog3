@@ -10,8 +10,7 @@ namespace program
 {
     public class ArtDB
     {
-        //private string connectionString = "Data Source=WOROWARCRA\\SQLEXPRESS;Initial Catalog=CATALOGO_P3_DB;"+"Integrated Security=True";
-        private string connectionString = "Data Source=DESKTOP-U30EL57\\SQLEXPRESS;Initial Catalog=CATALOGO_P3_DB;" + "Integrated Security=True";
+        private string connectionString = "Data Source=.\\SQLEXPRESS;Initial Catalog=CATALOGO_P3_DB;" + "Integrated Security=True";
 
         public bool ok()
         {
