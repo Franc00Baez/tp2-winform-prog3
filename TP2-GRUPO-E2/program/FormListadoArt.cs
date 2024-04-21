@@ -12,6 +12,7 @@ namespace program
 {
     public partial class FormListadoArt : Form
     {
+        private List<Articulo> listaArticulos;
         public FormListadoArt()
         {
             InitializeComponent();
@@ -45,8 +46,28 @@ namespace program
         private void cargar()
         {
             ArtDB artDB = new ArtDB();
-            dataGridView1.DataSource = artDB.Get();
+            listaArticulos = artDB.Get();
+            dataGridView1.DataSource = listaArticulos;
+            dataGridView1.Columns["Imagen"].Visible = false;
+            CargarImagen(listaArticulos[0].Imagen.URL);
         }
 
+        private void CargarImagen(string imagen)
+        {
+            try
+            {
+                picbArtiuclos.Load(imagen);
+            }
+            catch (Exception ex)
+            {
+                picbArtiuclos.Load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp_KiMdzcWl5r99nAPXG8dF0d5MWb2ZIX2bs1GvjRTvw&s");
+            }
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
+            Articulo seleccionado = (Articulo)dataGridView1.CurrentRow.DataBoundItem;
+            CargarImagen(seleccionado.Imagen.URL);
+        }
     }
 }

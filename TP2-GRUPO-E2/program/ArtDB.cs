@@ -30,7 +30,7 @@ namespace program
         public List<Articulo> Get()
         {
             List<Articulo> list = new List<Articulo>();
-            string query = "select A.Id,Codigo,Nombre,A.Descripcion,M.Descripcion as Marca,C.Descripcion as Categoria,Precio from ARTICULOS A, MARCAS M, CATEGORIAS C Where M.Id = A.IdMarca And C.Id = A.IdCategoria";
+            string query = "select A.Id,Codigo,Nombre,A.Descripcion,M.Descripcion as Marca,C.Descripcion as Categoria,Precio, I.ImagenUrl as Imagen from ARTICULOS A, MARCAS M, CATEGORIAS C, IMAGENES I Where M.Id = A.IdMarca And C.Id = A.IdCategoria and I.IdArticulo = A.Id";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 SqlCommand command = new SqlCommand(query, connection);
@@ -51,6 +51,9 @@ namespace program
                         articulo.Categoria = new Categoria();
                         articulo.Categoria.Tipo = (string)reader["Categoria"];
                         articulo.Precio = reader.GetDecimal(6);
+                        articulo.Imagen = new Imagen();
+                        articulo.Imagen.URL = (string)reader["Imagen"];
+
                         list.Add(articulo);
                     }
                     reader.Close();
