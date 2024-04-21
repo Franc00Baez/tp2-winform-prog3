@@ -9,7 +9,12 @@ namespace program
     public class Marca
     {
         public int IDMarca;
-        public string Nombre;
+        public string Descripcion;
+
+        public override string ToString()
+        {
+            return Descripcion;
+        }
 
     }
 }

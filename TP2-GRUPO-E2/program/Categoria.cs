@@ -10,5 +10,10 @@ namespace program
     {
         public int ID;
         public string Tipo;
+
+        public override string ToString()
+        {
+            return Tipo;
+        }
     }
 }
