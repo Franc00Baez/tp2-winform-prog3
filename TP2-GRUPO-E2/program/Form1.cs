@@ -105,5 +105,16 @@ namespace program
             formListadoArt.ShowDialog();
         }
 
+        private void verListadoDeMarcasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormListadoMarcas formListadoMarcas = new FormListadoMarcas();
+            formListadoMarcas.ShowDialog();
+        }
+
+        private void verListadoDeCategoríasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormListadoCat formListadoCat = new FormListadoCat();
+            formListadoCat.ShowDialog();
+        }
     }
 }

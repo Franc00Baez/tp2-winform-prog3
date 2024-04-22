@@ -109,3 +109,34 @@ C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\
 C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusNombre2.resources
 C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusNombre3.resources
 C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormListadoArt.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\bin\Debug\program.exe.config
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\bin\Debug\program.exe
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\bin\Debug\program.pdb
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.csproj.AssemblyReference.cache
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.csproj.SuggestedBindingRedirects.cache
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormPrincipal.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormAgrArt.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormAgrCat.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormAgrMarca.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusCategoria.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusID.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusID2.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusID3.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusMarca.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusNombre.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormArt.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusNombre2.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormBusNombre3.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormListadoArt.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.Properties.Resources.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.csproj.GenerateResource.cache
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.csproj.CoreCompileInputs.cache
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.exe
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.pdb
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\bin\Debug\dominio.dll
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\bin\Debug\dominio.pdb
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.csproj.CopyComplete
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\bin\Debug\negocio.dll
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\bin\Debug\negocio.pdb
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormListadoMarcas.resources
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormListadoCat.resources

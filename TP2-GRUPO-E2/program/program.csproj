@@ -46,9 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArtDB.cs" />
-    <Compile Include="Articulo.cs" />
-    <Compile Include="Categoria.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,8 +130,18 @@
     <Compile Include="FormListadoArt.Designer.cs">
       <DependentUpon>FormListadoArt.cs</DependentUpon>
     </Compile>
-    <Compile Include="Imagen.cs" />
-    <Compile Include="Marca.cs" />
+    <Compile Include="FormListadoCat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListadoCat.Designer.cs">
+      <DependentUpon>FormListadoCat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormListadoMarcas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormListadoMarcas.Designer.cs">
+      <DependentUpon>FormListadoMarcas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -178,6 +185,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormListadoArt.resx">
       <DependentUpon>FormListadoArt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoCat.resx">
+      <DependentUpon>FormListadoCat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormListadoMarcas.resx">
+      <DependentUpon>FormListadoMarcas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -226,6 +239,16 @@
     <Content Include="Resources\list_84237.ico" />
     <Content Include="Resources\magnifier-1_icon-icons.com_56924.ico" />
     <Content Include="Resources\wondicon-ui-free-parcel_111208.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\dominio\dominio.csproj">
+      <Project>{f2b1ad7c-e1da-4ad7-84da-90a7dee190d7}</Project>
+      <Name>dominio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\negocio\negocio.csproj">
+      <Project>{66083275-4426-45db-8630-7538e9d263d5}</Project>
+      <Name>negocio</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

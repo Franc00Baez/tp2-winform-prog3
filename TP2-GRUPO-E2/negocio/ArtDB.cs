@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
-using System.Windows.Forms;
 
 namespace program
 {
@@ -26,7 +25,7 @@ namespace program
             }
             return true;
         }
-
+        
         public List<Articulo> Get()
         {
             List<Articulo> list = new List<Articulo>();
@@ -67,7 +66,7 @@ namespace program
             }
             return list;
         }
-
+        
         public void Add(string Codigo,string Nombre,string Descripcion,int idMarca,int idCategoria,decimal Precio)
         {
             string query = "insert into ARTICULOS(Codigo, Nombre, Descripcion, idMarca, idCategoria, Precio) values" + "(@Codigo, @Nombre, @Descripcion, @idMarca, @idCategoria, @Precio) ";

@@ -1,0 +1,9 @@
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\negocio\bin\Debug\negocio.dll
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\negocio\bin\Debug\negocio.pdb
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\negocio\bin\Debug\dominio.dll
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\negocio\bin\Debug\dominio.pdb
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\negocio\obj\Debug\negocio.csproj.AssemblyReference.cache
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\negocio\obj\Debug\negocio.csproj.CoreCompileInputs.cache
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\negocio\obj\Debug\negocio.csproj.CopyComplete
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\negocio\obj\Debug\negocio.dll
+C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\negocio\obj\Debug\negocio.pdb

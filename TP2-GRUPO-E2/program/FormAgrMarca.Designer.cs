@@ -79,11 +79,11 @@
             // 
             this.lblCategoria.AutoSize = true;
             this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(51, 53);
+            this.lblCategoria.Location = new System.Drawing.Point(27, 54);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(116, 17);
+            this.lblCategoria.Size = new System.Drawing.Size(140, 17);
             this.lblCategoria.TabIndex = 4;
-            this.lblCategoria.Text = "Ingresar nombre:";
+            this.lblCategoria.Text = "Ingresar descripción:";
             // 
             // FormAgrMarca
             // 

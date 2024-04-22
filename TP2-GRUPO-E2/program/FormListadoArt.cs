@@ -1,4 +1,5 @@
-﻿using System;
+﻿using negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,8 +46,8 @@ namespace program
 
         private void cargar()
         {
-            ArtDB artDB = new ArtDB();
-            listaArticulos = artDB.Get();
+            ArtNegocio artNegocio = new ArtNegocio();
+            listaArticulos = artNegocio.listar();
             dataGridView1.DataSource = listaArticulos;
             dataGridView1.Columns["Imagen"].Visible = false;
             CargarImagen(listaArticulos[0].Imagen.URL);
@@ -58,7 +59,7 @@ namespace program
             {
                 picbArtiuclos.Load(imagen);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 picbArtiuclos.Load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp_KiMdzcWl5r99nAPXG8dF0d5MWb2ZIX2bs1GvjRTvw&s");
             }
@@ -68,6 +69,11 @@ namespace program
         {
             Articulo seleccionado = (Articulo)dataGridView1.CurrentRow.DataBoundItem;
             CargarImagen(seleccionado.Imagen.URL);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
