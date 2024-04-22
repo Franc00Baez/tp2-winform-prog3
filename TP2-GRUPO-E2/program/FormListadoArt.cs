@@ -75,5 +75,11 @@ namespace program
         {
             this.Close();
         }
+
+        private void btnDetalles_Click(object sender, EventArgs e)
+        {
+            FormArt formArt = new FormArt();    
+            formArt.ShowDialog();
+        }
     }
 }

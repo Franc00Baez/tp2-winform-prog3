@@ -29,26 +29,26 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAgrMarca));
-            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.txtbCategoria = new System.Windows.Forms.TextBox();
-            this.lblCategoria = new System.Windows.Forms.Label();
+            this.txtbMarca = new System.Windows.Forms.TextBox();
+            this.lblMarca = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btnBuscar
+            // btnAgregar
             // 
-            this.btnBuscar.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnBuscar.Location = new System.Drawing.Point(54, 110);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(112, 30);
-            this.btnBuscar.TabIndex = 6;
-            this.btnBuscar.Text = "AGREGAR";
-            this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.Location = new System.Drawing.Point(54, 110);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(112, 30);
+            this.btnAgregar.TabIndex = 6;
+            this.btnAgregar.Text = "AGREGAR";
+            this.btnAgregar.UseVisualStyleBackColor = false;
             // 
             // btnCancelar
             // 
@@ -66,24 +66,24 @@
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // txtbCategoria
+            // txtbMarca
             // 
-            this.txtbCategoria.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtbCategoria.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtbCategoria.Location = new System.Drawing.Point(173, 53);
-            this.txtbCategoria.Name = "txtbCategoria";
-            this.txtbCategoria.Size = new System.Drawing.Size(213, 20);
-            this.txtbCategoria.TabIndex = 5;
+            this.txtbMarca.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtbMarca.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.txtbMarca.Location = new System.Drawing.Point(173, 53);
+            this.txtbMarca.Name = "txtbMarca";
+            this.txtbMarca.Size = new System.Drawing.Size(213, 20);
+            this.txtbMarca.TabIndex = 5;
             // 
-            // lblCategoria
+            // lblMarca
             // 
-            this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCategoria.Location = new System.Drawing.Point(27, 54);
-            this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(140, 17);
-            this.lblCategoria.TabIndex = 4;
-            this.lblCategoria.Text = "Ingresar descripción:";
+            this.lblMarca.AutoSize = true;
+            this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMarca.Location = new System.Drawing.Point(27, 54);
+            this.lblMarca.Name = "lblMarca";
+            this.lblMarca.Size = new System.Drawing.Size(140, 17);
+            this.lblMarca.TabIndex = 4;
+            this.lblMarca.Text = "Ingresar descripción:";
             // 
             // FormAgrMarca
             // 
@@ -91,10 +91,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(421, 164);
-            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.txtbCategoria);
-            this.Controls.Add(this.lblCategoria);
+            this.Controls.Add(this.txtbMarca);
+            this.Controls.Add(this.lblMarca);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
@@ -109,9 +109,9 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.TextBox txtbCategoria;
-        private System.Windows.Forms.Label lblCategoria;
+        private System.Windows.Forms.TextBox txtbMarca;
+        private System.Windows.Forms.Label lblMarca;
     }
 }
