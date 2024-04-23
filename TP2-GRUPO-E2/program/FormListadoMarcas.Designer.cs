@@ -172,6 +172,7 @@
             this.Name = "FormListadoMarcas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Listado de marcas";
+            this.Load += new System.EventHandler(this.FormListadoMarcas_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -8,8 +8,8 @@ namespace program
 {
     public class Marca
     {
-        public int IDMarca;
-        public string Descripcion;
+        public int IDMarca { get; set; }
+        public string Descripcion { get; set; }
 
         public override string ToString()
         {

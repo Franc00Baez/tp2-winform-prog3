@@ -8,9 +8,9 @@ namespace program
 {
     public class Categoria
     {
-        public int ID;
-        public string Tipo;
-        
+        public int ID { get; set; }
+        public string Tipo { get; set; }
+
         public override string ToString()
         {
             return Tipo;

@@ -44,6 +44,8 @@
     <Compile Include="AccesoDB.cs" />
     <Compile Include="ArtDB.cs" />
     <Compile Include="ArtNegocio.cs" />
+    <Compile Include="CatNegocio.cs" />
+    <Compile Include="MarcaNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

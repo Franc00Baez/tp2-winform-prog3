@@ -1,4 +1,5 @@
-﻿using System;
+﻿using negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,7 @@ namespace program
 {
     public partial class FormListadoCat : Form
     {
+        private List<Categoria> listaCategorias;
         public FormListadoCat()
         {
             InitializeComponent();
@@ -26,6 +28,19 @@ namespace program
         {
             FormAgrCat formAgrCat = new FormAgrCat();
             formAgrCat.ShowDialog();
+        }
+
+        private void FormListadoCat_Load(object sender, EventArgs e)
+        {
+            cargar();
+            Refresh();
+        }
+
+        private void cargar()
+        {
+            CatNegocio catNegocio = new CatNegocio();
+            listaCategorias = catNegocio.listar();
+            dataGridView1.DataSource = listaCategorias;
         }
     }
 }

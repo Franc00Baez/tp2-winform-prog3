@@ -1,4 +1,5 @@
-﻿using System;
+﻿using negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,22 @@ namespace program
 {
     public partial class FormListadoMarcas : Form
     {
+        private List<Marca> listaMarcas;
         public FormListadoMarcas()
         {
             InitializeComponent();
+        }
+        private void FormListadoMarcas_Load(object sender, EventArgs e)
+        {
+            cargar();
+            Refresh();
+        }
+
+        private void cargar()
+        {
+            MarcaNegocio marcaNegocio = new MarcaNegocio();
+            listaMarcas = marcaNegocio.listar();
+            dataGridView1.DataSource = listaMarcas;
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -27,5 +41,6 @@ namespace program
             FormAgrMarca formAgrMarca = new FormAgrMarca(); 
             formAgrMarca.ShowDialog();
         }
+
     }
 }
