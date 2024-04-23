@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAgrArt));
-            this.btnImportar = new System.Windows.Forms.Button();
             this.lblImagen = new System.Windows.Forms.Label();
             this.txtbDescripcion = new System.Windows.Forms.TextBox();
             this.txtbPrecio = new System.Windows.Forms.TextBox();
@@ -46,20 +45,8 @@
             this.lblMarca = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblCodArt = new System.Windows.Forms.Label();
+            this.txtUrlImagen = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // btnImportar
-            // 
-            this.btnImportar.BackColor = System.Drawing.SystemColors.Desktop;
-            this.btnImportar.FlatAppearance.BorderSize = 0;
-            this.btnImportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnImportar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnImportar.Location = new System.Drawing.Point(154, 170);
-            this.btnImportar.Name = "btnImportar";
-            this.btnImportar.Size = new System.Drawing.Size(251, 20);
-            this.btnImportar.TabIndex = 11;
-            this.btnImportar.Text = "IMPORTAR";
-            this.btnImportar.UseVisualStyleBackColor = false;
             // 
             // lblImagen
             // 
@@ -218,13 +205,20 @@
             this.lblCodArt.TabIndex = 0;
             this.lblCodArt.Text = "Código de articulo : ";
             // 
+            // txtUrlImagen
+            // 
+            this.txtUrlImagen.Location = new System.Drawing.Point(143, 170);
+            this.txtUrlImagen.Name = "txtUrlImagen";
+            this.txtUrlImagen.Size = new System.Drawing.Size(251, 20);
+            this.txtUrlImagen.TabIndex = 40;
+            // 
             // FormAgrArt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(581, 374);
-            this.Controls.Add(this.btnImportar);
+            this.Controls.Add(this.txtUrlImagen);
             this.Controls.Add(this.lblImagen);
             this.Controls.Add(this.txtbDescripcion);
             this.Controls.Add(this.txtbPrecio);
@@ -255,8 +249,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnImportar;
         private System.Windows.Forms.Label lblImagen;
         private System.Windows.Forms.TextBox txtbDescripcion;
         private System.Windows.Forms.TextBox txtbPrecio;
@@ -273,5 +265,6 @@
         private System.Windows.Forms.Label lblMarca;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblCodArt;
+        private System.Windows.Forms.TextBox txtUrlImagen;
     }
 }

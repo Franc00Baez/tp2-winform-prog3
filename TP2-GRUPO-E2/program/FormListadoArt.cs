@@ -21,6 +21,7 @@ namespace program
 
         private void button1_Click(object sender, EventArgs e)
         {
+            cargar();
             Refresh();
             
         }
@@ -50,6 +51,7 @@ namespace program
             listaArticulos = artNegocio.listar();
             dataGridView1.DataSource = listaArticulos;
             dataGridView1.Columns["Imagen"].Visible = false;
+            dataGridView1.Columns["Id"].Visible = false;
             CargarImagen(listaArticulos[0].Imagen.URL);
         }
 

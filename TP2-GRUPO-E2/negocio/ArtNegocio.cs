@@ -19,7 +19,7 @@ namespace negocio
 
             try
             {
-                datos.setearQuery("select A.Id,Codigo,Nombre,A.Descripcion,M.Descripcion as Marca,C.Descripcion as Categoria,Precio, I.ImagenUrl as Imagen from ARTICULOS A, MARCAS M, CATEGORIAS C, IMAGENES I Where M.Id = A.IdMarca And C.Id = A.IdCategoria and I.IdArticulo = A.Id");
+                datos.setearQuery("SELECT A.Id, Codigo, Nombre, A.Descripcion, M.Descripcion AS Marca, C.Descripcion AS Categoria, Precio, COALESCE(I.ImagenUrl, 'Sin imagen') AS Imagen FROM ARTICULOS A INNER JOIN MARCAS M ON M.Id = A.IdMarca INNER JOIN CATEGORIAS C ON C.Id = A.IdCategoria LEFT JOIN IMAGENES I ON I.IdArticulo = A.Id;");
                 datos.ejectuarLectura();
 
                 while (datos.Lector.Read())
@@ -58,9 +58,14 @@ namespace negocio
             AccesoDB datos = new AccesoDB();
             try
             {
-                datos.setearQuery("insert into ARTICULOS(Codigo, Nombre, Descripcion , IdMarca, IdCategoria, Precio) values('" + art.Codigo + "', '" + art.Nombre + "', '" + art.Descripcion + "', @idMarca, @idCategoria," + art.Precio + ")");
-                datos.setearParametro("@idMarca", art.Marca.IDMarca);
-                datos.setearParametro("@idCategoria", art.Categoria.ID);
+                datos.setearQuery("insert into ARTICULOS(Codigo, Nombre, Descripcion, IdMarca, IdCategoria, Precio) values(@Codigo, @Nombre, @Descripcion, @IdMarca, @IdCategoria, @Precio); insert into IMAGENES(IdArticulo, ImagenUrl) values(SCOPE_IDENTITY(), @UrlImagen)");
+                datos.setearParametro("@Codigo", art.Codigo);
+                datos.setearParametro("@Nombre", art.Nombre);
+                datos.setearParametro("@Descripcion", art.Descripcion);
+                datos.setearParametro("@IdMarca", art.Marca.IDMarca);
+                datos.setearParametro("@IdCategoria", art.Categoria.ID);
+                datos.setearParametro("@Precio", art.Precio);
+                datos.setearParametro("@UrlImagen", art.Imagen.URL);
                 datos.ejecutarAccion();
             }
             catch (Exception ex)

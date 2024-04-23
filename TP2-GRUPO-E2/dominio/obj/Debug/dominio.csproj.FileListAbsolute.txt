@@ -4,3 +4,9 @@ C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\
 C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
 C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\dominio\obj\Debug\dominio.dll
 C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\dominio\obj\Debug\dominio.pdb
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\dominio\bin\Debug\dominio.dll
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\dominio\bin\Debug\dominio.pdb
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\dominio\obj\Debug\dominio.csproj.AssemblyReference.cache
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\dominio\obj\Debug\dominio.csproj.CoreCompileInputs.cache
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\dominio\obj\Debug\dominio.dll
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\dominio\obj\Debug\dominio.pdb

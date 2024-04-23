@@ -140,3 +140,10 @@ C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\
 C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\bin\Debug\negocio.pdb
 C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormListadoMarcas.resources
 C:\Users\Lucio\OneDrive\Escritorio\TP PROGRA III\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormListadoCat.resources
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\bin\Debug\dominio.dll
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\bin\Debug\negocio.dll
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\bin\Debug\dominio.pdb
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\bin\Debug\negocio.pdb
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormListadoCat.resources
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.FormListadoMarcas.resources
+C:\Users\Franco\FACULTAD\prog3\tp2-winform-prog3\TP2-GRUPO-E2\program\obj\Debug\program.csproj.CopyComplete

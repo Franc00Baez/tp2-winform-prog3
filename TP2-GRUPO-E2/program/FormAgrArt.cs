@@ -40,7 +40,8 @@ namespace program
                     return;
                 }
                 art.Precio = precio;
-
+                art.Imagen = new Imagen();
+                art.Imagen.URL = txtUrlImagen.Text;
                 art.Descripcion = txtbDescripcion.Text;
 
                 artN.agregar(art);
