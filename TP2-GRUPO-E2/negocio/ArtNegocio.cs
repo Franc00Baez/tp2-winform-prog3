@@ -1,6 +1,7 @@
 ﻿using program;
 using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
@@ -50,7 +51,29 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
+
+
+        public void agregar(Articulo art)
+        {
+            AccesoDB datos = new AccesoDB();
+            try
+            {
+                datos.setearQuery("insert into ARTICULOS(Codigo, Nombre, Descripcion , IdMarca, IdCategoria, Precio) values('" + art.Codigo + "', '" + art.Nombre + "', '" + art.Descripcion + "', @idMarca, @idCategoria," + art.Precio + ")");
+                datos.setearParametro("@idMarca", art.Marca.IDMarca);
+                datos.setearParametro("@idCategoria", art.Categoria.ID);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally {
+                datos.cerrarConexion(); 
+            }
+        }
+
     }
 
-        
+    
 }

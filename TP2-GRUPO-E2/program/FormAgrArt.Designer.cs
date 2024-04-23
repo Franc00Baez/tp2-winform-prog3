@@ -248,6 +248,7 @@
             this.Name = "FormAgrArt";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar articulo";
+            this.Load += new System.EventHandler(this.FormAgrArt_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

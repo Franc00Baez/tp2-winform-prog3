@@ -1,4 +1,5 @@
-﻿using System;
+﻿using negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,11 +25,28 @@ namespace program
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            ArtDB artDB = new ArtDB();
+            Articulo art = new Articulo();
+            ArtNegocio artN = new ArtNegocio();
             try
             {
-                artDB.Add(txtbCodArt.Text,txtbNombre.Text,txtbDescripcion.Text,int.Parse(cboxMarca.Text),int.Parse(cboxCategoria.Text),int.Parse(txtbPrecio.Text));
-                this.Close();
+                art.Codigo = txtbCodArt.Text;
+                art.Nombre = txtbNombre.Text;
+                art.Categoria = (Categoria)cboxCategoria.SelectedItem;
+                art.Marca = (Marca)cboxMarca.SelectedItem;
+                decimal precio;
+                if (!decimal.TryParse(txtbPrecio.Text, out precio))
+                {
+                    MessageBox.Show("Por favor ingrese un valor numérico válido para el precio.");
+                    return;
+                }
+                art.Precio = precio;
+
+                art.Descripcion = txtbDescripcion.Text;
+
+                artN.agregar(art);
+                MessageBox.Show("Artículo agregado");
+                Close();
+                Refresh();
             }
             catch (Exception ex)
             {
@@ -36,6 +54,22 @@ namespace program
                 MessageBox.Show("Ocurrió un error al ingresar el registro " + ex.Message);
             }
             
+        }
+
+        private void FormAgrArt_Load(object sender, EventArgs e)
+        {
+            MarcaNegocio marNeg = new MarcaNegocio();
+            CatNegocio catNeg = new CatNegocio();
+            try
+            {
+                cboxMarca.DataSource = marNeg.listar();
+                cboxCategoria.DataSource = catNeg.listar();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
         }
     }
 }
