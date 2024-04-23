@@ -42,5 +42,10 @@ namespace program
             formAgrMarca.ShowDialog();
         }
 
+        private void btnRefrescar_Click(object sender, EventArgs e)
+        {
+            cargar();
+            Refresh();
+        }
     }
 }

@@ -39,5 +39,26 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
+
+    public void agregar(Marca mar)
+    {
+        AccesoDB datos = new AccesoDB();
+        try
+        {
+            datos.setearQuery("insert into MARCAS(Descripcion) values(@Descripcion)");
+            datos.setearParametro("@Descripcion", mar.Descripcion);
+            datos.ejecutarAccion();
+        }
+        catch (Exception ex)
+        {
+
+            throw ex;
+        }
+        finally
+        {
+            datos.cerrarConexion();
+        }
     }
+}
+
 }

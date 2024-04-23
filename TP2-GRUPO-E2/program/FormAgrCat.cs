@@ -1,4 +1,5 @@
-﻿using System;
+﻿using negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,5 +22,25 @@ namespace program
         {
             this.Close();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+                Categoria cat = new Categoria();
+                CatNegocio artN = new CatNegocio();
+                try
+                {
+                    cat.Descripcion = txtbCategoria.Text;
+                    artN.agregar(cat);
+                    MessageBox.Show("Categoría agregada");
+                    Close();
+                    Refresh();
+                }
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show("Ocurrió un error al ingresar el registro " + ex.Message);
+                }
+        }
+
     }
 }

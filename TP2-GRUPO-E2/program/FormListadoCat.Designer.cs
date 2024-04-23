@@ -94,6 +94,7 @@
             this.btnRefrescar.TabIndex = 23;
             this.btnRefrescar.Text = "REFRESCAR";
             this.btnRefrescar.UseVisualStyleBackColor = false;
+            this.btnRefrescar.Click += new System.EventHandler(this.btnRefrescar_Click);
             // 
             // btnAgregar
             // 

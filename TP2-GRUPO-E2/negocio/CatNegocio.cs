@@ -23,7 +23,7 @@ namespace negocio
                 {
                     Categoria aux = new Categoria();
                     aux.ID = datos.Lector.GetInt32(0);
-                    aux.Tipo= datos.Lector.GetString(1);
+                    aux.Descripcion= datos.Lector.GetString(1);
 
                     lista.Add(aux);
                 }
@@ -33,6 +33,26 @@ namespace negocio
             {
 
                 throw new Exception("hay un error en la BD" + ex.Message);
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
+
+        public void agregar(Categoria cat)
+        {
+            AccesoDB datos = new AccesoDB();
+            try
+            {
+                datos.setearQuery("insert into CATEGORIAS(Descripcion) values(@Descripcion)");
+                datos.setearParametro("@Descripcion", cat.Descripcion);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
             }
             finally
             {

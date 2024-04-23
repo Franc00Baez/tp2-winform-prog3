@@ -42,5 +42,11 @@ namespace program
             listaCategorias = catNegocio.listar();
             dataGridView1.DataSource = listaCategorias;
         }
+
+        private void btnRefrescar_Click(object sender, EventArgs e)
+        {
+            cargar();
+            Refresh();
+        }
     }
 }

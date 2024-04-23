@@ -48,7 +48,7 @@ namespace program
                         articulo.Marca = new Marca();
                         articulo.Marca.Descripcion = (string)reader["Marca"];
                         articulo.Categoria = new Categoria();
-                        articulo.Categoria.Tipo = (string)reader["Categoria"];
+                        articulo.Categoria.Descripcion = (string)reader["Categoria"];
                         articulo.Precio = reader.GetDecimal(6);
                         articulo.Imagen = new Imagen();
                         articulo.Imagen.URL = (string)reader["Imagen"];
