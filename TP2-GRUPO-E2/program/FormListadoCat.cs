@@ -59,5 +59,25 @@ namespace program
             formEdtCat.ShowDialog();
             cargar();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            CatNegocio artN = new CatNegocio();
+            Categoria seleccionado;
+            try
+            {
+                DialogResult respuesta = MessageBox.Show("¿Está seguro de que desea eliminar la categoría?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (respuesta == DialogResult.Yes)
+                {
+                    seleccionado = (Categoria)dataGridView1.CurrentRow.DataBoundItem;
+                    artN.eliminar(seleccionado.ID);
+                    cargar();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }

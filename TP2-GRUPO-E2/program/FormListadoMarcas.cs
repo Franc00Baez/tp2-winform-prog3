@@ -58,5 +58,25 @@ namespace program
             formEdtMar.ShowDialog();
             cargar();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            MarcaNegocio marN = new MarcaNegocio();
+            Marca seleccionado;
+            try
+            {
+                DialogResult respuesta = MessageBox.Show("¿Está seguro de que desea eliminar la marca?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (respuesta == DialogResult.Yes)
+                {
+                    seleccionado = (Marca)dataGridView1.CurrentRow.DataBoundItem;
+                    marN.eliminar(seleccionado.IDMarca); ;
+                    cargar();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
     }
 }

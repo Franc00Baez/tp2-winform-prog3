@@ -90,11 +90,12 @@
             // lblListado
             // 
             this.lblListado.AutoSize = true;
-            this.lblListado.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListado.Location = new System.Drawing.Point(24, 9);
+            this.lblListado.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListado.Location = new System.Drawing.Point(12, 9);
             this.lblListado.Name = "lblListado";
-            this.lblListado.Size = new System.Drawing.Size(0, 32);
+            this.lblListado.Size = new System.Drawing.Size(92, 28);
             this.lblListado.TabIndex = 44;
+            this.lblListado.Text = "Prueba";
             // 
             // FormAgrMarca
             // 

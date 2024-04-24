@@ -74,7 +74,7 @@ namespace program
                 btnAgregar.Text = "AGREGAR";
                 if (marca != null)
                 {
-                    lblListado.Text = "Editar categoría";
+                    lblListado.Text = "Editar marca";
                     btnAgregar.Text = "EDITAR";
                     txtbMarca.Text = marca.Descripcion;
                 }

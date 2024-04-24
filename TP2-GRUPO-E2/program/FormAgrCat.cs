@@ -50,8 +50,7 @@ namespace program
                     catN.agregar(categoria);
                     MessageBox.Show("Categoría agregada");
                 }
-
-                    Close();
+                Close();
                 }
                 catch (Exception ex)
                 {

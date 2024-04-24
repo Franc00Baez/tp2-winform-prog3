@@ -108,8 +108,21 @@ namespace negocio
                 datos.cerrarConexion();
             }
         }
-    }
-
-     
     
+        public void eliminar(int id)
+        {
+            try
+            {
+                AccesoDB datos = new AccesoDB();
+                datos.setearQuery("delete FROM ARTICULOS where id = @id");
+                datos.setearParametro("@id", id);
+                datos.ejecutarAccion();
+            }
+            catch (Exception ex )
+            {
+
+                throw ex;
+            }
+        }
+    } 
 }
