@@ -12,10 +12,18 @@ using System.Windows.Forms;
 namespace program
 {
     public partial class FormAgrArt : Form
-    {
+    {   
+        private Articulo articulo = null;
         public FormAgrArt()
         {
             InitializeComponent();
+        }
+
+        public FormAgrArt(Articulo articulo)
+        {
+            InitializeComponent();
+            this.articulo = articulo;
+            Text = "Editar artículo";
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -25,29 +33,39 @@ namespace program
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            Articulo art = new Articulo();
             ArtNegocio artN = new ArtNegocio();
             try
             {
-                art.Codigo = txtbCodArt.Text;
-                art.Nombre = txtbNombre.Text;
-                art.Categoria = (Categoria)cboxCategoria.SelectedItem;
-                art.Marca = (Marca)cboxMarca.SelectedItem;
+                if (articulo == null)
+                articulo = new Articulo();
+
+                articulo.Codigo = txtbCodArt.Text;
+                articulo.Nombre = txtbNombre.Text;
+                articulo.Categoria = (Categoria)cboxCategoria.SelectedItem;
+                articulo.Marca = (Marca)cboxMarca.SelectedItem;
                 decimal precio;
                 if (!decimal.TryParse(txtbPrecio.Text, out precio))
                 {
-                    MessageBox.Show("Por favor ingrese un valor numérico válido para el precio.");
+                    MessageBox.Show("Por favor ingrese un valor numérico válido para el precio");
                     return;
                 }
-                art.Precio = precio;
-                art.Imagen = new Imagen();
-                art.Imagen.URL = txtUrlImagen.Text;
-                art.Descripcion = txtbDescripcion.Text;
+                articulo.Precio = precio;
+                articulo.Imagen = new Imagen();
+                articulo.Imagen.URL = txtUrlImagen.Text;
+                articulo.Descripcion = txtbDescripcion.Text;
 
-                artN.agregar(art);
-                MessageBox.Show("Artículo agregado");
+                if (articulo.Id != 0)
+                {
+                    artN.editar(articulo);
+                    MessageBox.Show("Artículo editado");           
+                }
+                else
+                {
+                    artN.agregar(articulo);
+                    MessageBox.Show("Artículo agregado");
+                }
+
                 Close();
-                Refresh();
             }
             catch (Exception ex)
             {
@@ -63,8 +81,27 @@ namespace program
             CatNegocio catNeg = new CatNegocio();
             try
             {
+                lblListado.Text = "Agregar Articulo";
                 cboxMarca.DataSource = marNeg.listar();
+                cboxMarca.ValueMember = "IDMarca";
+                cboxMarca.DisplayMember = "Descripcion";
                 cboxCategoria.DataSource = catNeg.listar();
+                cboxCategoria.ValueMember = "ID";
+                cboxCategoria.DisplayMember = "Descripcion";
+
+
+                if (articulo != null)
+                {
+                    lblListado.Text = "Editar Articulo";
+                    txtbCodArt.Text = articulo.Codigo;
+                    txtbNombre.Text = articulo.Nombre;
+                    txtbDescripcion.Text = articulo.Descripcion;
+                    txtbPrecio.Text = articulo.Precio.ToString();
+                    txtUrlImagen.Text = articulo.Imagen.URL;
+                    CargarImagen(articulo.Imagen.URL);
+                    cboxCategoria.SelectedValue = articulo.Categoria.ID;
+                    cboxMarca.SelectedValue = articulo.Marca.IDMarca;
+                }
             }
             catch (Exception ex)
             {
@@ -72,5 +109,18 @@ namespace program
                 throw ex;
             }
         }
+
+        private void CargarImagen(string imagen)
+        {
+            try
+            {
+                picbArticulos.Load(imagen);
+            }
+            catch (Exception)
+            {
+                picbArticulos.Load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp_KiMdzcWl5r99nAPXG8dF0d5MWb2ZIX2bs1GvjRTvw&s");
+            }
+        }
+
     }
 }

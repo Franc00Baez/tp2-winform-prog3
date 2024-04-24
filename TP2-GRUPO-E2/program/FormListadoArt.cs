@@ -35,18 +35,22 @@ namespace program
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            FormAgrArt formEdtArt = new FormAgrArt();
+            Articulo seleccionado;
+            seleccionado = (Articulo)dataGridView1.CurrentRow.DataBoundItem;
+            FormAgrArt formEdtArt = new FormAgrArt(seleccionado);
             formEdtArt.ShowDialog();
+            cargar();
         }
 
         private void FormListadoArt_Load(object sender, EventArgs e)
         {
             cargar();
             Refresh();
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
         private void cargar()
-        {
+        {   
             ArtNegocio artNegocio = new ArtNegocio();
             listaArticulos = artNegocio.listar();
             dataGridView1.DataSource = listaArticulos;

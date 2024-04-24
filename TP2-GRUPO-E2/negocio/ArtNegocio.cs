@@ -19,7 +19,7 @@ namespace negocio
 
             try
             {
-                datos.setearQuery("SELECT A.Id, Codigo, Nombre, A.Descripcion, M.Descripcion AS Marca, C.Descripcion AS Categoria, Precio, COALESCE(I.ImagenUrl, 'Sin imagen') AS Imagen FROM ARTICULOS A INNER JOIN MARCAS M ON M.Id = A.IdMarca INNER JOIN CATEGORIAS C ON C.Id = A.IdCategoria LEFT JOIN IMAGENES I ON I.IdArticulo = A.Id;");
+                datos.setearQuery("SELECT A.Id, Codigo, Nombre, A.Descripcion, M.Descripcion AS Marca, C.Descripcion AS Categoria, Precio, COALESCE(I.ImagenUrl, 'Sin imagen') AS Imagen, IdMarca, IdCategoria FROM ARTICULOS A INNER JOIN MARCAS M ON M.Id = A.IdMarca INNER JOIN CATEGORIAS C ON C.Id = A.IdCategoria LEFT JOIN IMAGENES I ON I.IdArticulo = A.Id;");
                 datos.ejectuarLectura();
 
                 while (datos.Lector.Read())
@@ -30,8 +30,10 @@ namespace negocio
                     aux.Nombre = datos.Lector.GetString(2);
                     aux.Descripcion = datos.Lector.GetString(3);
                     aux.Marca = new Marca();
+                    aux.Marca.IDMarca = (int)datos.Lector["IdMarca"];
                     aux.Marca.Descripcion = (string)datos.Lector["Marca"];
                     aux.Categoria = new Categoria();
+                    aux.Categoria.ID = (int)datos.Lector["IdCategoria"];
                     aux.Categoria.Descripcion = (string)datos.Lector["Categoria"];
                     aux.Precio = datos.Lector.GetDecimal(6);
                     aux.Imagen = new Imagen();
@@ -44,7 +46,7 @@ namespace negocio
             catch (Exception ex)
             {
 
-                throw new Exception("hay un error en la BD" + ex.Message);
+                throw new Exception("hay un error en la BD " + ex.Message);
             }
             finally
             {
@@ -78,7 +80,36 @@ namespace negocio
             }
         }
 
+        public void editar(Articulo editado)
+        {
+            AccesoDB datos = new AccesoDB();
+            try
+            {
+                datos.setearQuery("UPDATE ARTICULOS SET Codigo = @Codigo, Nombre = @Nombre, Descripcion = @Descripcion, IdMarca = @IdMarca, IdCategoria = @IdCategoria, Precio = @Precio FROM ARTICULOS A INNER JOIN IMAGENES I ON A.Id = I.IdArticulo WHERE A.Id = @IdArticulo; UPDATE IMAGENES SET ImagenUrl = @NuevaImagenUrl WHERE IdArticulo = @IdArticulo;");
+                datos.setearParametro("@Codigo", editado.Codigo);
+                datos.setearParametro("@Nombre", editado.Nombre);
+                datos.setearParametro("@Descripcion", editado.Descripcion);
+                datos.setearParametro("@IdMarca", editado.Marca.IDMarca);
+                datos.setearParametro("@IdCategoria", editado.Categoria.ID);
+                datos.setearParametro("@Precio", editado.Precio);
+                datos.setearParametro("@NuevaImagenUrl", editado.Imagen.URL);
+                datos.setearParametro("@IdArticulo", editado.Id);
+
+                datos.ejecutarAccion();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+            finally
+            {
+                datos.cerrarConexion();
+            }
+        }
     }
 
+     
     
 }
