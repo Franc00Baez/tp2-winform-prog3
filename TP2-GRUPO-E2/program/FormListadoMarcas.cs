@@ -49,5 +49,14 @@ namespace program
             cargar();
             Refresh();
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Marca seleccionado;
+            seleccionado = (Marca)dataGridView1.CurrentRow.DataBoundItem;
+            FormAgrMarca formEdtMar = new FormAgrMarca(seleccionado);
+            formEdtMar.ShowDialog();
+            cargar();
+        }
     }
 }

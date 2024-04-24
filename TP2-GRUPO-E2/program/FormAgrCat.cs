@@ -56,8 +56,15 @@ namespace program
                 catch (Exception ex)
                 {
 
-                    MessageBox.Show("Ocurrió un error al ingresar el registro " + ex.Message);
+                if (categoria.ID != 0)
+                {
+                    MessageBox.Show("Ocurrió un error al editar el registro " + ex.Message);
                 }
+                else
+                {
+                    MessageBox.Show("Ocurrió un error al agregar el registro " + ex.Message);
+                }
+            }
         }
 
         private void FormAgrCat_Load(object sender, EventArgs e)
