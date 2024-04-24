@@ -81,7 +81,8 @@ namespace program
             CatNegocio catNeg = new CatNegocio();
             try
             {
-                lblListado.Text = "Agregar Articulo";
+                lblListado.Text = "Agregar Artículo";
+                btnAgregar.Text = "AGREGAR";
                 cboxMarca.DataSource = marNeg.listar();
                 cboxMarca.ValueMember = "IDMarca";
                 cboxMarca.DisplayMember = "Descripcion";
@@ -92,7 +93,8 @@ namespace program
 
                 if (articulo != null)
                 {
-                    lblListado.Text = "Editar Articulo";
+                    lblListado.Text = "Editar Artículo";
+                    btnAgregar.Text = "EDITAR";
                     txtbCodArt.Text = articulo.Codigo;
                     txtbNombre.Text = articulo.Nombre;
                     txtbDescripcion.Text = articulo.Descripcion;

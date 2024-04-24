@@ -22,6 +22,7 @@ namespace program
         {
             cargar();
             Refresh();
+            dataGridView1.RowHeadersVisible = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 

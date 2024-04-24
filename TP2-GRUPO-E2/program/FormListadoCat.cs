@@ -34,6 +34,7 @@ namespace program
         {
             cargar();
             Refresh();
+            dataGridView1.RowHeadersVisible = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
         }
 
@@ -48,6 +49,15 @@ namespace program
         {
             cargar();
             Refresh();
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Categoria seleccionado;
+            seleccionado = (Categoria)dataGridView1.CurrentRow.DataBoundItem;
+            FormAgrCat formEdtCat = new FormAgrCat(seleccionado);
+            formEdtCat.ShowDialog();
+            cargar();
         }
     }
 }

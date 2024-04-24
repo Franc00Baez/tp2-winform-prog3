@@ -33,6 +33,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.txtbCategoria = new System.Windows.Forms.TextBox();
             this.lblCategoria = new System.Windows.Forms.Label();
+            this.lblListado = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAgregar
@@ -86,12 +87,22 @@
             this.lblCategoria.TabIndex = 8;
             this.lblCategoria.Text = "Ingresar descripción:";
             // 
+            // lblListado
+            // 
+            this.lblListado.AutoSize = true;
+            this.lblListado.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListado.Location = new System.Drawing.Point(24, 9);
+            this.lblListado.Name = "lblListado";
+            this.lblListado.Size = new System.Drawing.Size(0, 32);
+            this.lblListado.TabIndex = 43;
+            // 
             // FormAgrCat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(421, 164);
+            this.Controls.Add(this.lblListado);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtbCategoria);
@@ -103,6 +114,7 @@
             this.Name = "FormAgrCat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Agregar categoría";
+            this.Load += new System.EventHandler(this.FormAgrCat_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -114,5 +126,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.TextBox txtbCategoria;
         private System.Windows.Forms.Label lblCategoria;
+        private System.Windows.Forms.Label lblListado;
     }
 }
