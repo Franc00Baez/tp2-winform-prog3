@@ -38,6 +38,10 @@
             this.picbArtiuclos = new System.Windows.Forms.PictureBox();
             this.lblListado = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.cbCampo = new System.Windows.Forms.ComboBox();
+            this.cbCriterio = new System.Windows.Forms.ComboBox();
+            this.txtFiltro = new System.Windows.Forms.TextBox();
+            this.btnFiltrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbArtiuclos)).BeginInit();
             this.SuspendLayout();
@@ -150,7 +154,7 @@
             this.lblListado.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblListado.Location = new System.Drawing.Point(6, 5);
             this.lblListado.Name = "lblListado";
-            this.lblListado.Size = new System.Drawing.Size(254, 32);
+            this.lblListado.Size = new System.Drawing.Size(255, 32);
             this.lblListado.TabIndex = 11;
             this.lblListado.Text = "Listado de artículos";
             // 
@@ -170,12 +174,58 @@
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.button3_Click);
             // 
+            // cbCampo
+            // 
+            this.cbCampo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCampo.FormattingEnabled = true;
+            this.cbCampo.Location = new System.Drawing.Point(13, 388);
+            this.cbCampo.Name = "cbCampo";
+            this.cbCampo.Size = new System.Drawing.Size(121, 21);
+            this.cbCampo.TabIndex = 13;
+            this.cbCampo.SelectedIndexChanged += new System.EventHandler(this.cbCampo_SelectedIndexChanged);
+            // 
+            // cbCriterio
+            // 
+            this.cbCriterio.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCriterio.FormattingEnabled = true;
+            this.cbCriterio.Location = new System.Drawing.Point(153, 388);
+            this.cbCriterio.Name = "cbCriterio";
+            this.cbCriterio.Size = new System.Drawing.Size(121, 21);
+            this.cbCriterio.TabIndex = 14;
+            // 
+            // txtFiltro
+            // 
+            this.txtFiltro.Location = new System.Drawing.Point(294, 389);
+            this.txtFiltro.Name = "txtFiltro";
+            this.txtFiltro.Size = new System.Drawing.Size(211, 20);
+            this.txtFiltro.TabIndex = 15;
+            // 
+            // btnFiltrar
+            // 
+            this.btnFiltrar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnFiltrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFiltrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnFiltrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFiltrar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrar.Location = new System.Drawing.Point(511, 385);
+            this.btnFiltrar.Name = "btnFiltrar";
+            this.btnFiltrar.Size = new System.Drawing.Size(135, 27);
+            this.btnFiltrar.TabIndex = 16;
+            this.btnFiltrar.Text = "FILTRAR";
+            this.btnFiltrar.UseVisualStyleBackColor = false;
+            this.btnFiltrar.Click += new System.EventHandler(this.btnFiltrar_Click);
+            // 
             // FormListadoArt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(975, 383);
+            this.ClientSize = new System.Drawing.Size(975, 417);
+            this.Controls.Add(this.btnFiltrar);
+            this.Controls.Add(this.txtFiltro);
+            this.Controls.Add(this.cbCriterio);
+            this.Controls.Add(this.cbCampo);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lblListado);
             this.Controls.Add(this.picbArtiuclos);
@@ -211,5 +261,9 @@
         private System.Windows.Forms.PictureBox picbArtiuclos;
         private System.Windows.Forms.Label lblListado;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.ComboBox cbCampo;
+        private System.Windows.Forms.ComboBox cbCriterio;
+        private System.Windows.Forms.TextBox txtFiltro;
+        private System.Windows.Forms.Button btnFiltrar;
     }
 }

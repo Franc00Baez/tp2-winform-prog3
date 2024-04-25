@@ -6,7 +6,7 @@ using System.Linq;
 using System.Runtime.Remoting.Messaging;
 using System.Text;
 using System.Threading.Tasks;
-
+using System.Windows.Forms;
 
 namespace negocio
 {
@@ -122,6 +122,105 @@ namespace negocio
             {
 
                 throw ex;
+            }
+        }
+
+        public List<Articulo> Filtrar(string campo, string criterio, string filtro)
+        {
+            List<Articulo> lista = new List<Articulo>();
+            AccesoDB datos = new AccesoDB();
+            string consulta = "SELECT A.Id, Codigo, Nombre, A.Descripcion, M.Descripcion AS Marca, C.Descripcion AS Categoria, Precio, COALESCE(I.ImagenUrl, 'Sin imagen') AS Imagen, IdMarca, IdCategoria FROM ARTICULOS A INNER JOIN MARCAS M ON M.Id = A.IdMarca INNER JOIN CATEGORIAS C ON C.Id = A.IdCategoria LEFT JOIN IMAGENES I ON I.IdArticulo = A.Id WHERE ";
+
+            switch (campo)
+            {
+                case "Id":
+                    switch (criterio)
+                    {
+                        case "Mayor a":
+                            consulta += "A.Id > " + filtro;
+                            break;
+                        case "Menor que":
+                            consulta += "A.Id < " + filtro;
+                            break;
+                        case "Igual a":
+                            consulta += "A.id = " + filtro;
+                            break;
+                    }
+                    break;
+                case "Nombre":
+                    switch (criterio)
+                    {
+                        case "Comienza por":
+                            consulta += "Nombre LIKE '" + filtro + "%'";
+                            break;
+                        case "Termina con":
+                            consulta += "Nombre LIKE '%" + filtro + "'";
+                            break;
+                        default:
+                            consulta += "Nombre Like '" + filtro + "'";
+                            break;
+                    }
+                    break;
+                case "Marca":
+                    switch (criterio)
+                    {
+                        case "Comienza por":
+                            consulta += "M.Descripcion LIKE '" + filtro + "%'";
+                            break;
+                        case "Termina con":
+                            consulta += "M.Descripcion LIKE '%" + filtro + "'";
+                            break;
+                        default:
+                            consulta += "M.Descripcion Like '" + filtro + "'";
+                            break;
+                    }
+                    break;
+                default:
+                    switch (criterio)
+                    {
+                        case "Comienza por":
+                            consulta += "C.Descripcion LIKE '" + filtro + "%'";
+                            break;
+                        case "Termina con":
+                            consulta += "C.Descripcion LIKE '%" + filtro + "'";
+                            break;
+                        default:
+                            consulta += "C.Descripcion Like '" + filtro + "'";
+                            break;
+                    }
+                    break;
+            }
+            try
+            {
+                datos.setearQuery(consulta);
+                datos.ejectuarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    Articulo aux = new Articulo();
+                    aux.Id = datos.Lector.GetInt32(0);
+                    aux.Codigo = datos.Lector.GetString(1);
+                    aux.Nombre = datos.Lector.GetString(2);
+                    aux.Descripcion = datos.Lector.GetString(3);
+                    aux.Marca = new Marca();
+                    aux.Marca.IDMarca = (int)datos.Lector["IdMarca"];
+                    aux.Marca.Descripcion = (string)datos.Lector["Marca"];
+                    aux.Categoria = new Categoria();
+                    aux.Categoria.ID = (int)datos.Lector["IdCategoria"];
+                    aux.Categoria.Descripcion = (string)datos.Lector["Categoria"];
+                    aux.Precio = datos.Lector.GetDecimal(6);
+                    aux.Imagen = new Imagen();
+                    aux.Imagen.URL = (string)datos.Lector["Imagen"];
+
+                    lista.Add(aux);
+                }
+                return lista;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return listar();
             }
         }
     } 
