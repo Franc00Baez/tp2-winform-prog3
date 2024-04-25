@@ -36,6 +36,8 @@ namespace program
             Refresh();
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            cbCampoCat.Items.Add("Id");
+            cbCampoCat.Items.Add("Descripción");
         }
 
         private void cargar()
@@ -73,6 +75,43 @@ namespace program
                     artN.eliminar(seleccionado.ID);
                     cargar();
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
+
+        private void cbCampoCat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string opcion = cbCampoCat.SelectedItem.ToString();
+
+            if (opcion == "Id")
+            {
+                cbCriterioCat.Items.Clear();
+                cbCriterioCat.Items.Add("Mayor a");
+                cbCriterioCat.Items.Add("Menor que");
+                cbCriterioCat.Items.Add("Igual a");
+            }
+            else
+            {
+                cbCriterioCat.Items.Clear();
+                cbCriterioCat.Items.Add("Comienza con");
+                cbCriterioCat.Items.Add("Termina por");
+                cbCriterioCat.Items.Add("Contiene");
+            }
+        }
+
+        private void btnFiltrarCat_Click(object sender, EventArgs e)
+        {
+            CatNegocio negocio = new CatNegocio();
+
+            try
+            {
+                string campo = cbCampoCat.SelectedItem.ToString();
+                string criterio = cbCriterioCat.SelectedItem.ToString();
+                string filtro = txtFiltrarCat.Text;
+                dataGridView1.DataSource = negocio.Filtrar(campo, criterio, filtro);
             }
             catch (Exception ex)
             {

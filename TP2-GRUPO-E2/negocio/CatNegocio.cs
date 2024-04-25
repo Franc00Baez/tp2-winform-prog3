@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace negocio
 {
@@ -96,6 +97,65 @@ namespace negocio
             {
 
                 throw ex;
+            }
+        }
+
+        public List<Categoria> Filtrar(string campo, string criterio, string filtro)
+        {
+            List<Categoria> lista = new List<Categoria>();
+            AccesoDB datos = new AccesoDB();
+            string consulta = "select Id, Descripcion FROM CATEGORIAS Where ";
+
+            if (campo == "Id")
+            {
+                switch (criterio)
+                {
+                    case "Mayor a":
+                        consulta += "Id > " + filtro;
+                        break;
+                    case "Menor que":
+                        consulta += "Id < " + filtro;
+                        break;
+                    default:
+                        consulta += "Id = " + filtro;
+                        break;
+                }
+            }
+            else
+            {
+                switch (criterio)
+                {
+                    case "Comienza con":
+                        consulta += "Descripcion Like '" + filtro + "%'";
+                        break;
+                    case "Termina por":
+                        consulta += "Descripcion Like '%" + filtro + "'";
+                        break;
+                    default:
+                        consulta += "Descripcion like '" + filtro + "'";
+                        break;
+                }
+            }
+
+            try
+            {
+                datos.setearQuery(consulta);
+                datos.ejectuarLectura();
+
+                while (datos.Lector.Read())
+                {
+                    Categoria aux = new Categoria();
+                    aux.ID = datos.Lector.GetInt32(0);
+                    aux.Descripcion = datos.Lector.GetString(1);
+
+                    lista.Add(aux);
+                }
+                return lista;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                return lista;
             }
         }
     }

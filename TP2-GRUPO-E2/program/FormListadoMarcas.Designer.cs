@@ -37,6 +37,10 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblMarcas = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.cbCampoMar = new System.Windows.Forms.ComboBox();
+            this.cbCriterioMar = new System.Windows.Forms.ComboBox();
+            this.txtFiltrarMar = new System.Windows.Forms.TextBox();
+            this.btnFiltrarMar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,7 +140,7 @@
             this.lblMarcas.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarcas.Location = new System.Drawing.Point(-2, 9);
             this.lblMarcas.Name = "lblMarcas";
-            this.lblMarcas.Size = new System.Drawing.Size(235, 32);
+            this.lblMarcas.Size = new System.Drawing.Size(236, 32);
             this.lblMarcas.TabIndex = 17;
             this.lblMarcas.Text = "Listado de marcas";
             // 
@@ -148,7 +152,7 @@
             this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(222, 326);
+            this.btnCancelar.Location = new System.Drawing.Point(222, 245);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(135, 27);
             this.btnCancelar.TabIndex = 18;
@@ -156,12 +160,58 @@
             this.btnCancelar.UseVisualStyleBackColor = false;
             this.btnCancelar.Click += new System.EventHandler(this.button3_Click);
             // 
+            // cbCampoMar
+            // 
+            this.cbCampoMar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCampoMar.FormattingEnabled = true;
+            this.cbCampoMar.Location = new System.Drawing.Point(4, 372);
+            this.cbCampoMar.Name = "cbCampoMar";
+            this.cbCampoMar.Size = new System.Drawing.Size(94, 21);
+            this.cbCampoMar.TabIndex = 19;
+            this.cbCampoMar.SelectedIndexChanged += new System.EventHandler(this.cbCampoMar_SelectedIndexChanged);
+            // 
+            // cbCriterioMar
+            // 
+            this.cbCriterioMar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCriterioMar.FormattingEnabled = true;
+            this.cbCriterioMar.Location = new System.Drawing.Point(114, 372);
+            this.cbCriterioMar.Name = "cbCriterioMar";
+            this.cbCriterioMar.Size = new System.Drawing.Size(94, 21);
+            this.cbCriterioMar.TabIndex = 20;
+            // 
+            // txtFiltrarMar
+            // 
+            this.txtFiltrarMar.Location = new System.Drawing.Point(222, 372);
+            this.txtFiltrarMar.Name = "txtFiltrarMar";
+            this.txtFiltrarMar.Size = new System.Drawing.Size(135, 20);
+            this.txtFiltrarMar.TabIndex = 21;
+            // 
+            // btnFiltrarMar
+            // 
+            this.btnFiltrarMar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnFiltrarMar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFiltrarMar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnFiltrarMar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnFiltrarMar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFiltrarMar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFiltrarMar.Location = new System.Drawing.Point(255, 339);
+            this.btnFiltrarMar.Name = "btnFiltrarMar";
+            this.btnFiltrarMar.Size = new System.Drawing.Size(75, 27);
+            this.btnFiltrarMar.TabIndex = 22;
+            this.btnFiltrarMar.Text = "FILTRAR";
+            this.btnFiltrarMar.UseVisualStyleBackColor = false;
+            this.btnFiltrarMar.Click += new System.EventHandler(this.btnFiltrarMar_Click);
+            // 
             // FormListadoMarcas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(369, 359);
+            this.ClientSize = new System.Drawing.Size(357, 414);
+            this.Controls.Add(this.btnFiltrarMar);
+            this.Controls.Add(this.txtFiltrarMar);
+            this.Controls.Add(this.cbCriterioMar);
+            this.Controls.Add(this.cbCampoMar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lblMarcas);
             this.Controls.Add(this.btnDetalles);
@@ -193,5 +243,9 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lblMarcas;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.ComboBox cbCampoMar;
+        private System.Windows.Forms.ComboBox cbCriterioMar;
+        private System.Windows.Forms.TextBox txtFiltrarMar;
+        private System.Windows.Forms.Button btnFiltrarMar;
     }
 }
