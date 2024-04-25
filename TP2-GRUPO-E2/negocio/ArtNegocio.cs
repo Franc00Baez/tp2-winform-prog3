@@ -114,7 +114,7 @@ namespace negocio
             try
             {
                 AccesoDB datos = new AccesoDB();
-                datos.setearQuery("delete FROM ARTICULOS where id = @id");
+                datos.setearQuery("delete FROM ARTICULOS where id = @id; delete from IMAGENES where IdArticulo = @id;");
                 datos.setearParametro("@id", id);
                 datos.ejecutarAccion();
             }
