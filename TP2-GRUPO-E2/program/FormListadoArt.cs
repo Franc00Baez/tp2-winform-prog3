@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -114,12 +115,38 @@ namespace program
             }
         }
 
+        private bool validar1()
+        {
+
+            if (cbCampo.SelectedIndex == -1)
+            {
+                lblERROR.Text = "Es necesario seleccionar un campo";
+                return true;
+            }
+    
+            if (cbCriterio.SelectedIndex == -1) 
+            {        
+                lblERROR.Text = "Es necesario seleccionar un criterio";
+                return true;
+             }
+           if(txtFiltro.Text == "")
+            {
+                cargar();
+                lblERROR.Text = "Campo de búsqueda vacio";
+                
+                return true;
+            }
+            return false;
+        }
+  
+
         private void cbCampo_SelectedIndexChanged(object sender, EventArgs e)
         {
             string opcion = cbCampo.SelectedItem.ToString();
-
-            if(opcion == "Id")
+           
+            if (opcion == "Id")
             {
+
                 cbCriterio.Items.Clear();
                 cbCriterio.Items.Add("Mayor a");
                 cbCriterio.Items.Add("Menor que");
@@ -140,6 +167,11 @@ namespace program
 
             try
             {
+                if (validar1())
+                {
+                    return;
+                }
+
                 string campo = cbCampo.SelectedItem.ToString();
                 string criterio = cbCriterio.SelectedItem.ToString();
                 string filtro = txtFiltro.Text;
@@ -151,5 +183,6 @@ namespace program
                 MessageBox.Show(ex.ToString());
             }
         }
+
     }
 }
