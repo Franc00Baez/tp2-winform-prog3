@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -36,6 +37,10 @@ namespace program
             ArtNegocio artN = new ArtNegocio();
             try
             {
+                if (validar())
+                {
+                    return;
+                }
                 if (articulo == null)
                 articulo = new Articulo();
 
@@ -56,13 +61,26 @@ namespace program
 
                 if (articulo.Id != 0)
                 {
-                    artN.editar(articulo);
-                    MessageBox.Show("Artículo editado");           
+
+                    DialogResult respuesta = MessageBox.Show("¿Desea editar el artículo?", "Agregando", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (respuesta == DialogResult.Yes)
+                    {
+                        artN.editar(articulo);
+                        MessageBox.Show("Artículo editado");
+
+                    }
+                             
                 }
                 else
                 {
-                    artN.agregar(articulo);
-                    MessageBox.Show("Artículo agregado");
+                    DialogResult respuesta = MessageBox.Show("¿Desea agregar el artículo?", "Agregando", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (respuesta == DialogResult.Yes)
+                    {
+                        artN.agregar(articulo);
+                        MessageBox.Show("Artículo agregado");
+
+                    }
+                    
                 }
 
                 Close();
@@ -82,6 +100,40 @@ namespace program
             
         }
 
+        private bool validar()
+        {
+            if(txtbCodArt.Text == "")
+            {
+                lblCodArt.ForeColor = Color.Red;
+                lblError.Visible = true;
+                return true;
+            }
+            if (txtbNombre.Text == "")
+            {
+                lblNombre.ForeColor = Color.Red;
+                lblError.Visible = true;
+                return true;
+            }
+            if (cboxMarca.SelectedIndex == -1)
+            {
+                lblMarca.ForeColor = Color.Red;
+                lblError.Visible = true;
+                return true;
+            }
+            if (cboxCategoria.SelectedIndex == -1)
+            {
+                lblCategoria.ForeColor = Color.Red;
+                lblError.Visible = true;
+                return true;
+            }
+            if(txtbDescripcion.Text == "")
+            {
+                txtbDescripcion.ForeColor = Color.White;
+                txtbDescripcion.Text = "Sin descripción";
+            }
+            return false;
+        }
+
         private void FormAgrArt_Load(object sender, EventArgs e)
         {
             MarcaNegocio marNeg = new MarcaNegocio();
@@ -89,6 +141,7 @@ namespace program
 
             try
             {
+               
                 lblListado.Text = "Agregar Artículo";
                 btnAgregar.Text = "AGREGAR";
                 cboxMarca.DataSource = marNeg.listar();

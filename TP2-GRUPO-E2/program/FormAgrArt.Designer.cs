@@ -43,11 +43,11 @@
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblMarca = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.lblCodArt = new System.Windows.Forms.Label();
             this.txtUrlImagen = new System.Windows.Forms.TextBox();
             this.picbArticulos = new System.Windows.Forms.PictureBox();
             this.lblListado = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picbArticulos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -189,15 +189,6 @@
             this.lblMarca.TabIndex = 4;
             this.lblMarca.Text = "Marca: ";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(384, 48);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 39);
-            this.label2.TabIndex = 39;
-            // 
             // lblCodArt
             // 
             this.lblCodArt.AutoSize = true;
@@ -234,12 +225,25 @@
             this.lblListado.Size = new System.Drawing.Size(0, 32);
             this.lblListado.TabIndex = 42;
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(12, 333);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(332, 16);
+            this.lblError.TabIndex = 43;
+            this.lblError.Text = "Los campos marcados en rojo son obligatorios";
+            this.lblError.Visible = false;
+            // 
             // FormAgrArt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(688, 374);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblListado);
             this.Controls.Add(this.picbArticulos);
             this.Controls.Add(this.txtUrlImagen);
@@ -257,7 +261,6 @@
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.lblDescripcion);
             this.Controls.Add(this.lblMarca);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.lblCodArt);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -288,10 +291,10 @@
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label lblMarca;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblCodArt;
         private System.Windows.Forms.TextBox txtUrlImagen;
         private System.Windows.Forms.PictureBox picbArticulos;
         private System.Windows.Forms.Label lblListado;
+        private System.Windows.Forms.Label lblError;
     }
 }
