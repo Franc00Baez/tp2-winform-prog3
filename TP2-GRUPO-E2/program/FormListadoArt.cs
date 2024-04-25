@@ -48,6 +48,7 @@ namespace program
             Refresh();
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.Columns["Precio"].DefaultCellStyle.Format = "0.##";
             cbCampo.Items.Add("Id");
             cbCampo.Items.Add("Nombre");
             cbCampo.Items.Add("Marca");

@@ -154,7 +154,7 @@
             this.lblListado.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblListado.Location = new System.Drawing.Point(6, 5);
             this.lblListado.Name = "lblListado";
-            this.lblListado.Size = new System.Drawing.Size(255, 32);
+            this.lblListado.Size = new System.Drawing.Size(254, 32);
             this.lblListado.TabIndex = 11;
             this.lblListado.Text = "Listado de artículos";
             // 
@@ -166,7 +166,7 @@
             this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(828, 344);
+            this.btnCancelar.Location = new System.Drawing.Point(828, 385);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(135, 27);
             this.btnCancelar.TabIndex = 12;
@@ -197,7 +197,7 @@
             // 
             this.txtFiltro.Location = new System.Drawing.Point(294, 389);
             this.txtFiltro.Name = "txtFiltro";
-            this.txtFiltro.Size = new System.Drawing.Size(211, 20);
+            this.txtFiltro.Size = new System.Drawing.Size(276, 20);
             this.txtFiltro.TabIndex = 15;
             // 
             // btnFiltrar
@@ -208,7 +208,7 @@
             this.btnFiltrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrar.Location = new System.Drawing.Point(511, 385);
+            this.btnFiltrar.Location = new System.Drawing.Point(576, 385);
             this.btnFiltrar.Name = "btnFiltrar";
             this.btnFiltrar.Size = new System.Drawing.Size(135, 27);
             this.btnFiltrar.TabIndex = 16;

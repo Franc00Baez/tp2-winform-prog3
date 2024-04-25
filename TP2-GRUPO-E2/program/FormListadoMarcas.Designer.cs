@@ -140,7 +140,7 @@
             this.lblMarcas.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarcas.Location = new System.Drawing.Point(-2, 9);
             this.lblMarcas.Name = "lblMarcas";
-            this.lblMarcas.Size = new System.Drawing.Size(236, 32);
+            this.lblMarcas.Size = new System.Drawing.Size(235, 32);
             this.lblMarcas.TabIndex = 17;
             this.lblMarcas.Text = "Listado de marcas";
             // 
@@ -164,7 +164,7 @@
             // 
             this.cbCampoMar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCampoMar.FormattingEnabled = true;
-            this.cbCampoMar.Location = new System.Drawing.Point(4, 372);
+            this.cbCampoMar.Location = new System.Drawing.Point(4, 371);
             this.cbCampoMar.Name = "cbCampoMar";
             this.cbCampoMar.Size = new System.Drawing.Size(94, 21);
             this.cbCampoMar.TabIndex = 19;
@@ -174,14 +174,14 @@
             // 
             this.cbCriterioMar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCriterioMar.FormattingEnabled = true;
-            this.cbCriterioMar.Location = new System.Drawing.Point(114, 372);
+            this.cbCriterioMar.Location = new System.Drawing.Point(114, 371);
             this.cbCriterioMar.Name = "cbCriterioMar";
             this.cbCriterioMar.Size = new System.Drawing.Size(94, 21);
             this.cbCriterioMar.TabIndex = 20;
             // 
             // txtFiltrarMar
             // 
-            this.txtFiltrarMar.Location = new System.Drawing.Point(222, 372);
+            this.txtFiltrarMar.Location = new System.Drawing.Point(221, 370);
             this.txtFiltrarMar.Name = "txtFiltrarMar";
             this.txtFiltrarMar.Size = new System.Drawing.Size(135, 20);
             this.txtFiltrarMar.TabIndex = 21;
@@ -194,9 +194,9 @@
             this.btnFiltrarMar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnFiltrarMar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarMar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrarMar.Location = new System.Drawing.Point(255, 339);
+            this.btnFiltrarMar.Location = new System.Drawing.Point(222, 336);
             this.btnFiltrarMar.Name = "btnFiltrarMar";
-            this.btnFiltrarMar.Size = new System.Drawing.Size(75, 27);
+            this.btnFiltrarMar.Size = new System.Drawing.Size(135, 27);
             this.btnFiltrarMar.TabIndex = 22;
             this.btnFiltrarMar.Text = "FILTRAR";
             this.btnFiltrarMar.UseVisualStyleBackColor = false;
@@ -207,7 +207,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(357, 414);
+            this.ClientSize = new System.Drawing.Size(360, 397);
             this.Controls.Add(this.btnFiltrarMar);
             this.Controls.Add(this.txtFiltrarMar);
             this.Controls.Add(this.cbCriterioMar);

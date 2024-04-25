@@ -86,6 +86,7 @@ namespace program
         {
             MarcaNegocio marNeg = new MarcaNegocio();
             CatNegocio catNeg = new CatNegocio();
+
             try
             {
                 lblListado.Text = "Agregar Artículo";
@@ -93,10 +94,11 @@ namespace program
                 cboxMarca.DataSource = marNeg.listar();
                 cboxMarca.ValueMember = "IDMarca";
                 cboxMarca.DisplayMember = "Descripcion";
+                cboxMarca.SelectedIndex = -1;
                 cboxCategoria.DataSource = catNeg.listar();
                 cboxCategoria.ValueMember = "ID";
                 cboxCategoria.DisplayMember = "Descripcion";
-
+                cboxCategoria.SelectedIndex = -1;
 
                 if (articulo != null)
                 {

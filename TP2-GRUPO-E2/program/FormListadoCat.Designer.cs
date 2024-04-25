@@ -66,7 +66,7 @@
             this.lblCategoria.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.Location = new System.Drawing.Point(-2, 9);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(273, 32);
+            this.lblCategoria.Size = new System.Drawing.Size(272, 32);
             this.lblCategoria.TabIndex = 25;
             this.lblCategoria.Text = "Listado de categorías";
             // 
@@ -164,9 +164,9 @@
             // 
             this.cbCampoCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCampoCat.FormattingEnabled = true;
-            this.cbCampoCat.Location = new System.Drawing.Point(4, 369);
+            this.cbCampoCat.Location = new System.Drawing.Point(4, 371);
             this.cbCampoCat.Name = "cbCampoCat";
-            this.cbCampoCat.Size = new System.Drawing.Size(90, 21);
+            this.cbCampoCat.Size = new System.Drawing.Size(94, 21);
             this.cbCampoCat.TabIndex = 27;
             this.cbCampoCat.SelectedIndexChanged += new System.EventHandler(this.cbCampoCat_SelectedIndexChanged);
             // 
@@ -174,14 +174,14 @@
             // 
             this.cbCriterioCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCriterioCat.FormattingEnabled = true;
-            this.cbCriterioCat.Location = new System.Drawing.Point(100, 369);
+            this.cbCriterioCat.Location = new System.Drawing.Point(114, 371);
             this.cbCriterioCat.Name = "cbCriterioCat";
             this.cbCriterioCat.Size = new System.Drawing.Size(94, 21);
             this.cbCriterioCat.TabIndex = 28;
             // 
             // txtFiltrarCat
             // 
-            this.txtFiltrarCat.Location = new System.Drawing.Point(222, 369);
+            this.txtFiltrarCat.Location = new System.Drawing.Point(221, 370);
             this.txtFiltrarCat.Name = "txtFiltrarCat";
             this.txtFiltrarCat.Size = new System.Drawing.Size(135, 20);
             this.txtFiltrarCat.TabIndex = 29;
@@ -194,9 +194,9 @@
             this.btnFiltrarCat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnFiltrarCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarCat.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrarCat.Location = new System.Drawing.Point(252, 336);
+            this.btnFiltrarCat.Location = new System.Drawing.Point(222, 336);
             this.btnFiltrarCat.Name = "btnFiltrarCat";
-            this.btnFiltrarCat.Size = new System.Drawing.Size(76, 27);
+            this.btnFiltrarCat.Size = new System.Drawing.Size(134, 27);
             this.btnFiltrarCat.TabIndex = 30;
             this.btnFiltrarCat.Text = "FILTRAR";
             this.btnFiltrarCat.UseVisualStyleBackColor = false;
