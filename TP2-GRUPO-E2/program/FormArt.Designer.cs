@@ -34,7 +34,6 @@
             this.lblMarca2 = new System.Windows.Forms.Label();
             this.lblCategoria2 = new System.Windows.Forms.Label();
             this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
             this.lblPrecio2 = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblNombre2 = new System.Windows.Forms.Label();
@@ -102,23 +101,9 @@
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(147, 39);
             this.btnEliminar.TabIndex = 1;
-            this.btnEliminar.Text = "ELIMINAR";
+            this.btnEliminar.Text = "CERRAR";
             this.btnEliminar.UseVisualStyleBackColor = false;
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(268, 323);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(147, 39);
-            this.btnEditar.TabIndex = 0;
-            this.btnEditar.Text = "EDITAR";
-            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblPrecio2
             // 
@@ -202,9 +187,9 @@
             // 
             // pictureBox
             // 
-            this.pictureBox.Location = new System.Drawing.Point(341, 12);
+            this.pictureBox.Location = new System.Drawing.Point(307, 12);
             this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(228, 179);
+            this.pictureBox.Size = new System.Drawing.Size(262, 221);
             this.pictureBox.TabIndex = 25;
             this.pictureBox.TabStop = false;
             // 
@@ -218,7 +203,6 @@
             this.Controls.Add(this.lblMarca2);
             this.Controls.Add(this.lblCategoria2);
             this.Controls.Add(this.btnEliminar);
-            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.lblPrecio2);
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.lblNombre2);
@@ -249,7 +233,6 @@
         private System.Windows.Forms.Label lblMarca2;
         private System.Windows.Forms.Label lblCategoria2;
         private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Label lblPrecio2;
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label lblNombre2;

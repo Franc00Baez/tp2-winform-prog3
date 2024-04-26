@@ -205,6 +205,7 @@
             this.txtUrlImagen.Name = "txtUrlImagen";
             this.txtUrlImagen.Size = new System.Drawing.Size(241, 20);
             this.txtUrlImagen.TabIndex = 40;
+            this.txtUrlImagen.Leave += new System.EventHandler(this.txtUrlImagen_Leave);
             // 
             // picbArticulos
             // 

@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -50,6 +51,7 @@ namespace program
         {
             cargar();
             Refresh();
+            lblERROR.Text = "";
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -100,12 +102,43 @@ namespace program
             }
         }
 
+        private bool validar()
+        {
+
+            if (cbCampoMar.SelectedIndex == -1)
+            {
+                lblERROR.Text = "Es necesario seleccionar un campo";
+                return true;
+            }
+
+            if (cbCriterioMar.SelectedIndex == -1)
+            {
+                lblERROR.Text = "Es necesario seleccionar un criterio";
+                return true;
+            }
+
+            if (txtFiltrarMar.Text == "")
+            {
+                cargar();
+                lblERROR.Text = "Campo de búsqueda vacio";
+
+                return true;
+            }
+
+            return false;
+        }
         private void btnFiltrarMar_Click(object sender, EventArgs e)
         {
             MarcaNegocio negocio = new MarcaNegocio();
 
             try
             {
+                if (validar())
+                {
+                    return;
+                }
+                lblERROR.Text = "";
+
                 string campo = cbCampoMar.SelectedItem.ToString();
                 string criterio = cbCriterioMar.SelectedItem.ToString();
                 string filtro = txtFiltrarMar.Text;

@@ -133,17 +133,17 @@ namespace negocio
 
             switch (campo)
             {
-                case "Id":
+                case "Precio":
                     switch (criterio)
                     {
                         case "Mayor a":
-                            consulta += "A.Id > " + filtro;
+                            consulta += "Precio > " + filtro;
                             break;
                         case "Menor que":
-                            consulta += "A.Id < " + filtro;
+                            consulta += "Precio < " + filtro;
                             break;
                         case "Igual a":
-                            consulta += "A.id = " + filtro;
+                            consulta += "Precio = " + filtro;
                             break;
                     }
                     break;

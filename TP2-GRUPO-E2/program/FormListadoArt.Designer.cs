@@ -45,6 +45,7 @@
             this.lblERROR = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.lblErrorBusqueda = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbArtiuclos)).BeginInit();
             this.SuspendLayout();
@@ -53,7 +54,7 @@
             // 
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 72);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 84);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -69,7 +70,7 @@
             this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEditar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditar.Location = new System.Drawing.Point(153, 39);
+            this.btnEditar.Location = new System.Drawing.Point(153, 51);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(135, 27);
             this.btnEditar.TabIndex = 1;
@@ -85,7 +86,7 @@
             this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(294, 39);
+            this.btnEliminar.Location = new System.Drawing.Point(294, 51);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(135, 27);
             this.btnEliminar.TabIndex = 2;
@@ -101,7 +102,7 @@
             this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(12, 39);
+            this.btnAgregar.Location = new System.Drawing.Point(12, 51);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(135, 27);
             this.btnAgregar.TabIndex = 7;
@@ -117,7 +118,7 @@
             this.btnRefrescar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnRefrescar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefrescar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefrescar.Location = new System.Drawing.Point(576, 39);
+            this.btnRefrescar.Location = new System.Drawing.Point(576, 51);
             this.btnRefrescar.Name = "btnRefrescar";
             this.btnRefrescar.Size = new System.Drawing.Size(135, 27);
             this.btnRefrescar.TabIndex = 8;
@@ -133,7 +134,7 @@
             this.btnDetalles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDetalles.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDetalles.Location = new System.Drawing.Point(435, 39);
+            this.btnDetalles.Location = new System.Drawing.Point(435, 51);
             this.btnDetalles.Name = "btnDetalles";
             this.btnDetalles.Size = new System.Drawing.Size(135, 27);
             this.btnDetalles.TabIndex = 9;
@@ -144,7 +145,7 @@
             // picbArtiuclos
             // 
             this.picbArtiuclos.Cursor = System.Windows.Forms.Cursors.Default;
-            this.picbArtiuclos.Location = new System.Drawing.Point(717, 72);
+            this.picbArtiuclos.Location = new System.Drawing.Point(717, 84);
             this.picbArtiuclos.Name = "picbArtiuclos";
             this.picbArtiuclos.Size = new System.Drawing.Size(262, 221);
             this.picbArtiuclos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -155,7 +156,8 @@
             // 
             this.lblListado.AutoSize = true;
             this.lblListado.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListado.Location = new System.Drawing.Point(6, 5);
+            this.lblListado.ForeColor = System.Drawing.SystemColors.InfoText;
+            this.lblListado.Location = new System.Drawing.Point(6, 4);
             this.lblListado.Name = "lblListado";
             this.lblListado.Size = new System.Drawing.Size(254, 32);
             this.lblListado.TabIndex = 11;
@@ -249,12 +251,23 @@
             this.label2.TabIndex = 19;
             this.label2.Text = "Criterio:";
             // 
+            // lblErrorBusqueda
+            // 
+            this.lblErrorBusqueda.AutoSize = true;
+            this.lblErrorBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorBusqueda.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorBusqueda.Location = new System.Drawing.Point(12, 455);
+            this.lblErrorBusqueda.Name = "lblErrorBusqueda";
+            this.lblErrorBusqueda.Size = new System.Drawing.Size(0, 16);
+            this.lblErrorBusqueda.TabIndex = 20;
+            // 
             // FormListadoArt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(975, 480);
+            this.Controls.Add(this.lblErrorBusqueda);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblERROR);
@@ -304,5 +317,6 @@
         private System.Windows.Forms.Label lblERROR;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblErrorBusqueda;
     }
 }

@@ -24,7 +24,7 @@ namespace program
         {
             cargar();
             Refresh();
-            
+            lblERROR.Text = "";
         }
 
         private void btnBuscar_Click(object sender, EventArgs e)
@@ -50,10 +50,10 @@ namespace program
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.Columns["Precio"].DefaultCellStyle.Format = "0.##";
-            cbCampo.Items.Add("Id");
             cbCampo.Items.Add("Nombre");
             cbCampo.Items.Add("Marca");
             cbCampo.Items.Add("Categoria");
+            cbCampo.Items.Add("Precio");
         }
 
         private void cargar()
@@ -115,7 +115,7 @@ namespace program
             }
         }
 
-        private bool validar1()
+        private bool validar()
         {
 
             if (cbCampo.SelectedIndex == -1)
@@ -123,28 +123,46 @@ namespace program
                 lblERROR.Text = "Es necesario seleccionar un campo";
                 return true;
             }
-    
+
             if (cbCriterio.SelectedIndex == -1) 
             {        
                 lblERROR.Text = "Es necesario seleccionar un criterio";
                 return true;
-             }
-           if(txtFiltro.Text == "")
+            }
+
+            if (cbCampo.SelectedItem.ToString() == "Precio" && !validarNumero(txtFiltro.Text))
+            {
+                lblERROR.Text = "Este campo solo acepta valores numéricos";
+                return true;
+            }
+
+            if (txtFiltro.Text == "")
             {
                 cargar();
                 lblERROR.Text = "Campo de búsqueda vacio";
                 
                 return true;
             }
+            
             return false;
         }
+
   
+        private bool validarNumero(string cadena)
+        {
+           foreach(char caracter in cadena)
+            {
+                if (!(char.IsNumber(caracter)))
+                    return false;
+            }
+            return true;
+        }
 
         private void cbCampo_SelectedIndexChanged(object sender, EventArgs e)
         {
             string opcion = cbCampo.SelectedItem.ToString();
            
-            if (opcion == "Id")
+            if (opcion == "Precio")
             {
 
                 cbCriterio.Items.Clear();
@@ -167,11 +185,12 @@ namespace program
 
             try
             {
-                if (validar1())
+                if (validar())
                 {
                     return;
                 }
-
+                lblERROR.Text = "";
+ 
                 string campo = cbCampo.SelectedItem.ToString();
                 string criterio = cbCriterio.SelectedItem.ToString();
                 string filtro = txtFiltro.Text;

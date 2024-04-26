@@ -62,7 +62,7 @@ namespace program
                 if (articulo.Id != 0)
                 {
 
-                    DialogResult respuesta = MessageBox.Show("¿Desea editar el artículo?", "Agregando", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult respuesta = MessageBox.Show("¿Desea editar el artículo?", "Editando", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (respuesta == DialogResult.Yes)
                     {
                         artN.editar(articulo);
@@ -186,5 +186,9 @@ namespace program
             }
         }
 
+        private void txtUrlImagen_Leave(object sender, EventArgs e)
+        {
+            CargarImagen(txtUrlImagen.Text);
+        }
     }
 }

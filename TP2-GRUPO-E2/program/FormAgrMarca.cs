@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -35,19 +36,37 @@ namespace program
             MarcaNegocio marN = new MarcaNegocio();
             try
             {
+                if (validar())
+                {
+                    return;
+                }
+                lblMarca.ForeColor = Color.Black;
+                lblError.Visible = false;
+
                 if (marca == null)
                     marca = new Marca();
 
                 marca.Descripcion = txtbMarca.Text;
                 if (marca.IDMarca != 0)
                 {
-                    marN.editar(marca);
-                    MessageBox.Show("Marca editada");
+                    DialogResult respuesta = MessageBox.Show("¿Desea editar la marca?", "Editando", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (respuesta == DialogResult.Yes)
+                    {
+                        marN.editar(marca);
+                        MessageBox.Show("Marca editada");
+                    }
+                    
                 }
                 else
                 {
-                    marN.agregar(marca);
-                    MessageBox.Show("Marca agregada");
+                    DialogResult respuesta = MessageBox.Show("¿Desea agregar la categoría?", "Agregando", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (respuesta == DialogResult.Yes)
+                    {
+                        marN.agregar(marca);
+                        MessageBox.Show("Marca agregada");
+
+                    }
+                    
                 }
 
                 Close();
@@ -64,6 +83,18 @@ namespace program
                     MessageBox.Show("Ocurrió un error al agregar el registro " + ex.Message);
                 }
             }
+        }
+
+        private bool validar()
+        {
+            if (txtbMarca.Text == "")
+            {
+                lblMarca.ForeColor = Color.Red;
+                lblError.Visible = true;
+                return true;
+            }
+
+            return false;
         }
 
         private void FormAgrMarca_Load(object sender, EventArgs e)

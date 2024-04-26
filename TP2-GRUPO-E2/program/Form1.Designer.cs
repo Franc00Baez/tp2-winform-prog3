@@ -208,7 +208,7 @@ namespace program
             // 
             this.buscarPorIDTSMI1.Image = global::program.Properties.Resources.search_file_icon_252034;
             this.buscarPorIDTSMI1.Name = "buscarPorIDTSMI1";
-            this.buscarPorIDTSMI1.Size = new System.Drawing.Size(180, 22);
+            this.buscarPorIDTSMI1.Size = new System.Drawing.Size(175, 22);
             this.buscarPorIDTSMI1.Text = "Buscar por ID";
             this.buscarPorIDTSMI1.Click += new System.EventHandler(this.buscarPorIDToolStripMenuItem1_Click);
             // 
@@ -216,7 +216,7 @@ namespace program
             // 
             this.buscarPorNombreTSMI1.Image = global::program.Properties.Resources.search_file_icon_252034;
             this.buscarPorNombreTSMI1.Name = "buscarPorNombreTSMI1";
-            this.buscarPorNombreTSMI1.Size = new System.Drawing.Size(180, 22);
+            this.buscarPorNombreTSMI1.Size = new System.Drawing.Size(175, 22);
             this.buscarPorNombreTSMI1.Text = "Buscar por nombre";
             this.buscarPorNombreTSMI1.Click += new System.EventHandler(this.buscarPorNombreToolStripMenuItem1_Click);
             // 
@@ -260,7 +260,7 @@ namespace program
             // 
             this.buscarPorIDTSMI2.Image = global::program.Properties.Resources.search_file_icon_252034;
             this.buscarPorIDTSMI2.Name = "buscarPorIDTSMI2";
-            this.buscarPorIDTSMI2.Size = new System.Drawing.Size(180, 22);
+            this.buscarPorIDTSMI2.Size = new System.Drawing.Size(175, 22);
             this.buscarPorIDTSMI2.Text = "Buscar por ID";
             this.buscarPorIDTSMI2.Click += new System.EventHandler(this.buscarPorIDToolStripMenuItem2_Click);
             // 
@@ -268,7 +268,7 @@ namespace program
             // 
             this.buscarPorNombreTSMI2.Image = global::program.Properties.Resources.search_file_icon_252034;
             this.buscarPorNombreTSMI2.Name = "buscarPorNombreTSMI2";
-            this.buscarPorNombreTSMI2.Size = new System.Drawing.Size(180, 22);
+            this.buscarPorNombreTSMI2.Size = new System.Drawing.Size(175, 22);
             this.buscarPorNombreTSMI2.Text = "Buscar por nombre";
             this.buscarPorNombreTSMI2.Click += new System.EventHandler(this.buscarPorNombreToolStripMenuItem2_Click);
             // 
@@ -285,6 +285,7 @@ namespace program
             this.aboutTSMI.Name = "aboutTSMI";
             this.aboutTSMI.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.T)));
             this.aboutTSMI.Size = new System.Drawing.Size(52, 20);
+            this.aboutTSMI.Tag = "";
             this.aboutTSMI.Text = "About&";
             this.aboutTSMI.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 

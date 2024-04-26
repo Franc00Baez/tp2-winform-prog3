@@ -41,6 +41,10 @@
             this.cbCriterioCat = new System.Windows.Forms.ComboBox();
             this.txtFiltrarCat = new System.Windows.Forms.TextBox();
             this.btnFiltrarCat = new System.Windows.Forms.Button();
+            this.lblErrorBusqueda = new System.Windows.Forms.Label();
+            this.lblERROR = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -164,7 +168,7 @@
             // 
             this.cbCampoCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCampoCat.FormattingEnabled = true;
-            this.cbCampoCat.Location = new System.Drawing.Point(4, 371);
+            this.cbCampoCat.Location = new System.Drawing.Point(4, 388);
             this.cbCampoCat.Name = "cbCampoCat";
             this.cbCampoCat.Size = new System.Drawing.Size(94, 21);
             this.cbCampoCat.TabIndex = 27;
@@ -174,14 +178,14 @@
             // 
             this.cbCriterioCat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCriterioCat.FormattingEnabled = true;
-            this.cbCriterioCat.Location = new System.Drawing.Point(114, 371);
+            this.cbCriterioCat.Location = new System.Drawing.Point(114, 388);
             this.cbCriterioCat.Name = "cbCriterioCat";
             this.cbCriterioCat.Size = new System.Drawing.Size(94, 21);
             this.cbCriterioCat.TabIndex = 28;
             // 
             // txtFiltrarCat
             // 
-            this.txtFiltrarCat.Location = new System.Drawing.Point(221, 370);
+            this.txtFiltrarCat.Location = new System.Drawing.Point(222, 388);
             this.txtFiltrarCat.Name = "txtFiltrarCat";
             this.txtFiltrarCat.Size = new System.Drawing.Size(135, 20);
             this.txtFiltrarCat.TabIndex = 29;
@@ -194,20 +198,64 @@
             this.btnFiltrarCat.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnFiltrarCat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFiltrarCat.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFiltrarCat.Location = new System.Drawing.Point(222, 336);
+            this.btnFiltrarCat.Location = new System.Drawing.Point(222, 355);
             this.btnFiltrarCat.Name = "btnFiltrarCat";
-            this.btnFiltrarCat.Size = new System.Drawing.Size(134, 27);
+            this.btnFiltrarCat.Size = new System.Drawing.Size(135, 27);
             this.btnFiltrarCat.TabIndex = 30;
             this.btnFiltrarCat.Text = "FILTRAR";
             this.btnFiltrarCat.UseVisualStyleBackColor = false;
             this.btnFiltrarCat.Click += new System.EventHandler(this.btnFiltrarCat_Click);
+            // 
+            // lblErrorBusqueda
+            // 
+            this.lblErrorBusqueda.AutoSize = true;
+            this.lblErrorBusqueda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblErrorBusqueda.ForeColor = System.Drawing.Color.Red;
+            this.lblErrorBusqueda.Location = new System.Drawing.Point(1, 424);
+            this.lblErrorBusqueda.Name = "lblErrorBusqueda";
+            this.lblErrorBusqueda.Size = new System.Drawing.Size(0, 16);
+            this.lblErrorBusqueda.TabIndex = 32;
+            // 
+            // lblERROR
+            // 
+            this.lblERROR.AutoSize = true;
+            this.lblERROR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblERROR.ForeColor = System.Drawing.Color.Red;
+            this.lblERROR.Location = new System.Drawing.Point(1, 424);
+            this.lblERROR.Name = "lblERROR";
+            this.lblERROR.Size = new System.Drawing.Size(0, 16);
+            this.lblERROR.TabIndex = 31;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(111, 369);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 16);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "Criterio:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(1, 369);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(60, 16);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "Campo:";
             // 
             // FormListadoCat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(360, 397);
+            this.ClientSize = new System.Drawing.Size(360, 449);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblErrorBusqueda);
+            this.Controls.Add(this.lblERROR);
             this.Controls.Add(this.btnFiltrarCat);
             this.Controls.Add(this.txtFiltrarCat);
             this.Controls.Add(this.cbCriterioCat);
@@ -248,5 +296,9 @@
         private System.Windows.Forms.ComboBox cbCriterioCat;
         private System.Windows.Forms.TextBox txtFiltrarCat;
         private System.Windows.Forms.Button btnFiltrarCat;
+        private System.Windows.Forms.Label lblErrorBusqueda;
+        private System.Windows.Forms.Label lblERROR;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
     }
 }

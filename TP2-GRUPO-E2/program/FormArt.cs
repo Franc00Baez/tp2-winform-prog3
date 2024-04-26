@@ -16,5 +16,10 @@ namespace program
         {
             InitializeComponent();
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

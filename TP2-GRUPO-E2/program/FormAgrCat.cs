@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -35,6 +36,13 @@ namespace program
                 CatNegocio catN = new CatNegocio();
                 try
                 {
+                if (validar())
+                {
+                    return;
+                }
+                lblCategoria.ForeColor = Color.Black;
+                lblError.Visible = false;
+
                 if (categoria == null)
                 categoria = new Categoria();
 
@@ -42,13 +50,24 @@ namespace program
                 
                 if (categoria.ID != 0)
                 {
-                    catN.editar(categoria);
-                    MessageBox.Show("Categoría editada");
+                    DialogResult respuesta = MessageBox.Show("¿Desea editar la categoría?", "Editando", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (respuesta == DialogResult.Yes)
+                    {
+                        catN.editar(categoria);
+                        MessageBox.Show("Categoría editada");
+                    }
+                    
                 }
                 else
                 {
-                    catN.agregar(categoria);
-                    MessageBox.Show("Categoría agregada");
+                    DialogResult respuesta = MessageBox.Show("¿Desea agregar la categoría?", "Agregando", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    if (respuesta == DialogResult.Yes)
+                    {
+                        catN.agregar(categoria);
+                        MessageBox.Show("Categoría agregada");
+
+                    }
+                   
                 }
                 Close();
                 }
@@ -66,6 +85,17 @@ namespace program
             }
         }
 
+        private bool validar()
+        {
+            if (txtbCategoria.Text == "")
+            {
+                lblCategoria.ForeColor = Color.Red;
+                lblError.Visible = true;
+                return true;
+            }
+            
+            return false;
+        }
         private void FormAgrCat_Load(object sender, EventArgs e)
         {
 

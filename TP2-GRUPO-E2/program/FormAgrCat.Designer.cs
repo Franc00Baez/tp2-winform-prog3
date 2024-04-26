@@ -34,6 +34,7 @@
             this.txtbCategoria = new System.Windows.Forms.TextBox();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblListado = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnAgregar
@@ -97,12 +98,25 @@
             this.lblListado.TabIndex = 43;
             this.lblListado.Text = "Prueba";
             // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(12, 150);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(332, 16);
+            this.lblError.TabIndex = 44;
+            this.lblError.Text = "Los campos marcados en rojo son obligatorios";
+            this.lblError.Visible = false;
+            // 
             // FormAgrCat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(421, 164);
+            this.ClientSize = new System.Drawing.Size(421, 175);
+            this.Controls.Add(this.lblError);
             this.Controls.Add(this.lblListado);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnCancelar);
@@ -128,5 +142,6 @@
         private System.Windows.Forms.TextBox txtbCategoria;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label lblListado;
+        private System.Windows.Forms.Label lblError;
     }
 }
