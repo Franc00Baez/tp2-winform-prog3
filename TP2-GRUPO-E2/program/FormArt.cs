@@ -32,15 +32,31 @@ namespace program
 
         private void FormArt_Load(object sender, EventArgs e)
         {
-            lblCodArt2.Text = art.Codigo;
-            lblNombre2.Text = art.Nombre;
-            lblMarca2.Text = art.Marca.Descripcion;
-            lblCategoria2.Text = art.Categoria.Descripcion;
-            lblPrecio2.Text = art.Precio.ToString();
-            lblDescripcion.Text = art.Descripcion;
-            pictureBox.Load(art.Imagen.URL);
+            if(art != null)
+            {
+                lblCodArt2.Text = art.Codigo;
+                lblNombre2.Text = art.Nombre;
+                lblMarca2.Text = art.Marca.Descripcion;
+                lblCategoria2.Text = art.Categoria.Descripcion;
+                lblPrecio2.Text = art.Precio.ToString();
+                lblDescripcion.Text = art.Descripcion;
+                CargarImagen(art.Imagen.URL);
+
+            }
 
 
+        }
+
+        private void CargarImagen(string imagen)
+        {
+            try
+            {
+                pictureBox.Load(imagen);
+            }
+            catch (Exception)
+            {
+                pictureBox.Load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQp_KiMdzcWl5r99nAPXG8dF0d5MWb2ZIX2bs1GvjRTvw&s");
+            }
         }
     }
 }

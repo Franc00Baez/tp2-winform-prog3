@@ -1,4 +1,5 @@
-﻿using System;
+﻿using negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -57,6 +58,22 @@ namespace program
             }
             lblID.ForeColor = Color.Black;
             lblError.Visible = false;
+            if(validarNumero(txtbID.Text) == false)
+            {
+                MessageBox.Show("Porfavor ingrese un valor numerico!");
+                return;
+            }
+
+            ArtNegocio negocio = new ArtNegocio();
+            List<Articulo> lista = negocio.listar();
+            Articulo seleccionado;
+            string Id = txtbID.Text;
+
+            seleccionado = lista.FirstOrDefault(x => x.Id == int.Parse(Id));
+
+            FormArt frm = new FormArt(seleccionado);
+            frm.Show();
+
 
         }
     }

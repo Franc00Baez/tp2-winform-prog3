@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormListadoCat));
             this.btnCancelar = new System.Windows.Forms.Button();
             this.lblCategoria = new System.Windows.Forms.Label();
-            this.btnDetalles = new System.Windows.Forms.Button();
             this.btnRefrescar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -56,7 +55,7 @@
             this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(222, 245);
+            this.btnCancelar.Location = new System.Drawing.Point(222, 213);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(135, 27);
             this.btnCancelar.TabIndex = 26;
@@ -70,24 +69,9 @@
             this.lblCategoria.Font = new System.Drawing.Font("Cambria", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCategoria.Location = new System.Drawing.Point(-2, 9);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(272, 32);
+            this.lblCategoria.Size = new System.Drawing.Size(273, 32);
             this.lblCategoria.TabIndex = 25;
             this.lblCategoria.Text = "Listado de categorías";
-            // 
-            // btnDetalles
-            // 
-            this.btnDetalles.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnDetalles.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDetalles.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnDetalles.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnDetalles.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDetalles.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDetalles.Location = new System.Drawing.Point(222, 165);
-            this.btnDetalles.Name = "btnDetalles";
-            this.btnDetalles.Size = new System.Drawing.Size(135, 27);
-            this.btnDetalles.TabIndex = 24;
-            this.btnDetalles.Text = "VER DETALLES";
-            this.btnDetalles.UseVisualStyleBackColor = false;
             // 
             // btnRefrescar
             // 
@@ -97,7 +81,7 @@
             this.btnRefrescar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.btnRefrescar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefrescar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRefrescar.Location = new System.Drawing.Point(222, 202);
+            this.btnRefrescar.Location = new System.Drawing.Point(222, 170);
             this.btnRefrescar.Name = "btnRefrescar";
             this.btnRefrescar.Size = new System.Drawing.Size(135, 27);
             this.btnRefrescar.TabIndex = 23;
@@ -232,7 +216,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(111, 369);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 16);
+            this.label2.Size = new System.Drawing.Size(62, 16);
             this.label2.TabIndex = 34;
             this.label2.Text = "Criterio:";
             // 
@@ -242,7 +226,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(1, 369);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 16);
+            this.label1.Size = new System.Drawing.Size(61, 16);
             this.label1.TabIndex = 33;
             this.label1.Text = "Campo:";
             // 
@@ -262,7 +246,6 @@
             this.Controls.Add(this.cbCampoCat);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lblCategoria);
-            this.Controls.Add(this.btnDetalles);
             this.Controls.Add(this.btnRefrescar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnEliminar);
@@ -286,7 +269,6 @@
 
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label lblCategoria;
-        private System.Windows.Forms.Button btnDetalles;
         private System.Windows.Forms.Button btnRefrescar;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEliminar;

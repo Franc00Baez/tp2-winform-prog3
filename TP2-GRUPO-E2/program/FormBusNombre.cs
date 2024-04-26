@@ -1,4 +1,5 @@
-﻿using System;
+﻿using negocio;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -42,6 +43,16 @@ namespace program
             }
             lblNombre.ForeColor = Color.Black;
             lblError.Visible = false;
+            ArtNegocio negocio = new ArtNegocio();
+            List<Articulo> lista = negocio.listar();
+            Articulo seleccionado;
+            string nombre = txtbNombre.Text;
+
+            seleccionado = lista.FirstOrDefault(x => x.Nombre.ToUpper().Contains(nombre.ToUpper()));
+
+            FormArt frm = new FormArt(seleccionado);
+            frm.Show();
+
         }
     }
 }
