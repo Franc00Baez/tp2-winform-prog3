@@ -33,7 +33,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.txtbMarca = new System.Windows.Forms.TextBox();
             this.lblMarca = new System.Windows.Forms.Label();
-            this.lblListado = new System.Windows.Forms.Label();
+            this.lblartmar = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -87,15 +87,15 @@
             this.lblMarca.TabIndex = 0;
             this.lblMarca.Text = "Ingresar marca:";
             // 
-            // lblListado
+            // lblartmar
             // 
-            this.lblListado.AutoSize = true;
-            this.lblListado.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListado.Location = new System.Drawing.Point(12, 9);
-            this.lblListado.Name = "lblListado";
-            this.lblListado.Size = new System.Drawing.Size(298, 28);
-            this.lblListado.TabIndex = 45;
-            this.lblListado.Text = "Buscar artículo por marca";
+            this.lblartmar.AutoSize = true;
+            this.lblartmar.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblartmar.Location = new System.Drawing.Point(12, 9);
+            this.lblartmar.Name = "lblartmar";
+            this.lblartmar.Size = new System.Drawing.Size(298, 28);
+            this.lblartmar.TabIndex = 45;
+            this.lblartmar.Text = "Buscar artículo por marca";
             // 
             // lblError
             // 
@@ -116,7 +116,7 @@
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(421, 175);
             this.Controls.Add(this.lblError);
-            this.Controls.Add(this.lblListado);
+            this.Controls.Add(this.lblartmar);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtbMarca);
@@ -139,7 +139,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.TextBox txtbMarca;
         private System.Windows.Forms.Label lblMarca;
-        private System.Windows.Forms.Label lblListado;
+        private System.Windows.Forms.Label lblartmar;
         private System.Windows.Forms.Label lblError;
     }
 }

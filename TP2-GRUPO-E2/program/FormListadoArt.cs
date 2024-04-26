@@ -36,6 +36,11 @@ namespace program
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
+            if (dataGridView1.CurrentRow == null)
+            {
+                MessageBox.Show("Por favor, seleccione un artículo para editar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             Articulo seleccionado;
             seleccionado = (Articulo)dataGridView1.CurrentRow.DataBoundItem;
             FormAgrArt formEdtArt = new FormAgrArt(seleccionado);
@@ -101,6 +106,12 @@ namespace program
             Articulo seleccionado;
             try
             {
+                if (dataGridView1.CurrentRow == null)
+                {
+                    MessageBox.Show("Por favor, seleccione un artículo para eliminar.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return; 
+                }
+
                 DialogResult respuesta = MessageBox.Show("¿Está seguro de que desea eliminar el artículo?", "Eliminando", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (respuesta == DialogResult.Yes)
                 {

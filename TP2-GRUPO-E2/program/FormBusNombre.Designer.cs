@@ -33,7 +33,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.txtbNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.lblListado = new System.Windows.Forms.Label();
+            this.lblartnombre = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -87,15 +87,15 @@
             this.lblNombre.TabIndex = 0;
             this.lblNombre.Text = "Ingresar nombre:";
             // 
-            // lblListado
+            // lblartnombre
             // 
-            this.lblListado.AutoSize = true;
-            this.lblListado.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListado.Location = new System.Drawing.Point(12, 9);
-            this.lblListado.Name = "lblListado";
-            this.lblListado.Size = new System.Drawing.Size(316, 28);
-            this.lblListado.TabIndex = 45;
-            this.lblListado.Text = "Buscar artículo por nombre";
+            this.lblartnombre.AutoSize = true;
+            this.lblartnombre.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblartnombre.Location = new System.Drawing.Point(12, 9);
+            this.lblartnombre.Name = "lblartnombre";
+            this.lblartnombre.Size = new System.Drawing.Size(316, 28);
+            this.lblartnombre.TabIndex = 45;
+            this.lblartnombre.Text = "Buscar artículo por nombre";
             // 
             // lblError
             // 
@@ -116,7 +116,7 @@
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(421, 175);
             this.Controls.Add(this.lblError);
-            this.Controls.Add(this.lblListado);
+            this.Controls.Add(this.lblartnombre);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtbNombre);
@@ -139,7 +139,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.TextBox txtbNombre;
         private System.Windows.Forms.Label lblNombre;
-        private System.Windows.Forms.Label lblListado;
+        private System.Windows.Forms.Label lblartnombre;
         private System.Windows.Forms.Label lblError;
     }
 }

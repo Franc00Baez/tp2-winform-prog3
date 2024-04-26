@@ -33,7 +33,7 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.txtbID = new System.Windows.Forms.TextBox();
             this.lblID = new System.Windows.Forms.Label();
-            this.lblListado = new System.Windows.Forms.Label();
+            this.lblcatid = new System.Windows.Forms.Label();
             this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -88,15 +88,15 @@
             this.lblID.TabIndex = 4;
             this.lblID.Text = "Ingresar ID:";
             // 
-            // lblListado
+            // lblcatid
             // 
-            this.lblListado.AutoSize = true;
-            this.lblListado.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblListado.Location = new System.Drawing.Point(12, 9);
-            this.lblListado.Name = "lblListado";
-            this.lblListado.Size = new System.Drawing.Size(271, 28);
-            this.lblListado.TabIndex = 44;
-            this.lblListado.Text = "Buscar categoría por ID";
+            this.lblcatid.AutoSize = true;
+            this.lblcatid.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcatid.Location = new System.Drawing.Point(12, 9);
+            this.lblcatid.Name = "lblcatid";
+            this.lblcatid.Size = new System.Drawing.Size(271, 28);
+            this.lblcatid.TabIndex = 44;
+            this.lblcatid.Text = "Buscar categoría por ID";
             // 
             // lblError
             // 
@@ -117,7 +117,7 @@
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(421, 175);
             this.Controls.Add(this.lblError);
-            this.Controls.Add(this.lblListado);
+            this.Controls.Add(this.lblcatid);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtbID);
@@ -140,7 +140,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.TextBox txtbID;
         private System.Windows.Forms.Label lblID;
-        private System.Windows.Forms.Label lblListado;
+        private System.Windows.Forms.Label lblcatid;
         private System.Windows.Forms.Label lblError;
     }
 }

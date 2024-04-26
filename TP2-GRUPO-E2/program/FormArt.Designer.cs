@@ -33,7 +33,7 @@
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblMarca2 = new System.Windows.Forms.Label();
             this.lblCategoria2 = new System.Windows.Forms.Label();
-            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.Button();
             this.lblPrecio2 = new System.Windows.Forms.Label();
             this.lblPrecio = new System.Windows.Forms.Label();
             this.lblNombre2 = new System.Windows.Forms.Label();
@@ -89,21 +89,21 @@
             this.lblCategoria2.TabIndex = 32;
             this.lblCategoria2.Text = "Categoría1";
             // 
-            // btnEliminar
+            // btnCerrar
             // 
-            this.btnEliminar.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(422, 323);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(147, 39);
-            this.btnEliminar.TabIndex = 1;
-            this.btnEliminar.Text = "CERRAR";
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            this.btnCerrar.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCerrar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCerrar.Location = new System.Drawing.Point(422, 323);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(147, 39);
+            this.btnCerrar.TabIndex = 1;
+            this.btnCerrar.Text = "CERRAR";
+            this.btnCerrar.UseVisualStyleBackColor = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // lblPrecio2
             // 
@@ -203,7 +203,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.lblMarca2);
             this.Controls.Add(this.lblCategoria2);
-            this.Controls.Add(this.btnEliminar);
+            this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.lblPrecio2);
             this.Controls.Add(this.lblPrecio);
             this.Controls.Add(this.lblNombre2);
@@ -233,7 +233,7 @@
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label lblMarca2;
         private System.Windows.Forms.Label lblCategoria2;
-        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnCerrar;
         private System.Windows.Forms.Label lblPrecio2;
         private System.Windows.Forms.Label lblPrecio;
         private System.Windows.Forms.Label lblNombre2;
