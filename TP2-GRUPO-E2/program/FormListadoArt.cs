@@ -96,8 +96,16 @@ namespace program
 
         private void btnDetalles_Click(object sender, EventArgs e)
         {
-            FormArt formArt = new FormArt();    
+            if(dataGridView1.CurrentRow == null)
+            {
+                MessageBox.Show("Por favor, seleccione un artículo para editar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            Articulo seleccionado = (Articulo)dataGridView1.CurrentRow.DataBoundItem;
+            FormArt formArt = new FormArt(seleccionado);    
             formArt.ShowDialog();
+        
+
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

@@ -65,7 +65,7 @@
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Location = new System.Drawing.Point(12, 20);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(44, 16);
+            this.lblDescripcion.Size = new System.Drawing.Size(45, 16);
             this.lblDescripcion.TabIndex = 0;
             this.lblDescripcion.Text = "label4";
             // 
@@ -219,6 +219,7 @@
             this.Name = "FormArt";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Artículo";
+            this.Load += new System.EventHandler(this.FormArt_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
