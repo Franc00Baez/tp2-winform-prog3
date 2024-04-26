@@ -213,7 +213,7 @@
             this.picbArticulos.Location = new System.Drawing.Point(414, 51);
             this.picbArticulos.Name = "picbArticulos";
             this.picbArticulos.Size = new System.Drawing.Size(262, 221);
-            this.picbArticulos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picbArticulos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picbArticulos.TabIndex = 41;
             this.picbArticulos.TabStop = false;
             // 

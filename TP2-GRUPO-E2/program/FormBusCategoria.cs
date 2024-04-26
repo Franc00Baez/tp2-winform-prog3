@@ -21,5 +21,27 @@ namespace program
         {
             this.Close();
         }
+
+        private bool validar()
+        {
+            if (txtbCategoria.Text == "")
+            {
+                lblCategoria.ForeColor = Color.Red;
+                lblError.Visible = true;
+                return true;
+            }
+
+            return false;
+        }
+
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (validar())
+            {
+                return;
+            }
+            lblCategoria.ForeColor = Color.Black;
+            lblError.Visible = false;
+        }
     }
 }

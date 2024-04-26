@@ -21,5 +21,26 @@ namespace program
         {
             this.Close();
         }
+
+        private bool validar()
+        {
+            if (txtbMarca.Text == "")
+            {
+                lblMarca.ForeColor = Color.Red;
+                lblError.Visible = true;
+                return true;
+            }
+
+            return false;
+        }
+        private void btnBuscar_Click(object sender, EventArgs e)
+        {
+            if (validar())
+            {
+                return;
+            }
+            lblMarca.ForeColor = Color.Black;
+            lblError.Visible = false;
+        }
     }
 }

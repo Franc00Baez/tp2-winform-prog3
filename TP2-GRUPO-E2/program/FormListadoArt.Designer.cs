@@ -148,7 +148,7 @@
             this.picbArtiuclos.Location = new System.Drawing.Point(717, 84);
             this.picbArtiuclos.Name = "picbArtiuclos";
             this.picbArtiuclos.Size = new System.Drawing.Size(262, 221);
-            this.picbArtiuclos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picbArtiuclos.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picbArtiuclos.TabIndex = 10;
             this.picbArtiuclos.TabStop = false;
             // 

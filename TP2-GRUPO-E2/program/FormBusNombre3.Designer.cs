@@ -33,6 +33,8 @@
             this.btnCancelar = new System.Windows.Forms.Button();
             this.txtbNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
+            this.lblListado = new System.Windows.Forms.Label();
+            this.lblError = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnBuscar
@@ -49,6 +51,7 @@
             this.btnBuscar.TabIndex = 6;
             this.btnBuscar.Text = "BUSCAR";
             this.btnBuscar.UseVisualStyleBackColor = false;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // btnCancelar
             // 
@@ -69,7 +72,7 @@
             // txtbNombre
             // 
             this.txtbNombre.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.txtbNombre.Location = new System.Drawing.Point(173, 53);
+            this.txtbNombre.Location = new System.Drawing.Point(173, 63);
             this.txtbNombre.Name = "txtbNombre";
             this.txtbNombre.Size = new System.Drawing.Size(213, 20);
             this.txtbNombre.TabIndex = 5;
@@ -78,18 +81,42 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(51, 53);
+            this.lblNombre.Location = new System.Drawing.Point(51, 64);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(116, 17);
             this.lblNombre.TabIndex = 4;
             this.lblNombre.Text = "Ingresar nombre:";
+            // 
+            // lblListado
+            // 
+            this.lblListado.AutoSize = true;
+            this.lblListado.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblListado.Location = new System.Drawing.Point(12, 9);
+            this.lblListado.Name = "lblListado";
+            this.lblListado.Size = new System.Drawing.Size(333, 28);
+            this.lblListado.TabIndex = 45;
+            this.lblListado.Text = "Buscar categoría por nombre";
+            // 
+            // lblError
+            // 
+            this.lblError.AutoSize = true;
+            this.lblError.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblError.ForeColor = System.Drawing.Color.Red;
+            this.lblError.Location = new System.Drawing.Point(12, 150);
+            this.lblError.Name = "lblError";
+            this.lblError.Size = new System.Drawing.Size(332, 16);
+            this.lblError.TabIndex = 46;
+            this.lblError.Text = "Los campos marcados en rojo son obligatorios";
+            this.lblError.Visible = false;
             // 
             // FormBusNombre3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(421, 164);
+            this.ClientSize = new System.Drawing.Size(421, 175);
+            this.Controls.Add(this.lblError);
+            this.Controls.Add(this.lblListado);
             this.Controls.Add(this.btnBuscar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.txtbNombre);
@@ -112,5 +139,7 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.TextBox txtbNombre;
         private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblListado;
+        private System.Windows.Forms.Label lblError;
     }
 }
