@@ -77,7 +77,6 @@
             this.txtbMarca.Name = "txtbMarca";
             this.txtbMarca.Size = new System.Drawing.Size(213, 20);
             this.txtbMarca.TabIndex = 5;
-            this.txtbMarca.TextChanged += new System.EventHandler(this.txtbMarca_TextChanged);
             // 
             // lblMarca
             // 

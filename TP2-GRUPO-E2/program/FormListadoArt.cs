@@ -52,6 +52,7 @@ namespace program
         {
             cargar();
             Refresh();
+           
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.Columns["Precio"].DefaultCellStyle.Format = "0.##";
@@ -214,6 +215,5 @@ namespace program
                 MessageBox.Show(ex.ToString());
             }
         }
-
     }
 }

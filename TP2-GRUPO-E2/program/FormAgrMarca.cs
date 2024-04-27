@@ -36,10 +36,7 @@ namespace program
             MarcaNegocio marN = new MarcaNegocio();
             try
             {
-                if (validar())
-                {
-                    return;
-                }
+
                 lblMarca.ForeColor = Color.Black;
                 lblError.Visible = false;
 
@@ -52,24 +49,44 @@ namespace program
                     DialogResult respuesta = MessageBox.Show("¿Desea editar la marca?", "Editando", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (respuesta == DialogResult.Yes)
                     {
-                        marN.editar(marca);
-                        MessageBox.Show("Marca editada");
+                        if (!validator())
+                        {
+                            marN.editar(marca);
+                            MessageBox.Show("Marca editada");
+                            Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya existe una marca con esa descripción");
+                        }
+                       
+                       
                     }
                     
                 }
                 else
                 {
+
                     DialogResult respuesta = MessageBox.Show("¿Desea agregar la categoría?", "Agregando", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (respuesta == DialogResult.Yes)
                     {
-                        marN.agregar(marca);
-                        MessageBox.Show("Marca agregada");
+                        if (!validator())
+                        {
+                            marN.agregar(marca);
+                            MessageBox.Show("Marca agregada");
+                            Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya existe una marca con esa descripción");
+                        }
+                        
 
                     }
                     
                 }
 
-                Close();
+                txtbMarca.Text = marca.Descripcion;
             }
             catch (Exception ex)
             {
@@ -83,18 +100,6 @@ namespace program
                     MessageBox.Show("Ocurrió un error al agregar el registro " + ex.Message);
                 }
             }
-        }
-
-        private bool validar()
-        {
-            if (txtbMarca.Text == "")
-            {
-                lblMarca.ForeColor = Color.Red;
-                lblError.Visible = true;
-                return true;
-            }
-
-            return false;
         }
 
         private void FormAgrMarca_Load(object sender, EventArgs e)
@@ -117,12 +122,11 @@ namespace program
             }
         }
 
-        private void txtbMarca_TextChanged(object sender, EventArgs e)
+        private bool validator()
         {
             MarcaNegocio negocio = new MarcaNegocio();
 
             List<Marca> lista = negocio.listar();
-
 
             if (txtbMarca.Text != "")
             {
@@ -130,13 +134,27 @@ namespace program
                 {
                     if (item.Descripcion.ToUpper() == txtbMarca.Text.ToUpper())
                     {
-                        lblMarca.ForeColor = Color.Red;
-                        lblError.Text = "El nombre del artículo está en uso";
-                        lblError.Visible = true;
-                        txtbMarca.Clear();
+                        if (this.marca != null)
+                        {
+                            //lblMarca.ForeColor = Color.Red;
+                            lblError.Text = "El nombre de la marca está en uso";
+                            lblError.Visible = false;
+                            txtbMarca.Clear();
+                            return true;
+                        }
+                        else
+                        {
+                            lblMarca.ForeColor = Color.Red;
+                            lblError.Text = "El nombre de la marca está en uso";
+                            lblError.Visible = true;
+                            txtbMarca.Clear();
+                            return true;
+                        }
+
                     }
                 }
             }
+            return false;
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -36,10 +37,6 @@ namespace program
                 CatNegocio catN = new CatNegocio();
                 try
                 {
-                if (validar())
-                {
-                    return;
-                }
                 lblCategoria.ForeColor = Color.Black;
                 lblError.Visible = false;
 
@@ -53,8 +50,17 @@ namespace program
                     DialogResult respuesta = MessageBox.Show("¿Desea editar la categoría?", "Editando", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (respuesta == DialogResult.Yes)
                     {
-                        catN.editar(categoria);
-                        MessageBox.Show("Categoría editada");
+                        if (!validator())
+                        {
+                            catN.editar(categoria);
+                            MessageBox.Show("Categoría editada");
+                            Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya existe una categoría con esa descripción");
+                        }
+                        
                     }
                     
                 }
@@ -63,14 +69,23 @@ namespace program
                     DialogResult respuesta = MessageBox.Show("¿Desea agregar la categoría?", "Agregando", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (respuesta == DialogResult.Yes)
                     {
-                        catN.agregar(categoria);
-                        MessageBox.Show("Categoría agregada");
+                        if (!validator())
+                        {
+                            catN.agregar(categoria);
+                            MessageBox.Show("Categoría agregada");
+                            Close();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Ya existe una categoría con esa descripción");
+                            
+                        }                     
 
                     }
                    
                 }
-                Close();
-                }
+                txtbCategoria.Text = categoria.Descripcion;
+            }
                 catch (Exception ex)
                 {
 
@@ -85,17 +100,6 @@ namespace program
             }
         }
 
-        private bool validar()
-        {
-            if (txtbCategoria.Text == "")
-            {
-                lblCategoria.ForeColor = Color.Red;
-                lblError.Visible = true;
-                return true;
-            }
-            
-            return false;
-        }
         private void FormAgrCat_Load(object sender, EventArgs e)
         {
 
@@ -117,12 +121,11 @@ namespace program
             }
         }
 
-        private void txtbCategoria_TextChanged(object sender, EventArgs e)
+        private bool validator()
         {
             CatNegocio negocio = new CatNegocio();
 
             List<Categoria> lista = negocio.listar();
-
 
             if (txtbCategoria.Text != "")
             {
@@ -130,13 +133,27 @@ namespace program
                 {
                     if (item.Descripcion.ToUpper() == txtbCategoria.Text.ToUpper())
                     {
-                        lblCategoria.ForeColor = Color.Red;
-                        lblError.Text = "El nombre del artículo está en uso";
-                        lblError.Visible = true;
-                        txtbCategoria.Clear();
+                        if (this.categoria != null)
+                        {
+                            lblCategoria.ForeColor = Color.Red;
+                            lblError.Text = "El nombre de la categoría está en uso";
+                            lblError.Visible = false;
+                            txtbCategoria.Clear();
+                            return true;
+                        }
+                        else
+                        {
+                            lblCategoria.ForeColor = Color.Red;
+                            lblError.Text = "El nombre de la categoría está en uso";
+                            lblError.Visible = true;
+                            txtbCategoria.Clear();
+                            return true;
+                        }
+
                     }
                 }
             }
+            return false;
         }
     }
 }

@@ -99,7 +99,6 @@
             this.txtbNombre.Name = "txtbNombre";
             this.txtbNombre.Size = new System.Drawing.Size(296, 20);
             this.txtbNombre.TabIndex = 3;
-            this.txtbNombre.Leave += new System.EventHandler(this.txtbNombre_Leave);
             // 
             // txtbCodArt
             // 
@@ -107,7 +106,6 @@
             this.txtbCodArt.Name = "txtbCodArt";
             this.txtbCodArt.Size = new System.Drawing.Size(232, 20);
             this.txtbCodArt.TabIndex = 1;
-            this.txtbCodArt.Leave += new System.EventHandler(this.txtbCodArt_Leave);
             // 
             // btnCancelar
             // 

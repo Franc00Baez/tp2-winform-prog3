@@ -38,7 +38,6 @@ namespace negocio
                     aux.Precio = datos.Lector.GetDecimal(6);
                     aux.Imagen = new Imagen();
                     aux.Imagen.URL = (string)datos.Lector["Imagen"];
-                    
                     lista.Add(aux);
                 }
                 return lista;

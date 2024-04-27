@@ -45,6 +45,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblErrorBusqueda = new System.Windows.Forms.Label();
+            this.btnAccion = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbArtiuclos)).BeginInit();
             this.SuspendLayout();
@@ -158,7 +159,7 @@
             this.lblListado.ForeColor = System.Drawing.SystemColors.InfoText;
             this.lblListado.Location = new System.Drawing.Point(6, 4);
             this.lblListado.Name = "lblListado";
-            this.lblListado.Size = new System.Drawing.Size(255, 32);
+            this.lblListado.Size = new System.Drawing.Size(254, 32);
             this.lblListado.TabIndex = 11;
             this.lblListado.Text = "Listado de artículos";
             // 
@@ -220,7 +221,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(9, 398);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 16);
+            this.label1.Size = new System.Drawing.Size(60, 16);
             this.label1.TabIndex = 18;
             this.label1.Text = "Campo:";
             // 
@@ -230,7 +231,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(150, 398);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(62, 16);
+            this.label2.Size = new System.Drawing.Size(61, 16);
             this.label2.TabIndex = 19;
             this.label2.Text = "Criterio:";
             // 
@@ -244,12 +245,22 @@
             this.lblErrorBusqueda.Size = new System.Drawing.Size(0, 16);
             this.lblErrorBusqueda.TabIndex = 20;
             // 
+            // btnAccion
+            // 
+            this.btnAccion.Location = new System.Drawing.Point(809, 311);
+            this.btnAccion.Name = "btnAccion";
+            this.btnAccion.Size = new System.Drawing.Size(75, 28);
+            this.btnAccion.TabIndex = 21;
+            this.btnAccion.Text = "button1";
+            this.btnAccion.UseVisualStyleBackColor = true;
+            // 
             // FormListadoArt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(975, 480);
+            this.Controls.Add(this.btnAccion);
             this.Controls.Add(this.lblErrorBusqueda);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -299,5 +310,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblErrorBusqueda;
+        private System.Windows.Forms.Button btnAccion;
     }
 }

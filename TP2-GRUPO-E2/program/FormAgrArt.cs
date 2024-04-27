@@ -67,23 +67,40 @@ namespace program
                     DialogResult respuesta = MessageBox.Show("¿Desea editar el artículo?", "Editando", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (respuesta == DialogResult.Yes)
                     {
-                        artN.editar(articulo);
-                        MessageBox.Show("Artículo editado");                
+                        if (!validator())
+                        {
+                            artN.editar(articulo);
+                            MessageBox.Show("Artículo editado");
+                            Close();
+                        }
                     }
-                             
+                    else
+                    {
+                        MessageBox.Show("Hubo un error al editar el artículo");
+                    }
+
                 }
                 else
                 {
                     DialogResult respuesta = MessageBox.Show("¿Desea agregar el artículo?", "Agregando", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (respuesta == DialogResult.Yes)
                     {
-                        artN.agregar(articulo);
-                        MessageBox.Show("Artículo agregado");
+                        if (!validator())
+                        {
+                            artN.agregar(articulo);
+                            MessageBox.Show("Artículo agregado");
+                            Close();
+                        }
                     }
-                    
-                }
+                    else
+                    {
+                        MessageBox.Show("Hubo un error al agregar el artículo");
+                    }
 
-                Close();
+                }
+                txtbCodArt.Text = articulo.Codigo;
+                txtbNombre.Text = articulo.Nombre;
+                
             }
             catch (Exception ex)
             {
@@ -160,7 +177,7 @@ namespace program
                     txtbCodArt.Text = articulo.Codigo;
                     txtbNombre.Text = articulo.Nombre;
                     txtbDescripcion.Text = articulo.Descripcion;
-                    txtbPrecio.Text = articulo.Precio.ToString();
+                    txtbPrecio.Text = articulo.Precio.ToString("0.##");
                     txtUrlImagen.Text = articulo.Imagen.URL;
                     CargarImagen(articulo.Imagen.URL);
                     cboxCategoria.SelectedValue = articulo.Categoria.ID;
@@ -191,48 +208,45 @@ namespace program
             CargarImagen(txtUrlImagen.Text);
         }
 
-        private void txtbNombre_Leave(object sender, EventArgs e)
-        {
-            ArtNegocio negocio = new ArtNegocio();
+        private bool validator()
+        {         
+                ArtNegocio negocio = new ArtNegocio();
 
-            List<Articulo> lista = negocio.listar();
-
+                List<Articulo> lista = negocio.listar();
+            int idRegistroActual = Convert.ToInt32(articulo.Id);
 
             if (txtbNombre.Text != "")
-            {
-                foreach (Articulo item in lista)
                 {
-                    if (item.Nombre.ToUpper() == txtbNombre.Text.ToUpper())
+                    foreach (Articulo item in lista)
                     {
+                        if (item.Id != idRegistroActual && item.Nombre.ToUpper() == txtbNombre.Text.ToUpper())
+                        {
                         lblNombre.ForeColor = Color.Red;
                         lblError.Text = "El nombre del artículo está en uso";
-                        lblError.Visible = true;                      
+                        lblError.Visible = true;
                         txtbNombre.Clear();
+                        return true;
+                    }
                     }
                 }
-            }
-        }
 
-        private void txtbCodArt_Leave(object sender, EventArgs e)
-        {
-            ArtNegocio negocio = new ArtNegocio();
-
-            List<Articulo> lista = negocio.listar();
-
-
-            if (txtbCodArt.Text != "")
-            {
-                foreach (Articulo item in lista)
+                if (txtbCodArt.Text != "")
                 {
-                    if (item.Codigo.ToUpper().Equals(txtbCodArt.Text.ToUpper()))
+                    foreach (Articulo item in lista)
                     {
+                        if (item.Id != idRegistroActual && item.Codigo.ToUpper().Equals(txtbCodArt.Text.ToUpper()))
+                        {
                         lblCodArt.ForeColor = Color.Red;
                         lblError.Text = "El codigo del artículo está en uso";
                         lblError.Visible = true;
                         txtbCodArt.Clear();
+                        return true;
+                    }
                     }
                 }
-            }
+
+                return false;
+          
         }
     }
 }
