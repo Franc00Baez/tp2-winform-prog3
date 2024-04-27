@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormListadoCat));
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.btnRefrescar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -46,22 +45,6 @@
             this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(222, 213);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(135, 27);
-            this.btnCancelar.TabIndex = 26;
-            this.btnCancelar.Text = "CANCELAR";
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.button3_Click);
             // 
             // lblCategoria
             // 
@@ -244,7 +227,6 @@
             this.Controls.Add(this.txtFiltrarCat);
             this.Controls.Add(this.cbCriterioCat);
             this.Controls.Add(this.cbCampoCat);
-            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.btnRefrescar);
             this.Controls.Add(this.btnAgregar);
@@ -266,8 +248,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Button btnRefrescar;
         private System.Windows.Forms.Button btnAgregar;

@@ -35,7 +35,6 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.lblMarcas = new System.Windows.Forms.Label();
-            this.btnCancelar = new System.Windows.Forms.Button();
             this.cbCampoMar = new System.Windows.Forms.ComboBox();
             this.cbCriterioMar = new System.Windows.Forms.ComboBox();
             this.txtFiltrarMar = new System.Windows.Forms.TextBox();
@@ -131,22 +130,6 @@
             this.lblMarcas.Size = new System.Drawing.Size(236, 32);
             this.lblMarcas.TabIndex = 17;
             this.lblMarcas.Text = "Listado de marcas";
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCancelar.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnCancelar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(222, 214);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(135, 27);
-            this.btnCancelar.TabIndex = 18;
-            this.btnCancelar.Text = "CANCELAR";
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.button3_Click);
             // 
             // cbCampoMar
             // 
@@ -244,7 +227,6 @@
             this.Controls.Add(this.txtFiltrarMar);
             this.Controls.Add(this.cbCriterioMar);
             this.Controls.Add(this.cbCampoMar);
-            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.lblMarcas);
             this.Controls.Add(this.btnRefrescar);
             this.Controls.Add(this.btnAgregar);
@@ -272,7 +254,6 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label lblMarcas;
-        private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.ComboBox cbCampoMar;
         private System.Windows.Forms.ComboBox cbCriterioMar;
         private System.Windows.Forms.TextBox txtFiltrarMar;

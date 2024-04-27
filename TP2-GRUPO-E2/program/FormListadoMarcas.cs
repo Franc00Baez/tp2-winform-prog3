@@ -36,11 +36,6 @@ namespace program
             dataGridView1.DataSource = listaMarcas;
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             FormAgrMarca formAgrMarca = new FormAgrMarca(); 

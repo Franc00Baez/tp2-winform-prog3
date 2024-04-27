@@ -87,12 +87,6 @@ namespace program
             Articulo seleccionado = (Articulo)dataGridView1.CurrentRow.DataBoundItem;
             CargarImagen(seleccionado.Imagen.URL);
         }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void btnDetalles_Click(object sender, EventArgs e)
         {
             if(dataGridView1.CurrentRow == null)

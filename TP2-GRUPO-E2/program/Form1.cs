@@ -42,17 +42,6 @@ namespace program
             formBusNombre.ShowDialog();
         }
 
-        private void buscarPorMarcaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormBusMarca formBusMarca = new FormBusMarca(); 
-            formBusMarca.ShowDialog();
-        }
-
-        private void buscarPorCategoríaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            FormBusCategoria formBusCategoria = new FormBusCategoria();
-            formBusCategoria.ShowDialog();
-        }
         private void Timer_Tick(object sender, EventArgs e)
         {
             tsslFecha.Text = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss");
@@ -75,30 +64,6 @@ namespace program
         {
             FormAgrCat formAgrCat = new FormAgrCat(); 
             formAgrCat.ShowDialog();
-        }
-
-        private void buscarPorIDToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            FormBusID2 formBusID2 = new FormBusID2();
-            formBusID2.ShowDialog();
-        }
-
-        private void buscarPorNombreToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            FormBusNombre2 formBusNombre2 = new FormBusNombre2();
-            formBusNombre2.ShowDialog();
-        }
-
-        private void buscarPorIDToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            FormBusID3 formBusID3 = new FormBusID3();
-            formBusID3.ShowDialog();
-        }
-
-        private void buscarPorNombreToolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            FormBusNombre3 formBusNombre3 = new FormBusNombre3();
-            formBusNombre3.ShowDialog();
         }
 
         private void verListadoDeArtículosToolStripMenuItem_Click(object sender, EventArgs e)

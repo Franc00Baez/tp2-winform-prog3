@@ -41,20 +41,12 @@ namespace program
             this.buscarArtículoTSMI = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarPorIDTSMI = new System.Windows.Forms.ToolStripMenuItem();
             this.buscarPorNombreTSMI = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarPorMarcaTSMI = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarPorCategoríaTSMI = new System.Windows.Forms.ToolStripMenuItem();
             this.verListadoDeArtículosTSMI = new System.Windows.Forms.ToolStripMenuItem();
             this.marcasTSMI = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarMarcaTSMI = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarMarcaTSMI = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarPorIDTSMI1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarPorNombreTSMI1 = new System.Windows.Forms.ToolStripMenuItem();
             this.verListadoDeMarcasTSMI = new System.Windows.Forms.ToolStripMenuItem();
             this.categoríasTSMI = new System.Windows.Forms.ToolStripMenuItem();
             this.agregarCategoríaTSMI = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarCategoríaTSMI = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarPorIDTSMI2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.buscarPorNombreTSMI2 = new System.Windows.Forms.ToolStripMenuItem();
             this.verListadoDeCategoríasTSMI = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutTSMI = new System.Windows.Forms.ToolStripMenuItem();
             this.timer = new System.Windows.Forms.Timer(this.components);
@@ -128,9 +120,7 @@ namespace program
             // 
             this.buscarArtículoTSMI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.buscarPorIDTSMI,
-            this.buscarPorNombreTSMI,
-            this.buscarPorMarcaTSMI,
-            this.buscarPorCategoríaTSMI});
+            this.buscarPorNombreTSMI});
             this.buscarArtículoTSMI.Image = global::program.Properties.Resources.search_data_magnifier_folder_icon_252030;
             this.buscarArtículoTSMI.Name = "buscarArtículoTSMI";
             this.buscarArtículoTSMI.Size = new System.Drawing.Size(192, 22);
@@ -140,7 +130,7 @@ namespace program
             // 
             this.buscarPorIDTSMI.Image = global::program.Properties.Resources.search_file_icon_252034;
             this.buscarPorIDTSMI.Name = "buscarPorIDTSMI";
-            this.buscarPorIDTSMI.Size = new System.Drawing.Size(182, 22);
+            this.buscarPorIDTSMI.Size = new System.Drawing.Size(180, 22);
             this.buscarPorIDTSMI.Text = "Buscar por ID";
             this.buscarPorIDTSMI.Click += new System.EventHandler(this.buscarPorIDToolStripMenuItem_Click);
             // 
@@ -148,25 +138,9 @@ namespace program
             // 
             this.buscarPorNombreTSMI.Image = global::program.Properties.Resources.search_file_icon_252034;
             this.buscarPorNombreTSMI.Name = "buscarPorNombreTSMI";
-            this.buscarPorNombreTSMI.Size = new System.Drawing.Size(182, 22);
+            this.buscarPorNombreTSMI.Size = new System.Drawing.Size(180, 22);
             this.buscarPorNombreTSMI.Text = "Buscar por nombre";
             this.buscarPorNombreTSMI.Click += new System.EventHandler(this.buscarPorNombreToolStripMenuItem_Click);
-            // 
-            // buscarPorMarcaTSMI
-            // 
-            this.buscarPorMarcaTSMI.Image = global::program.Properties.Resources.search_file_icon_252034;
-            this.buscarPorMarcaTSMI.Name = "buscarPorMarcaTSMI";
-            this.buscarPorMarcaTSMI.Size = new System.Drawing.Size(182, 22);
-            this.buscarPorMarcaTSMI.Text = "Buscar por marca";
-            this.buscarPorMarcaTSMI.Click += new System.EventHandler(this.buscarPorMarcaToolStripMenuItem_Click);
-            // 
-            // buscarPorCategoríaTSMI
-            // 
-            this.buscarPorCategoríaTSMI.Image = global::program.Properties.Resources.search_file_icon_252034;
-            this.buscarPorCategoríaTSMI.Name = "buscarPorCategoríaTSMI";
-            this.buscarPorCategoríaTSMI.Size = new System.Drawing.Size(182, 22);
-            this.buscarPorCategoríaTSMI.Text = "Buscar por categoría";
-            this.buscarPorCategoríaTSMI.Click += new System.EventHandler(this.buscarPorCategoríaToolStripMenuItem_Click);
             // 
             // verListadoDeArtículosTSMI
             // 
@@ -180,7 +154,6 @@ namespace program
             // 
             this.marcasTSMI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agregarMarcaTSMI,
-            this.buscarMarcaTSMI,
             this.verListadoDeMarcasTSMI});
             this.marcasTSMI.Name = "marcasTSMI";
             this.marcasTSMI.Size = new System.Drawing.Size(57, 20);
@@ -194,32 +167,6 @@ namespace program
             this.agregarMarcaTSMI.Text = "Agregar marca";
             this.agregarMarcaTSMI.Click += new System.EventHandler(this.agregarMarcaToolStripMenuItem_Click);
             // 
-            // buscarMarcaTSMI
-            // 
-            this.buscarMarcaTSMI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.buscarPorIDTSMI1,
-            this.buscarPorNombreTSMI1});
-            this.buscarMarcaTSMI.Image = global::program.Properties.Resources.search_data_magnifier_folder_icon_252030;
-            this.buscarMarcaTSMI.Name = "buscarMarcaTSMI";
-            this.buscarMarcaTSMI.Size = new System.Drawing.Size(185, 22);
-            this.buscarMarcaTSMI.Text = "Buscar marca";
-            // 
-            // buscarPorIDTSMI1
-            // 
-            this.buscarPorIDTSMI1.Image = global::program.Properties.Resources.search_file_icon_252034;
-            this.buscarPorIDTSMI1.Name = "buscarPorIDTSMI1";
-            this.buscarPorIDTSMI1.Size = new System.Drawing.Size(175, 22);
-            this.buscarPorIDTSMI1.Text = "Buscar por ID";
-            this.buscarPorIDTSMI1.Click += new System.EventHandler(this.buscarPorIDToolStripMenuItem1_Click);
-            // 
-            // buscarPorNombreTSMI1
-            // 
-            this.buscarPorNombreTSMI1.Image = global::program.Properties.Resources.search_file_icon_252034;
-            this.buscarPorNombreTSMI1.Name = "buscarPorNombreTSMI1";
-            this.buscarPorNombreTSMI1.Size = new System.Drawing.Size(175, 22);
-            this.buscarPorNombreTSMI1.Text = "Buscar por nombre";
-            this.buscarPorNombreTSMI1.Click += new System.EventHandler(this.buscarPorNombreToolStripMenuItem1_Click);
-            // 
             // verListadoDeMarcasTSMI
             // 
             this.verListadoDeMarcasTSMI.Image = global::program.Properties.Resources.text_clipboard_icon_252043;
@@ -232,7 +179,6 @@ namespace program
             // 
             this.categoríasTSMI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.agregarCategoríaTSMI,
-            this.buscarCategoríaTSMI,
             this.verListadoDeCategoríasTSMI});
             this.categoríasTSMI.Name = "categoríasTSMI";
             this.categoríasTSMI.Size = new System.Drawing.Size(75, 20);
@@ -245,32 +191,6 @@ namespace program
             this.agregarCategoríaTSMI.Size = new System.Drawing.Size(201, 22);
             this.agregarCategoríaTSMI.Text = "Agregar categoría";
             this.agregarCategoríaTSMI.Click += new System.EventHandler(this.agregarCategoríaToolStripMenuItem_Click);
-            // 
-            // buscarCategoríaTSMI
-            // 
-            this.buscarCategoríaTSMI.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.buscarPorIDTSMI2,
-            this.buscarPorNombreTSMI2});
-            this.buscarCategoríaTSMI.Image = global::program.Properties.Resources.search_data_magnifier_folder_icon_252030;
-            this.buscarCategoríaTSMI.Name = "buscarCategoríaTSMI";
-            this.buscarCategoríaTSMI.Size = new System.Drawing.Size(201, 22);
-            this.buscarCategoríaTSMI.Text = "Buscar categoría";
-            // 
-            // buscarPorIDTSMI2
-            // 
-            this.buscarPorIDTSMI2.Image = global::program.Properties.Resources.search_file_icon_252034;
-            this.buscarPorIDTSMI2.Name = "buscarPorIDTSMI2";
-            this.buscarPorIDTSMI2.Size = new System.Drawing.Size(175, 22);
-            this.buscarPorIDTSMI2.Text = "Buscar por ID";
-            this.buscarPorIDTSMI2.Click += new System.EventHandler(this.buscarPorIDToolStripMenuItem2_Click);
-            // 
-            // buscarPorNombreTSMI2
-            // 
-            this.buscarPorNombreTSMI2.Image = global::program.Properties.Resources.search_file_icon_252034;
-            this.buscarPorNombreTSMI2.Name = "buscarPorNombreTSMI2";
-            this.buscarPorNombreTSMI2.Size = new System.Drawing.Size(175, 22);
-            this.buscarPorNombreTSMI2.Text = "Buscar por nombre";
-            this.buscarPorNombreTSMI2.Click += new System.EventHandler(this.buscarPorNombreToolStripMenuItem2_Click);
             // 
             // verListadoDeCategoríasTSMI
             // 
@@ -325,22 +245,14 @@ namespace program
         private System.Windows.Forms.ToolStripMenuItem buscarArtículoTSMI;
         private System.Windows.Forms.ToolStripMenuItem buscarPorIDTSMI;
         private System.Windows.Forms.ToolStripMenuItem buscarPorNombreTSMI;
-        private System.Windows.Forms.ToolStripMenuItem buscarPorMarcaTSMI;
-        private System.Windows.Forms.ToolStripMenuItem buscarPorCategoríaTSMI;
         private System.Windows.Forms.ToolStripMenuItem verListadoDeArtículosTSMI;
         private System.Windows.Forms.ToolStripMenuItem marcasTSMI;
         private System.Windows.Forms.ToolStripMenuItem agregarMarcaTSMI;
-        private System.Windows.Forms.ToolStripMenuItem buscarMarcaTSMI;
         private System.Windows.Forms.ToolStripMenuItem categoríasTSMI;
         private System.Windows.Forms.ToolStripMenuItem agregarCategoríaTSMI;
-        private System.Windows.Forms.ToolStripMenuItem buscarCategoríaTSMI;
         private System.Windows.Forms.ToolStripMenuItem aboutTSMI;
         private System.Windows.Forms.Timer timer;
         private System.Windows.Forms.ToolStripStatusLabel tsslFecha;
-        private System.Windows.Forms.ToolStripMenuItem buscarPorIDTSMI1;
-        private System.Windows.Forms.ToolStripMenuItem buscarPorNombreTSMI1;
-        private System.Windows.Forms.ToolStripMenuItem buscarPorIDTSMI2;
-        private System.Windows.Forms.ToolStripMenuItem buscarPorNombreTSMI2;
         private System.Windows.Forms.ToolStripStatusLabel TSML1;
         private System.Windows.Forms.ToolStripMenuItem verListadoDeMarcasTSMI;
         private System.Windows.Forms.ToolStripMenuItem verListadoDeCategoríasTSMI;

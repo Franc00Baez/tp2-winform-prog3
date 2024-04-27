@@ -70,35 +70,11 @@
     <Compile Include="FormAgrMarca.Designer.cs">
       <DependentUpon>FormAgrMarca.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormBusCategoria.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormBusCategoria.Designer.cs">
-      <DependentUpon>FormBusCategoria.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormBusID.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormBusID.Designer.cs">
       <DependentUpon>FormBusID.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormBusID2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormBusID2.Designer.cs">
-      <DependentUpon>FormBusID2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormBusID3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormBusID3.Designer.cs">
-      <DependentUpon>FormBusID3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormBusMarca.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormBusMarca.Designer.cs">
-      <DependentUpon>FormBusMarca.cs</DependentUpon>
     </Compile>
     <Compile Include="FormBusNombre.cs">
       <SubType>Form</SubType>
@@ -111,18 +87,6 @@
     </Compile>
     <Compile Include="FormArt.Designer.cs">
       <DependentUpon>FormArt.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormBusNombre2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormBusNombre2.Designer.cs">
-      <DependentUpon>FormBusNombre2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormBusNombre3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormBusNombre3.Designer.cs">
-      <DependentUpon>FormBusNombre3.cs</DependentUpon>
     </Compile>
     <Compile Include="FormListadoArt.cs">
       <SubType>Form</SubType>
@@ -156,32 +120,14 @@
     <EmbeddedResource Include="FormAgrMarca.resx">
       <DependentUpon>FormAgrMarca.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormBusCategoria.resx">
-      <DependentUpon>FormBusCategoria.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormBusID.resx">
       <DependentUpon>FormBusID.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormBusID2.resx">
-      <DependentUpon>FormBusID2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormBusID3.resx">
-      <DependentUpon>FormBusID3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormBusMarca.resx">
-      <DependentUpon>FormBusMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormBusNombre.resx">
       <DependentUpon>FormBusNombre.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormArt.resx">
       <DependentUpon>FormArt.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormBusNombre2.resx">
-      <DependentUpon>FormBusNombre2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormBusNombre3.resx">
-      <DependentUpon>FormBusNombre3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormListadoArt.resx">
       <DependentUpon>FormListadoArt.cs</DependentUpon>
