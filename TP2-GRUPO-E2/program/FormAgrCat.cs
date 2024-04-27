@@ -116,5 +116,27 @@ namespace program
                 throw ex;
             }
         }
+
+        private void txtbCategoria_TextChanged(object sender, EventArgs e)
+        {
+            CatNegocio negocio = new CatNegocio();
+
+            List<Categoria> lista = negocio.listar();
+
+
+            if (txtbCategoria.Text != "")
+            {
+                foreach (Categoria item in lista)
+                {
+                    if (item.Descripcion.ToUpper() == txtbCategoria.Text.ToUpper())
+                    {
+                        lblCategoria.ForeColor = Color.Red;
+                        lblError.Text = "El nombre del artículo está en uso";
+                        lblError.Visible = true;
+                        txtbCategoria.Clear();
+                    }
+                }
+            }
+        }
     }
 }

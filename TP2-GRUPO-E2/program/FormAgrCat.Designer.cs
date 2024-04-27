@@ -77,6 +77,7 @@
             this.txtbCategoria.Name = "txtbCategoria";
             this.txtbCategoria.Size = new System.Drawing.Size(213, 20);
             this.txtbCategoria.TabIndex = 9;
+            this.txtbCategoria.TextChanged += new System.EventHandler(this.txtbCategoria_TextChanged);
             // 
             // lblCategoria
             // 
@@ -105,7 +106,7 @@
             this.lblError.ForeColor = System.Drawing.Color.Red;
             this.lblError.Location = new System.Drawing.Point(12, 150);
             this.lblError.Name = "lblError";
-            this.lblError.Size = new System.Drawing.Size(332, 16);
+            this.lblError.Size = new System.Drawing.Size(333, 16);
             this.lblError.TabIndex = 44;
             this.lblError.Text = "Los campos marcados en rojo son obligatorios";
             this.lblError.Visible = false;

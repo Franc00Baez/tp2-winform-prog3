@@ -116,5 +116,27 @@ namespace program
                 throw ex;
             }
         }
+
+        private void txtbMarca_TextChanged(object sender, EventArgs e)
+        {
+            MarcaNegocio negocio = new MarcaNegocio();
+
+            List<Marca> lista = negocio.listar();
+
+
+            if (txtbMarca.Text != "")
+            {
+                foreach (Marca item in lista)
+                {
+                    if (item.Descripcion.ToUpper() == txtbMarca.Text.ToUpper())
+                    {
+                        lblMarca.ForeColor = Color.Red;
+                        lblError.Text = "El nombre del artículo está en uso";
+                        lblError.Visible = true;
+                        txtbMarca.Clear();
+                    }
+                }
+            }
+        }
     }
 }
