@@ -38,12 +38,11 @@ namespace program
                 lblNombre2.Text = art.Nombre;
                 lblMarca2.Text = art.Marca.Descripcion;
                 lblCategoria2.Text = art.Categoria.Descripcion;
-                lblPrecio2.Text = art.Precio.ToString();
+                lblPrecio2.Text = art.Precio.ToString("0.##");
                 lblDescripcion.Text = art.Descripcion;
                 CargarImagen(art.Imagen.URL);
 
             }
-
 
         }
 

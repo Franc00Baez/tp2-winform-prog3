@@ -14,6 +14,8 @@ namespace program
 {
     public partial class FormAgrArt : Form
     {   
+
+
         private Articulo articulo = null;
         public FormAgrArt()
         {
@@ -66,8 +68,7 @@ namespace program
                     if (respuesta == DialogResult.Yes)
                     {
                         artN.editar(articulo);
-                        MessageBox.Show("Artículo editado");
-
+                        MessageBox.Show("Artículo editado");                
                     }
                              
                 }
@@ -78,7 +79,6 @@ namespace program
                     {
                         artN.agregar(articulo);
                         MessageBox.Show("Artículo agregado");
-
                     }
                     
                 }
@@ -189,6 +189,28 @@ namespace program
         private void txtUrlImagen_Leave(object sender, EventArgs e)
         {
             CargarImagen(txtUrlImagen.Text);
+        }
+
+        private void txtbNombre_Leave(object sender, EventArgs e)
+        {
+            ArtNegocio negocio = new ArtNegocio();
+
+            List<Articulo> lista = negocio.listar();
+
+
+            if (txtbNombre.Text != "")
+            {
+                foreach (Articulo item in lista)
+                {
+                    if (item.Nombre.ToUpper() == txtbNombre.Text.ToUpper())
+                    {
+                        lblNombre.ForeColor = Color.Red;
+                        lblError.Text = "El nombre del artículo está en uso";
+                        lblError.Visible = true;                      
+                        txtbNombre.Clear();
+                    }
+                }
+            }
         }
     }
 }
