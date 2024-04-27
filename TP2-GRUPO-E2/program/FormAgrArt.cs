@@ -212,5 +212,27 @@ namespace program
                 }
             }
         }
+
+        private void txtbCodArt_Leave(object sender, EventArgs e)
+        {
+            ArtNegocio negocio = new ArtNegocio();
+
+            List<Articulo> lista = negocio.listar();
+
+
+            if (txtbCodArt.Text != "")
+            {
+                foreach (Articulo item in lista)
+                {
+                    if (item.Codigo.ToUpper().Equals(txtbCodArt.Text.ToUpper()))
+                    {
+                        lblCodArt.ForeColor = Color.Red;
+                        lblError.Text = "El codigo del artículo está en uso";
+                        lblError.Visible = true;
+                        txtbCodArt.Clear();
+                    }
+                }
+            }
+        }
     }
 }
