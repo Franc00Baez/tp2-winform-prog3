@@ -45,7 +45,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblErrorBusqueda = new System.Windows.Forms.Label();
-            this.btnAccion = new System.Windows.Forms.Button();
+            this.btnNext = new System.Windows.Forms.Button();
+            this.btnPrev = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picbArtiuclos)).BeginInit();
             this.SuspendLayout();
@@ -60,6 +61,7 @@
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(699, 299);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.RowPrePaint += new System.Windows.Forms.DataGridViewRowPrePaintEventHandler(this.dataGridView1_RowPrePaint);
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // btnEditar
@@ -245,14 +247,27 @@
             this.lblErrorBusqueda.Size = new System.Drawing.Size(0, 16);
             this.lblErrorBusqueda.TabIndex = 20;
             // 
-            // btnAccion
+            // btnNext
             // 
-            this.btnAccion.Location = new System.Drawing.Point(809, 311);
-            this.btnAccion.Name = "btnAccion";
-            this.btnAccion.Size = new System.Drawing.Size(75, 28);
-            this.btnAccion.TabIndex = 21;
-            this.btnAccion.Text = "button1";
-            this.btnAccion.UseVisualStyleBackColor = true;
+            this.btnNext.Location = new System.Drawing.Point(862, 311);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(75, 23);
+            this.btnNext.TabIndex = 21;
+            this.btnNext.Text = "->";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Visible = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
+            // btnPrev
+            // 
+            this.btnPrev.Location = new System.Drawing.Point(771, 311);
+            this.btnPrev.Name = "btnPrev";
+            this.btnPrev.Size = new System.Drawing.Size(75, 23);
+            this.btnPrev.TabIndex = 22;
+            this.btnPrev.Text = "<-";
+            this.btnPrev.UseVisualStyleBackColor = true;
+            this.btnPrev.Visible = false;
+            this.btnPrev.Click += new System.EventHandler(this.btnPrev_Click);
             // 
             // FormListadoArt
             // 
@@ -260,7 +275,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(975, 480);
-            this.Controls.Add(this.btnAccion);
+            this.Controls.Add(this.btnPrev);
+            this.Controls.Add(this.btnNext);
             this.Controls.Add(this.lblErrorBusqueda);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -310,6 +326,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblErrorBusqueda;
-        private System.Windows.Forms.Button btnAccion;
+        private System.Windows.Forms.Button btnNext;
+        private System.Windows.Forms.Button btnPrev;
     }
 }

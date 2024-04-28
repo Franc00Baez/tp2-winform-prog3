@@ -8,8 +8,13 @@ namespace program
 {
     public class Imagen
     {
-        public int ID;
-        public int IDArticulo;
-        public string URL;
+        public int ID { get; set; }
+        public int IDArticulo { get; set; }
+        public string URL { get; set; }
+
+        public override string ToString()
+        {
+            return URL;
+        }
     }
 }
